@@ -1,22 +1,18 @@
+<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+
 # Troubleshooting
 
-## I Installed Auralis But Nothing Changed
+## I installed Auralis but do not see the themes
 
 Run:
 
 ```text
-Auralis: Open Setup Dashboard
+Preferences: Color Theme
 ```
 
-Then choose the recommended experience.
+Search for `Auralis`.
 
-You can also run:
-
-```text
-Auralis: Apply Recommended Experience
-```
-
-## I Do Not See File Icons Or Product Icons
+## Icons did not change
 
 Run:
 
@@ -24,38 +20,44 @@ Run:
 Auralis: Sync Icons With Active Theme
 ```
 
-Or choose these manually:
+Then reload VS Code if the Extensions view asks for it.
 
-- File Icon Theme: `Auralis Icons`
-- Product Icon Theme: `Auralis Product Icons`
-
-## Terraform, YAML, Or Web Formatting Is Not Working
+## I want one place to check my setup
 
 Run:
 
 ```text
-Auralis: Doctor
+Auralis: Open Setup Dashboard
 ```
 
-Then run the matching setup command:
+It reports the active theme, icon themes, formatter settings, companion extensions, optional ambience settings, and old Lumen settings that can be cleaned safely.
 
-- `Auralis: Setup Terraform Tooling`
-- `Auralis: Setup YAML and Kubernetes Tooling`
-- `Auralis: Setup Web Tooling`
+## Blame Ghosts does not show anything
 
-## YAML Shows The Wrong Schema
+Check that:
 
-Run:
+- The workspace is trusted.
+- The file is saved and not dirty.
+- The file is inside a local git repository.
+- `git` is available on your PATH.
+- `auralis.blameGhosts.enabled` is true.
+
+## A profile changed too many editor settings
+
+Profiles write normal VS Code settings. Open Settings JSON and adjust the settings you do not want. To stop profiles from toggling ambience:
+
+```json
+{
+  "auralis.profiles.includeAmbience": false
+}
+```
+
+## Images are broken on Marketplace
+
+Marketplace images must be public HTTPS URLs. Auralis uses a public asset repository for screenshots while keeping the source repository private.
+
+Public support issues live at:
 
 ```text
-Auralis: Setup YAML and Kubernetes Tooling
+https://github.com/bertrandmbanwi/auralis-support/issues
 ```
-
-Auralis removes older pre-release Kubernetes schema mappings that could cause noisy validation.
-
-## Marketplace Says Publisher Not Verified
-
-That is expected during beta. Microsoft requires publisher and domain-age milestones before verification can be approved.
-
-See [Publisher Verification](verification.md).
-

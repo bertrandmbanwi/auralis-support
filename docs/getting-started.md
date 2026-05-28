@@ -1,45 +1,55 @@
+<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+
 # Getting Started
 
-## Install
+## Marketplace
 
-Install Auralis from:
+1. Open VS Code.
+2. Open Extensions.
+3. Search for `Auralis`.
+4. Install the extension from publisher `Bertrand Mbanwi · Auralis`.
 
-[Auralis on the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system)
+## Local VSIX
 
-## First Run
+```bash
+npm run package
+code --install-extension auralis-theme-system-0.2.9.vsix --force
+```
 
-Open the Command Palette and run:
+Reload VS Code after installing a local package.
+
+## First Setup
+
+After Marketplace install, VS Code opens the Auralis Getting Started walkthrough. Run:
 
 ```text
 Auralis: Open Setup Dashboard
 ```
 
-For the fastest setup, run:
+for the guided first run. The dashboard shows whether the color theme, file icons, product icons, formatter settings, companion extensions, and old settings are in a healthy state.
+
+You can also run:
 
 ```text
 Auralis: Apply Recommended Experience
 ```
 
-This applies the recommended Auralis profile, color theme, file icon theme, product icon theme, bracket settings, minimap behavior, semantic highlighting, and optional profile-controlled ambience.
+for the fastest first run. It applies Auralis Botanica, file icons, product icons, bracket guides, semantic highlighting, and the balanced infrastructure profile.
 
-## Check Your Setup
-
-Run:
+To pick a different profile, run:
 
 ```text
+Auralis: Apply Complete Experience
+```
+
+Choose the profile closest to how you work. Auralis applies the color theme, file icons, product icons, bracket guides, minimap behavior, semantic highlighting, and optional ambience settings together.
+
+For infrastructure projects, also run:
+
+```text
+Auralis: Setup Terraform Tooling
+Auralis: Setup YAML and Kubernetes Tooling
 Auralis: Doctor
 ```
 
-Doctor reports active Auralis settings, companion extensions, optional CLI availability, and common setting conflicts.
-
-## Useful Commands
-
-- `Auralis: Open Setup Dashboard`
-- `Auralis: Apply Recommended Experience`
-- `Auralis: Apply Complete Experience`
-- `Auralis: Doctor`
-- `Auralis: Setup Terraform Tooling`
-- `Auralis: Setup YAML and Kubernetes Tooling`
-- `Auralis: Setup Web Tooling`
-- `Auralis: Configure Better Comments`
-
+These commands write normal VS Code settings and offer companion extensions. They do not bundle Terraform, TFLint, Prettier, ESLint, or the Red Hat YAML language server.

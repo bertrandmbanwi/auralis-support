@@ -1,3 +1,5 @@
+<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+
 # Auralis Support
 
 Public docs and support hub for **Auralis**, the VS Code theme system published by **Bertrand Mbanwi · Auralis** under the Marketplace publisher ID `auralis-labs`.
@@ -26,10 +28,15 @@ Auralis: Apply Recommended Experience
 
 - [Getting Started](docs/getting-started.md)
 - [Themes and Profiles](docs/profiles.md)
+- [File and Product Icons](docs/icons.md)
 - [Tooling Setup](docs/tooling.md)
+- [Ambience Features](docs/ambience.md)
+- [Customization](docs/customization.md)
 - [Performance and Privacy](docs/performance-privacy.md)
 - [Troubleshooting](docs/troubleshooting.md)
+- [0.2.9 Visual QA](docs/VISUAL_QA_0.2.9.md)
 - [Publisher Verification](docs/verification.md)
+- [Domain Verification Checklist](docs/DOMAIN_VERIFICATION_CHECKLIST.md)
 
 ## Support
 
@@ -40,12 +47,9 @@ Auralis: Apply Recommended Experience
 
 The Auralis product source is private during beta. This repository is public so Marketplace users have a reliable docs and support surface without exposing proprietary theme source, generated assets, or future licensing work.
 
-## Security
+## Security And Privacy
 
-Auralis has no startup activation, no telemetry, no remote service calls, and no secret reads. Optional local features run only after an Auralis command/profile enables them.
-
-Read the public policy:
+Auralis has no startup activation, no telemetry, no background network calls, and no secret reads. Optional local features run only after an Auralis command/profile enables them.
 
 - [Security Policy](SECURITY.md)
 - [Privacy Notes](PRIVACY.md)
-
