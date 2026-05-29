@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 0.2.10
+
+- Added `npm run docs:check` to CI so the public support hub cannot drift from the private source docs before release.
+- Cleaned the Terraform sample by defining `var.project_name`, reducing sample diagnostics during first-run QA.
+- Updated the Kubernetes/YAML sample image tag to the current 0.2.10 release line.
+- Refreshed Marketplace-facing copy to speak more directly to Terraform, Kubernetes/YAML, cloud infrastructure, and long-session users.
+- Updated local install references and recorded a 0.2.10 patch QA note.
+
 ## 0.2.9
 
 - Added `npm run docs:sync` and `npm run docs:check` so the public `auralis-support` documentation can be refreshed from the private source docs before each release.

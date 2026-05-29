@@ -13,7 +13,7 @@
 
 ```bash
 npm run package
-code --install-extension auralis-theme-system-0.2.9.vsix --force
+code --install-extension auralis-theme-system-0.2.10.vsix --force
 ```
 
 Reload VS Code after installing a local package.
