@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 0.2.11
+
+- Upgraded Auralis Product Icons to a WOFF-first bespoke glyph font with TTF fallback.
+- Persisted private product-glyph SVG sources for design iteration while excluding them from Marketplace packages.
+- Added validation that product icon themes include a WOFF source and kept packaged-file audits blocking private glyph sources.
+- Added polished Marketplace hero and Complete Experience preview assets.
+- Refreshed Marketplace copy and icon docs to describe the custom product font and updated visual assets.
+
 ## 0.2.10
 
 - Added `npm run docs:check` to CI so the public support hub cannot drift from the private source docs before release.

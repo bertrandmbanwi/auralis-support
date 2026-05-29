@@ -16,7 +16,7 @@ Auralis: Enable File Icons
 
 ## Product Icons
 
-Product icons restyle VS Code's built-in UI glyphs such as Explorer, Search, Source Control, Run, Testing, Chat, Notebooks, Extensions, Problems, Ports, folding controls, breakpoints, and diff actions. Auralis uses a bespoke single-color glyph font generated from Auralis SVG geometry.
+Product icons restyle VS Code's built-in UI glyphs such as Explorer, Search, Source Control, Run, Testing, Chat, Notebooks, Extensions, Problems, Ports, folding controls, breakpoints, and diff actions. Auralis uses a bespoke single-color glyph font generated from original Auralis SVG geometry, shipped WOFF-first with TTF fallback.
 
 Run:
 
