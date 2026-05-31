@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 0.2.12
+
+- Added `npm run qa:screenshots` and `npm run qa:screenshots:dry-run` for clean-profile VS Code visual QA across all eight themes.
+- Tuned Botanica Terraform and YAML/Kubernetes color roles to improve scanability for infrastructure files.
+- Expanded custom file icon coverage for cloud, Terraform modules, Kubernetes, CI/CD, Docker, Python, Go, Rust, React, env/security files, lockfiles, and monorepo folders.
+- Added modern VS Code surface coverage for Activity Bar active states, Command Palette focus states, panel sections, SCM graph colors, and inline edit indicators.
+- Refreshed Marketplace copy, docs, monetization architecture, domain verification notes, and the Azure DevOps account fallback path.
+
 ## 0.2.11
 
 - Upgraded Auralis Product Icons to a WOFF-first bespoke glyph font with TTF fallback.

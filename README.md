@@ -34,9 +34,10 @@ Auralis: Apply Recommended Experience
 - [Customization](docs/customization.md)
 - [Performance and Privacy](docs/performance-privacy.md)
 - [Troubleshooting](docs/troubleshooting.md)
-- [0.2.11 Visual QA](docs/VISUAL_QA_0.2.11.md)
+- [0.2.12 Visual QA](docs/VISUAL_QA_0.2.12.md)
 - [Publisher Verification](docs/verification.md)
 - [Domain Verification Checklist](docs/DOMAIN_VERIFICATION_CHECKLIST.md)
+- [Azure DevOps Account Path](docs/AZURE_DEVOPS_ACCOUNT_PATH.md)
 
 ## Support
 

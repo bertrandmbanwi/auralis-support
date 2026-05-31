@@ -22,6 +22,13 @@ If the strongest Auralis domains are unavailable or overpriced, use a Bertrand-o
 4. Add the DNS TXT record Microsoft provides.
 5. Apply for Marketplace publisher verification after the extension and domain age requirements are both satisfied.
 
+## Domain Selection Notes
+
+- Pick a domain that can survive the product becoming paid. Avoid novelty spellings that are hard to say in support conversations.
+- Use a registrar account protected by MFA.
+- Keep the DNS zone simple enough that the Marketplace TXT record can be added quickly.
+- Do not change the Marketplace display name after verification starts. Microsoft notes that publisher display-name changes can revoke verification.
+
 ## Current Status
 
 - Marketplace publisher: `auralis-labs`
