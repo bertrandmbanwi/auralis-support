@@ -2,7 +2,9 @@
 
 # Ambience Features
 
-Auralis ambience features are optional editor decorations. They are off by default unless a profile enables them.
+Auralis ambience features are optional editor decorations. They are off by default unless a profile or toggle enables them.
+
+The runtime activates lazily after VS Code startup (`onStartupFinished`). When every ambience setting is off, that activation does effectively nothing. When you enable an ambience feature, Auralis builds its decorations the first time you turn one on, and your choice is saved as a normal setting — so enabled ambience comes back exactly as you left it after a restart.
 
 ## Focus Field
 
@@ -36,10 +38,10 @@ Settings:
 
 ## Blame Ghosts
 
-Blame Ghosts shows faint inline git blame for the active line. It is disabled in untrusted workspaces, virtual workspaces, dirty files, unsaved files, and non-file documents.
+Blame Ghosts shows faint inline git blame for the active line. It is disabled in untrusted workspaces, virtual workspaces, dirty files, unsaved files, and non-file documents. `restrictedConfigurations` keeps `auralis.blameGhosts.enabled` and `auralis.reviewLens.enableBlameGhosts` from taking effect until the workspace is trusted.
 
 ```text
 Auralis: Toggle Blame Ghosts
 ```
 
-Blame Ghosts uses `git blame` through `execFile` after cursor movement settles. It does not run on startup.
+Blame Ghosts uses `git blame` through `execFile` after cursor movement settles. It runs only after the cursor settles in a trusted local file workspace, never during VS Code startup.

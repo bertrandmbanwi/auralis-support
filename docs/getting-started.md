@@ -13,10 +13,20 @@
 
 ```bash
 npm run package
-code --install-extension auralis-theme-system-0.2.12.vsix --force
+code --install-extension auralis-theme-system-0.3.0.vsix --force
 ```
 
 Reload VS Code after installing a local package.
+
+## Installation Is Non-Intrusive
+
+Installing Auralis does not change anything on its own. Your color theme, file icons, and editor settings stay exactly as they were until you choose to adopt the Auralis experience. To apply it, run:
+
+```text
+Auralis: Apply Recommended Experience
+```
+
+or use the walkthrough buttons or the Setup Dashboard. Everything Auralis writes is a normal VS Code setting, and `Auralis: Reset Auralis Settings` clears the settings Auralis owns whenever you want.
 
 ## First Setup
 
@@ -49,7 +59,7 @@ For infrastructure projects, also run:
 ```text
 Auralis: Setup Terraform Tooling
 Auralis: Setup YAML and Kubernetes Tooling
-Auralis: Doctor
+Auralis: Run Doctor (Check Setup)
 ```
 
 These commands write normal VS Code settings and offer companion extensions. They do not bundle Terraform, TFLint, Prettier, ESLint, or the Red Hat YAML language server.

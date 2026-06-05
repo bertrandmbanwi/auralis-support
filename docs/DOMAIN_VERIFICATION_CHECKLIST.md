@@ -2,37 +2,25 @@
 
 # Domain Verification Checklist
 
-Auralis cannot become a verified Marketplace publisher until the domain and publisher-age requirements are met. Registering a domain is a paid owner action, so this checklist tracks the work without pretending the domain has already been purchased.
+Becoming a verified Marketplace publisher is gated on a domain and a waiting period. The code and configuration side is complete. The only remaining owner-side work is purchasing/registering the Auralis domain and then waiting out the required age windows.
 
-## Recommended Domain Direction
+## Status
 
-Prefer a durable product domain such as:
+- Code and configuration side: complete.
+- Remaining owner-side action: register the domain and complete the verification steps below.
+- Domain: not yet registered.
+- Domain verified: no.
 
-- `auralis.dev`
-- `auralisapp.com`
-- `getauralis.dev`
+## Owner-Side Steps (the only work left)
 
-If the strongest Auralis domains are unavailable or overpriced, use a Bertrand-owned brand domain and keep the Marketplace display name stable as `Bertrand Mbanwi · Auralis`.
+1. **Purchase/register the Auralis apex domain.** It must be a non-subdomain domain served over HTTPS (Microsoft requires verification against an apex domain, not a subdomain). Prefer a durable product domain such as `auralis.dev`; if the strongest names are unavailable, register a Bertrand-owned brand apex domain and keep the Marketplace display name stable as `Bertrand Mbanwi · Auralis`.
+2. **Align publisher, repository, and homepage to the registered domain.** Point the publisher profile, and the manifest `repository`/`homepage` direction, at the new domain once it is live.
+3. **Wait out the required age windows.** Marketplace verified-publisher eligibility requires both a domain that is at least 6 months old and a publisher that has been on the Marketplace for at least 6 months. Keep the registration continuously active during this period.
+4. **Add the DNS TXT verification record.** When eligible, add the TXT record Microsoft provides to the domain's DNS zone so Microsoft can confirm ownership.
+5. **Apply for Marketplace verified publisher when eligible.** Submit the verification request once the domain is registered, aligned, aged, and the TXT record resolves.
 
-## Owner Actions
+## Notes
 
-1. Choose and register the final domain.
-2. Keep the registration active for at least 6 months.
-3. Add the domain to the `auralis-labs` Marketplace publisher profile.
-4. Add the DNS TXT record Microsoft provides.
-5. Apply for Marketplace publisher verification after the extension and domain age requirements are both satisfied.
-
-## Domain Selection Notes
-
-- Pick a domain that can survive the product becoming paid. Avoid novelty spellings that are hard to say in support conversations.
-- Use a registrar account protected by MFA.
-- Keep the DNS zone simple enough that the Marketplace TXT record can be added quickly.
+- Use a registrar account protected by MFA, and keep the DNS zone simple so the TXT record can be added quickly.
 - Do not change the Marketplace display name after verification starts. Microsoft notes that publisher display-name changes can revoke verification.
-
-## Current Status
-
-- Marketplace publisher: `auralis-labs`
-- Public display name: `Bertrand Mbanwi · Auralis`
-- Domain: not registered in this repo
-- Domain verified: no
-- Owner action required: choose and register the final domain
+- Nothing in the extension code, manifest, CI, or docs blocks verification. Only the purchase and the waiting period remain.

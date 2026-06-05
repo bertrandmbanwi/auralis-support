@@ -6,6 +6,15 @@ Auralis can configure a polished formatter and linter setup without bundling hea
 
 The setup commands write normal VS Code settings. They do not install Terraform, TFLint, Prettier, ESLint, or Better Comments unless you explicitly choose to install a missing companion extension from the prompt.
 
+## Opt-In Safety
+
+Tooling setup is designed to be safe and reversible:
+
+- **Detect before overwrite.** Auralis checks whether you already have a default formatter for a language before setting one. If you have already chosen a formatter, Auralis leaves it alone.
+- **Prefer Workspace scope.** When a folder is open, tooling settings are written to the current workspace rather than your global user settings, so each project keeps its own setup.
+- **Confirm before format-on-save.** Auralis asks before enabling format-on-save. Choose `Skip` to keep saving untouched and format manually. Nothing is turned on silently.
+- **Skip unregistered settings.** If a companion extension is not installed yet, Auralis skips its settings and tells you which ones were deferred until that extension registers them, instead of throwing an error.
+
 For a guided view, run:
 
 ```text
@@ -25,8 +34,8 @@ Auralis: Setup Terraform Tooling
 This applies:
 
 - Terraform file associations for `.tf`, `.tfvars`, `.tfstate`, and `.hcl`.
-- `HashiCorp.terraform` as the default formatter for Terraform, Terraform variables, and HCL.
-- Format on save for Terraform-related language IDs.
+- `HashiCorp.terraform` as the default formatter for Terraform, Terraform variables, and HCL, only when you have not already chosen a default formatter for those languages.
+- Format on save for Terraform-related language IDs, only if you confirm it.
 - Two-space indentation for Terraform/HCL.
 - Bracket pair colorization, active bracket guides, and semantic highlighting.
 
@@ -52,8 +61,8 @@ Auralis: Setup YAML and Kubernetes Tooling
 This applies:
 
 - YAML file associations for `.yaml`, `.yml`, GitHub Actions workflows, `k8s`, and `kubernetes` folders.
-- `esbenp.prettier-vscode` as the default formatter for YAML.
-- Format on save and two-space indentation for YAML.
+- `esbenp.prettier-vscode` as the default formatter for YAML, only when you have not already chosen a default YAML formatter.
+- Two-space indentation for YAML, and format on save only if you confirm it.
 - Red Hat YAML language-server settings for validation, hover, completion, formatting, and Schema Store support.
 - Bracket pair colorization, active bracket guides, and semantic highlighting.
 
@@ -74,9 +83,9 @@ Auralis: Setup Web Tooling
 
 This applies:
 
-- `esbenp.prettier-vscode` as the default formatter for JavaScript, TypeScript, JSON, CSS, HTML, Markdown, MDX, and YAML.
-- Format on save for common web file types.
-- ESLint fix-on-save for JavaScript and TypeScript on explicit saves.
+- `esbenp.prettier-vscode` as the default formatter for JavaScript, TypeScript, JSON, CSS, HTML, Markdown, MDX, and YAML, only where you have not already set a default formatter.
+- Format on save for common web file types, only if you confirm it.
+- ESLint fix-on-save for JavaScript and TypeScript on explicit saves, only when you confirm format on save.
 - ESLint working directory auto-detection.
 
 Recommended companion extensions:
@@ -142,7 +151,7 @@ Auralis: Toggle Active Bracket Guides
 Run:
 
 ```text
-Auralis: Doctor
+Auralis: Run Doctor (Check Setup)
 ```
 
 Desktop VS Code checks:
@@ -151,5 +160,7 @@ Desktop VS Code checks:
 - Companion extension installation state.
 - Whether `terraform`, `tflint`, `prettier`, and `eslint` are available on `PATH`.
 - Formatter settings for Terraform, HCL, YAML, and common web languages.
+
+The CLI availability checks run only when the workspace is trusted. In an untrusted workspace Doctor still reports settings and extension state, but skips spawning the `terraform`, `tflint`, `prettier`, and `eslint` checks and tells you to trust the workspace to run them.
 
 Browser VS Code skips CLI checks and only reports settings and extension availability.

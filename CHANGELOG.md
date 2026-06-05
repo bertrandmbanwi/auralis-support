@@ -2,6 +2,28 @@
 
 # Changelog
 
+## 0.3.0
+
+- Made installation non-intrusive: removed the forced `configurationDefaults` color theme, icon theme, product icon theme, and editor overrides so Auralis never changes your editor silently. You adopt the look through the walkthrough, the Setup Dashboard, or `Auralis: Apply Recommended Experience`.
+- Replaced the previous "no startup activation" behavior with a truthful, lazy `onStartupFinished` activation: commands and the status bar always register cheaply, ambience decorations build only when an ambience setting is on, and enabled ambience now survives a restart instead of resetting.
+- Made `Auralis Noir High Contrast` a true `hc-black` theme and `Auralis Paper High Contrast` a true `hc-light` theme, each with explicit `contrastBorder`/`contrastActiveBorder` and stronger widget borders.
+- Moved the colorblind variant's status meaning onto a CVD-safe blue/orange axis so add, modify, and error states stay distinguishable without red/green separation.
+- Gave each terminal its full bright ANSI palette as distinct colors and fixed the light-theme `terminal.ansiBlack` so terminal output reads correctly in light mode.
+- Distinguished Markdown bold and italic so emphasis no longer collapses into one style.
+- Added theming for the three-way merge editor and the debug token expression (variables) view.
+- Made all six bracket-pair color slots visually distinct, including on the colorblind variant.
+- Clarified AI ghost text and added an `auralis.cognitiveContrast.aiSurfaces` control for the legibility of generated/inline suggestions.
+- Stopped product icons from falling back to the Auralis brand mark: real VS Code codicons render where Auralis has no bespoke glyph, and high-visibility actions (replace, replace-all, zoom, copy, bold, italic, find, source control, debug, testing, terminal, comment/chat, and the AI sparkle) got faithful new glyphs.
+- Hardened the Setup Dashboard webview: a crypto-strong per-render nonce, `localResourceRoots: []`, `retainContextWhenHidden: false`, and a locked-down Content-Security-Policy.
+- Gated Auralis Doctor CLI checks (terraform, tflint, prettier, eslint) on Workspace Trust, and added `restrictedConfigurations` so blame-related settings stay off until a workspace is trusted.
+- Made profile application scope-aware (`auralis.profiles.scope`: ask/workspace/global) with an explicit confirmation before writing settings.
+- Made tooling setup safer and opt-in: Auralis detects an existing default formatter before overwriting it, prefers Workspace scope when a folder is open, and asks before enabling format-on-save instead of turning it on silently.
+- Added `Auralis: Reset Auralis Settings`, `Auralis: Customize Accent & Overrides`, `Auralis: Apply AI Pairing Profile`, and `Auralis: Auralis Menu`, plus an optional status bar entry.
+- Documented the Codicons attribution accurately as CC-BY-4.0.
+- Hardened CI with SHA-pinned actions, a Dependabot entry for GitHub Actions, and a fail-loud tag-and-release publish workflow.
+- Shrank the VSIX by excluding README-only Marketplace media that is never used by the walkthrough.
+- Added a privacy-first, local-first license and trial foundation: `Auralis: Start Auralis Trial` (30-day, stored in global state, no network) and `Auralis: Activate License` (key stored in VS Code secret storage at command time, never on the network), with an entitlement gate that keeps every feature unlocked during the public beta and no startup license check.
+
 ## 0.2.12
 
 - Added `npm run qa:screenshots` and `npm run qa:screenshots:dry-run` for clean-profile VS Code visual QA across all eight themes.

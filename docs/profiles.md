@@ -8,9 +8,9 @@
 - `Auralis Frost`: crisp technical dark for systems work.
 - `Auralis Paper`: warm light mode for daylight.
 - `Auralis Botanica`: quiet forest dark for infrastructure work.
-- `Auralis Noir High Contrast`: sharper dark contrast for review and debugging.
-- `Auralis Frost Colorblind`: cyan, amber, and violet without red-green dependence.
-- `Auralis Paper Contrast`: crisper light mode for dense work.
+- `Auralis Noir High Contrast`: a true `hc-black` VS Code high-contrast theme with explicit contrast borders for review and debugging.
+- `Auralis Frost Colorblind`: a CVD-safe palette that puts status meaning on a blue/orange axis instead of red/green.
+- `Auralis Paper High Contrast`: a true `hc-light` VS Code high-contrast theme for dense daylight and projector work.
 - `Auralis Dimmed`: lower-glare dark mode for terminal-heavy sessions.
 
 ## Complete Experience Profiles
@@ -23,7 +23,17 @@
 - `Auralis Botanica: Calm Infra`: Terraform-friendly forest palette with gentle focus and edit heat.
 - `Auralis Review Lens`: high-contrast review mode for diffs, SCM, Problems, and optional blame context.
 - `Auralis Terminal Heavy`: dimmed editor and stronger panel rhythm.
-- `Auralis AI Pairing`: tuned ghost text, inlay hints, chat, and generated edits.
+- `Auralis AI Pairing`: tuned ghost text, inlay hints, chat, and generated edits. Apply it directly with `Auralis: Apply AI Pairing Profile`.
+
+## Where Profiles Write Settings
+
+Profiles and customizations are scope-aware. The `auralis.profiles.scope` setting controls where they write:
+
+- `ask` (default): Auralis prompts you to choose Workspace or Global each time, when a folder is open.
+- `workspace`: prefer the current folder's settings.
+- `global`: write your user settings.
+
+Before a profile changes your theme and writes editor, diff, and SCM settings, Auralis shows a confirmation that names the profile, the target theme, and the scope it will write to. `Auralis: Apply Recommended Experience` is the one exception: it applies the recommended Botanica profile to your user settings for the fastest first run.
 
 ## Commands
 
@@ -33,4 +43,7 @@ Auralis: Open Setup Dashboard
 Auralis: Apply Complete Experience
 Auralis: Switch Theme Variant
 Auralis: Enter Review Mode
+Auralis: Apply AI Pairing Profile
+Auralis: Customize Accent & Overrides
+Auralis: Reset Auralis Settings
 ```
