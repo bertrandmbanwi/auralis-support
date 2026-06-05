@@ -7,7 +7,8 @@ This is the owner-side path for publishing automation when the original Azure/De
 ## Current Situation
 
 - Manual Marketplace upload works through the Visual Studio Marketplace publisher dashboard.
-- CLI publishing with `vsce publish` needs an Azure DevOps Personal Access Token.
+- CLI publishing and GitHub Actions publishing with `vsce publish` need an Azure DevOps Personal Access Token.
+- The source repo expects the token to be stored as a GitHub Actions secret named `VSCE_PAT`.
 - If the Microsoft/Entra tenant behind the old account is blocked due to inactivity, do not keep fighting it during release work. Keep using the manual dashboard upload until a clean PAT path exists.
 
 ## New Account Option
@@ -40,7 +41,9 @@ npx @vscode/vsce login auralis-labs
 npx @vscode/vsce show auralis-labs.auralis-theme-system
 ```
 
-7. Keep manual dashboard upload as the fallback path.
+7. Add the PAT to GitHub as `VSCE_PAT`.
+8. Run the `Publish Marketplace` GitHub Actions workflow manually.
+9. Keep manual dashboard upload as the fallback path.
 
 ## References
 
