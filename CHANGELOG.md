@@ -2,6 +2,18 @@
 
 # Changelog
 
+## 0.4.0
+
+- Broadened syntax coverage so far more file types read fully themed instead of near-plain: string escapes, template expression delimiters, `this`/`self`, namespaces, decorators and annotations, C/C++ preprocessor directives, PHP variables, Ruby instance variables and symbols, shell variables and builtins, CSS selectors/properties/units, SQL identifiers, Markdown lists/quotes/tables/strikethrough, diff and patch coloring, INI/TOML sections and keys, and log output tokens.
+- Expanded file icons from 68 to 162 extensions and from 129 to 173 file names (Elixir, Erlang, Clojure, Scala, Haskell, OCaml, Nim, Zig, Julia, Perl, PowerShell, F#, Groovy, Gradle, Objective-C, Protocol Buffers, Solidity, notebooks, fonts, audio, video, archives, WebAssembly, Nix, Composer, templates, and more), and added a `languageIds` map so unsaved and extension-less files get icons too.
+- Made git status visibility a first-class check: Complete Experience profiles restore `explorer.decorations.badges`, `explorer.decorations.colors`, and `git.decorations.enabled` (so the M/A/U letters and colors next to changed files always show), Doctor and the Setup Dashboard report their state with a fix hint, and the contrast audit asserts every theme's `gitDecoration` colors stay legible on the sidebar.
+- Renamed the two theme files that still carried old slugs: `Auralis Frost` now ships in `frost-color-theme.json` and `Auralis Paper` in `paper-color-theme.json`. Theme labels are unchanged, so your selected theme is unaffected.
+- Stamped every generated theme/icon JSON with a `_generatedBy` marker, and CI now fails when the checked-in generated assets drift from `scripts/build-assets.js` output or when a hand edit would be silently overwritten.
+- Added ESLint, Prettier, and a unit test suite (blame parsing, edit-heat scoring, license and color validation, HTML escaping, WCAG contrast math) — all gating CI and the publish workflow.
+- Added a desktop/web entry parity check to the validation chain; it already caught and fixed the web reset command missing the terminal settings desktop profiles write.
+- Removed the legacy Lumen Pro settings cleanup and Vira panels; that migration path never shipped publicly and had no users.
+- Hardened the build scripts: temp glyph output is cleaned up even when the font build fails, and CI tolerates a support-repo outage with a warning instead of failing unrelated PRs (the publish workflow still enforces docs sync strictly).
+
 ## 0.3.0
 
 - Made installation non-intrusive: removed the forced `configurationDefaults` color theme, icon theme, product icon theme, and editor overrides so Auralis never changes your editor silently. You adopt the look through the walkthrough, the Setup Dashboard, or `Auralis: Apply Recommended Experience`.

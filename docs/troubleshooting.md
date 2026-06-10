@@ -30,7 +30,21 @@ Run:
 Auralis: Open Setup Dashboard
 ```
 
-It reports the active theme, icon themes, formatter settings, companion extensions, optional ambience settings, and old Lumen settings that can be cleaned safely.
+It reports the active theme, icon themes, git decoration visibility (the M/A/U letters and colors next to changed files), formatter settings, companion extensions, and optional ambience settings.
+
+## The git letters (M, A, U) next to changed files are missing
+
+Those letters and file colors come from VS Code's explorer decorations, and Auralis themes color them in every variant. If they are missing, a past setting turned them off. Run `Auralis: Run Doctor (Check Setup)` to confirm, or set these back to true:
+
+```json
+{
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "git.decorations.enabled": true
+}
+```
+
+Applying any Auralis Complete Experience profile also restores them.
 
 ## Blame Ghosts does not show anything
 

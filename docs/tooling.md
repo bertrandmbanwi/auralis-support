@@ -21,7 +21,7 @@ For a guided view, run:
 Auralis: Open Setup Dashboard
 ```
 
-The dashboard shows active theme/icon status, formatter readiness, companion extension availability, and legacy Auralis/Lumen settings hygiene.
+The dashboard shows active theme/icon status, git decoration visibility, formatter readiness, and companion extension availability.
 
 ## Terraform
 
