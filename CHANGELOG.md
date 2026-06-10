@@ -2,6 +2,13 @@
 
 # Changelog
 
+## 0.4.1
+
+- Rebuilt both entry points from a single shared source tree (`src/`): `extension.js` and `browser.js` are now generated, drift-gated esbuild bundles instead of two hand-maintained copies, so desktop and web can no longer diverge. As part of unifying, browser VS Code gained the full Doctor report (output channel) and the complete Setup Dashboard.
+- Added a real VS Code integration smoke test (`npm run test:integration`) that activates the extension, applies the recommended experience, and asserts the theme, icon, and git decoration settings; it runs in CI under xvfb.
+- Split the asset generator into focused modules (`scripts/lib/`), with one WCAG color-math implementation shared by the generator and the contrast auditor.
+- No user-facing theme or icon changes; this release is internal hardening only.
+
 ## 0.4.0
 
 - Broadened syntax coverage so far more file types read fully themed instead of near-plain: string escapes, template expression delimiters, `this`/`self`, namespaces, decorators and annotations, C/C++ preprocessor directives, PHP variables, Ruby instance variables and symbols, shell variables and builtins, CSS selectors/properties/units, SQL identifiers, Markdown lists/quotes/tables/strikethrough, diff and patch coloring, INI/TOML sections and keys, and log output tokens.
