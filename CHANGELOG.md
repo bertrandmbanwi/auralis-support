@@ -2,6 +2,21 @@
 
 # Changelog
 
+## 0.5.0
+
+Signature features — all local-first, no network, no telemetry:
+
+- **Environment Guard**: the workbench warns you when you are pointed at production. Local kubectl current-context, Terraform workspace, and git branch signals are matched against configurable patterns; a red `PROD` shield (amber for staging) appears in the status bar with an optional status bar/title bar tint. File reads only — Auralis never runs kubectl, terraform, or git for this — trust-gated and off by default.
+- **Auralis Tune**: reshape the active Auralis theme in OKLab space with warmth, contrast, saturation, and accent sliders, previewing live. Overrides apply theme-scoped (other themes untouched) and the WCAG contrast floors that gate every release are re-enforced after each adjustment.
+- **Calibrate Comfort & Contrast**: a three-question wizard (contrast strength, color intensity, temperature) with live preview and exact cancel-restore, saved as Tune adjustments.
+- **Rhythm**: scheduled theme switching — Paper by day, Botanica at dusk, Noir at night, Dimmed past midnight by default, fully configurable. A manual theme change always wins until the next slot boundary.
+- **Edit provenance**: the Edit Heatmap can color bulk edits (multi-line insertions arriving in one change — the shape of AI suggestions and pastes) violet apart from typed orange, and `Show Session Edit Summary` reports typed vs bulk lines per file. Classification is by edit shape and labeled honestly.
+- **Review Sessions**: `Start Review Session` snapshots your setup, applies Review Lens, resets edit heat, and times the session in the status bar; `End Review Session` restores the exact prior state (including unset values) and summarizes what you touched. Sessions survive reloads.
+- **Team profiles**: commit `.auralis/profile.json` (written by `Write Team Profile Recommendation`) and trusted workspaces offer the recommended experience once per recommendation — Apply / Not now / Never for this repo, never silent.
+- **Tinted icon families**: four generated icon theme variants (Noir, Frost, Paper, Botanica) whose accent glyphs match the active color theme; Sync Icons and profiles pick the family automatically.
+- **Terminal ports**: generated iTerm2, Windows Terminal, Alacritty, WezTerm, Ghostty, and Warp palettes for all eight themes, built from the same color source and drift-gated like every other generated asset.
+- New runtime OKLab color engine with unit-tested conversions, transforms, and a contrast-floor walker; 20+ new unit tests overall.
+
 ## 0.4.1
 
 - Rebuilt both entry points from a single shared source tree (`src/`): `extension.js` and `browser.js` are now generated, drift-gated esbuild bundles instead of two hand-maintained copies, so desktop and web can no longer diverge. As part of unifying, browser VS Code gained the full Doctor report (output channel) and the complete Setup Dashboard.
