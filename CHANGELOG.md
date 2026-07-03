@@ -2,12 +2,17 @@
 
 # Changelog
 
-## 0.6.1
+## 0.6.2
 
-Documentation and presentation patch — no theme, icon, or runtime behavior changes.
+Presentation patch — no theme, icon, or runtime behavior changes.
 
 - The Marketplace listing was redesigned around a gallery: every one of the nine variants now has its own preview card showing the same code and an integrated terminal running the theme's full ANSI palette, with an Auralis wordmark drawn from the theme's own terminal colors. Developer-facing content moved out of the listing into internal docs.
-- New runnable terminal demo (`terminal-colors.sh`, also published on the support hub next to the ports): prints your terminal theme's 16-color palette and the Auralis wordmark in those colors — pair it with Export Terminal Theme.
+- New runnable terminal demo (`terminal-colors.sh`, published on the support hub next to the ports): prints your terminal theme's 16-color palette and the Auralis wordmark in those colors — pair it with Export Terminal Theme.
+
+## 0.6.1
+
+Documentation patch — no theme, icon, or runtime behavior changes.
+
 - The packaged Help Center catches up with 0.6.0: a new Export Terminal Theme guide, shared Tune presets documented in the team profiles guide, Auralis Void in the variant lists, current icon coverage and product-glyph notes, and offline signed-key verification in the privacy notes.
 - The Getting Started walkthrough's "Make it yours" step now offers Export Terminal Theme.
 - All preview images re-rendered from the 0.6.0 palettes, including the new Auralis Void preview.
