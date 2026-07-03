@@ -2,6 +2,15 @@
 
 # Changelog
 
+## 0.6.1
+
+Documentation patch — no theme, icon, or runtime behavior changes.
+
+- The packaged Help Center catches up with 0.6.0: a new Export Terminal Theme guide, shared Tune presets documented in the team profiles guide, Auralis Void in the variant lists, current icon coverage and product-glyph notes, and offline signed-key verification in the privacy notes.
+- The Getting Started walkthrough's "Make it yours" step now offers Export Terminal Theme.
+- The Marketplace listing gained an Auralis Void preview, and all preview images were re-rendered from the 0.6.0 palettes.
+- The public support hub now hosts the six newer feature guides and the complete generated terminal ports tree for every theme.
+
 ## 0.6.0
 
 A depth-and-polish release: a ninth theme, pictorial icons, deeper syntax coverage, in-product terminal export, team-shared Tune presets, real entitlement plumbing, and a set of correctness fixes.
