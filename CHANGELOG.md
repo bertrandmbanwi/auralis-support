@@ -2,6 +2,33 @@
 
 # Changelog
 
+## 0.6.0
+
+A depth-and-polish release: a ninth theme, pictorial icons, deeper syntax coverage, in-product terminal export, team-shared Tune presets, real entitlement plumbing, and a set of correctness fixes.
+
+New:
+
+- **Auralis Void**: a true-black OLED variant (`#000000` canvas) with electric cyan/violet accents — pixels off, colors on.
+- **Export Terminal Theme**: the generated iTerm2, Windows Terminal, Alacritty, WezTerm, Ghostty, and Warp ports are now available inside VS Code — `Auralis: Export Terminal Theme` writes the palette of the active Auralis theme for the terminal you pick, byte-identical to the committed `ports/` tree. Also on the Setup Dashboard.
+- **Team-shared Tune presets**: `.auralis/profile.json` can now carry Tune adjustments and an accent alongside the recommended profile, so a whole team gets the identical calibrated environment. Values from the repo are clamped and validated, applying still always asks first, and `Write Team Profile Recommendation` offers to include your current Tune settings.
+- **Pictorial file icons**: Docker, Python, React (jsx/tsx), Kubernetes, Helm, git, SQL, Rust, Cargo, secrets, shell, and image files trade their letter chip for a hand-drawn glyph; everything else keeps the chip system.
+- **Icon coverage roughly doubled**: 398 icon definitions (was 238), 227 file extensions, 312 file names, 69 language ids, and 122 folder names — jest, vitest, playwright, cypress, storybook, babel, angular, nuxt, .NET, devcontainers, openapi/swagger, bicep, CDK, firebase, cloudflare, expo, bun, deno, HashiCorp vault/nomad/consul/packer, dbt, argo, flux, bazel, grafana, prometheus, `.tfstate`, `.d.ts`, `*.test.*`/`*.spec.*`/`*.stories.*`, and many more.
+- **Product icons**: the window minimize/maximize/restore controls now have three distinct glyphs, every common IntelliSense symbol kind has its own glyph (12 distinct shapes instead of one shared mark), and `code`, `eye`, `tag`, and `arrow-both` are covered. 583 workbench ids over 111 bespoke glyphs.
+- **Richer syntax**: dedicated rules for regex internals (quantifiers, anchors, groups, escapes), string interpolation, SQL, C#, Java, Kotlin, Swift, C/C++, and GraphQL; new semantic modifiers (`*.async` italic, `*.static` underline, `*.abstract`, Rust lifetimes, Python dunder/self); JSON keys and string values are finally distinct colors; full `symbolIcon.*` theming; terminal selection, debug stack-frame highlights, fold/hover/range highlights, and diff gutter keys added (509 workbench colors per theme, up from 462).
+- **Show License Status** command, and license activation now verifies signed keys (ECDSA P-256, offline, WebCrypto) with fail-closed handling; the documented `entitlementState()`/`isEntitled()` gate is now real code with tests. Everything remains unlocked during the public beta.
+
+Fixed:
+
+- Auralis Tune, Calibrate, and team profiles work on vscode.dev again (a Node-only `Buffer` call had broken them in browser hosts; a packaging gate now blocks Node globals from the web bundle).
+- Environment Guard no longer deletes user-set status/title bar colors: it only removes tint values it wrote itself, restores anything it covered, and stops its background poll when disabled.
+- Doctor CLI probes now work on Windows for npm/choco-installed tools (`.cmd` shims).
+- Edit Heatmap highlights stay on the lines they belong to when lines are inserted or deleted above them.
+- Language and file-association setup no longer copies workspace settings into user settings (or vice versa) when merging.
+- Rainbow bracket colors are guaranteed visually distinct in all themes — six designed hues per theme, enforced by a new audit gate.
+- Unverified breakpoints no longer render as a checkmark in the product icons, and window-control glyphs are no longer identical.
+- Theme switches no longer leak decoration handles, and rapid theme changes rebuild ambience decorations once instead of twice.
+- Publish workflow now requires main, runs the integration smoke test, and CI gained Windows and minimum-VS Code (1.90) test jobs.
+
 ## 0.5.0
 
 Signature features — all local-first, no network, no telemetry:
