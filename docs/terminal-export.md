@@ -40,6 +40,8 @@ selection, and all sixteen ANSI colors — the exact `terminal.*` values you see
 in VS Code's integrated terminal, so colors match across both.
 
 Pre-generated ports for every theme also live in the `ports/` folder of the
-public support hub:
+public support hub, along with `terminal-colors.sh` — a small script that
+prints your terminal theme's 16-color palette and an Auralis wordmark drawn
+in those colors, so you can see the port the moment it is installed:
 
 - https://github.com/bertrandmbanwi/auralis-support
