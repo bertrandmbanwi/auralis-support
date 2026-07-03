@@ -24,7 +24,7 @@ Auralis is designed to feel instant.
 - Blame Ghosts runs local `git blame` only when enabled by the user and only in trusted local workspaces. `restrictedConfigurations` keeps the blame settings from taking effect until the workspace is trusted.
 - Auralis Doctor only checks whether optional companion CLIs are available on `PATH`, and only in trusted workspaces; it does not run formatters or linters against your source files.
 - The Setup Dashboard webview is locked down: a crypto-strong per-render nonce, `localResourceRoots: []`, `retainContextWhenHidden: false`, and a `default-src 'none'` Content-Security-Policy. It loads no external or local resources.
-- License and trial state is local-first: trial state lives in VS Code global state and a license key lives in VS Code secret storage. Neither is sent over the network, and there is no startup license check.
+- License and trial state is local-first: trial state lives in VS Code global state and a license key lives in VS Code secret storage. Neither is sent over the network, and there is no startup license check. Signed license keys are verified entirely offline against a public key embedded in the extension, and `Auralis: Show License Status` reports the stored state (during the public beta everything is unlocked for everyone regardless).
 
 ## Web and Virtual Workspaces
 

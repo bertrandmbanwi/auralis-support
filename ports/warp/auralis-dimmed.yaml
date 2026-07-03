@@ -1,0 +1,26 @@
+# Auralis Dimmed for Warp — generated from the Auralis VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Auralis Dimmed"
+accent: "#41bdd1"
+background: "#040608"
+foreground: "#d4d0ca"
+details: darker
+terminal_colors:
+  normal:
+    black: "#080a0d"
+    red: "#fc5855"
+    green: "#6ec272"
+    yellow: "#e9ab2b"
+    blue: "#41bdd1"
+    magenta: "#19a9b0"
+    cyan: "#6fc4ae"
+    white: "#d4d0ca"
+  bright:
+    black: "#5b6167"
+    red: "#ff625f"
+    green: "#75d87a"
+    yellow: "#ffbc19"
+    blue: "#2fd4ec"
+    magenta: "#00bfc8"
+    cyan: "#6ddcc0"
+    white: "#e1ddd7"

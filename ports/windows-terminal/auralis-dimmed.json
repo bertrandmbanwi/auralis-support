@@ -1,0 +1,23 @@
+{
+  "name": "Auralis Dimmed",
+  "background": "#040608",
+  "foreground": "#d4d0ca",
+  "cursorColor": "#e1a447",
+  "selectionBackground": "#004859",
+  "black": "#080a0d",
+  "red": "#fc5855",
+  "green": "#6ec272",
+  "yellow": "#e9ab2b",
+  "blue": "#41bdd1",
+  "purple": "#19a9b0",
+  "cyan": "#6fc4ae",
+  "white": "#d4d0ca",
+  "brightBlack": "#5b6167",
+  "brightRed": "#ff625f",
+  "brightGreen": "#75d87a",
+  "brightYellow": "#ffbc19",
+  "brightBlue": "#2fd4ec",
+  "brightPurple": "#00bfc8",
+  "brightCyan": "#6ddcc0",
+  "brightWhite": "#e1ddd7"
+}

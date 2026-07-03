@@ -1,0 +1,26 @@
+# Auralis Paper High Contrast for Warp — generated from the Auralis VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Auralis Paper High Contrast"
+accent: "#044cb6"
+background: "#f3ede5"
+foreground: "#1f1610"
+details: lighter
+terminal_colors:
+  normal:
+    black: "#130b06"
+    red: "#cc272e"
+    green: "#308639"
+    yellow: "#bb6a00"
+    blue: "#044cb6"
+    magenta: "#6365c1"
+    cyan: "#007982"
+    white: "#1f1610"
+  bright:
+    black: "#5a5049"
+    red: "#be000c"
+    green: "#007617"
+    yellow: "#ad5300"
+    blue: "#0035ad"
+    magenta: "#524fb8"
+    cyan: "#006975"
+    white: "#150e08"

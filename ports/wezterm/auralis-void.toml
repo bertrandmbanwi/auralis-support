@@ -1,0 +1,15 @@
+# Auralis Void for WezTerm — generated from the Auralis VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#e1ded5"
+background = "#000000"
+cursor_bg = "#00efff"
+cursor_border = "#00efff"
+selection_bg = "#004985"
+ansi = ["#000000", "#fc5855", "#61cb7c", "#e6b22d", "#00dffd", "#c787ff", "#5ae6c6", "#e1ded5"]
+brights = ["#696870", "#ff625f", "#65e287", "#ffc31a", "#00f6ff", "#de95ff", "#50fed8", "#eeebe2"]
+
+[metadata]
+name = "Auralis Void"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

@@ -1,0 +1,15 @@
+# Auralis Dimmed for WezTerm — generated from the Auralis VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#d4d0ca"
+background = "#040608"
+cursor_bg = "#e1a447"
+cursor_border = "#e1a447"
+selection_bg = "#004859"
+ansi = ["#080a0d", "#fc5855", "#6ec272", "#e9ab2b", "#41bdd1", "#19a9b0", "#6fc4ae", "#d4d0ca"]
+brights = ["#5b6167", "#ff625f", "#75d87a", "#ffbc19", "#2fd4ec", "#00bfc8", "#6ddcc0", "#e1ddd7"]
+
+[metadata]
+name = "Auralis Dimmed"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

@@ -1,0 +1,23 @@
+{
+  "name": "Auralis Frost Colorblind",
+  "background": "#02080e",
+  "foreground": "#ddeff5",
+  "cursorColor": "#00efff",
+  "selectionBackground": "#00758c",
+  "black": "#060e14",
+  "red": "#fc984c",
+  "green": "#00cef3",
+  "yellow": "#e6b816",
+  "blue": "#00e2ff",
+  "purple": "#ed9e2f",
+  "cyan": "#60e7d8",
+  "white": "#ddeff5",
+  "brightBlack": "#5b6c74",
+  "brightRed": "#ffa64c",
+  "brightGreen": "#00e5ff",
+  "brightYellow": "#ffca00",
+  "brightBlue": "#00f9ff",
+  "brightPurple": "#ffae23",
+  "brightCyan": "#55ffed",
+  "brightWhite": "#ebfcff"
+}

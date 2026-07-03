@@ -12,6 +12,7 @@
 - `Auralis Frost Colorblind`: a CVD-safe palette that puts status meaning on a blue/orange axis instead of red/green.
 - `Auralis Paper High Contrast`: a true `hc-light` VS Code high-contrast theme for dense daylight and projector work.
 - `Auralis Dimmed`: lower-glare dark mode for terminal-heavy sessions.
+- `Auralis Void`: true-black OLED dark (`#000000` canvas) with electric cyan/violet accents — pixels off, colors on.
 
 ## Complete Experience Profiles
 

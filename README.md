@@ -29,6 +29,12 @@ Auralis: Apply Recommended Experience
 - [Getting Started](docs/getting-started.md)
 - [Themes and Profiles](docs/profiles.md)
 - [File and Product Icons](docs/icons.md)
+- [Rhythm — Scheduled Themes](docs/rhythm.md)
+- [Environment Guard](docs/environment-guard.md)
+- [Auralis Tune and Calibration](docs/tune.md)
+- [Review Sessions and Edit Provenance](docs/review-sessions.md)
+- [Team Profiles](docs/team-profiles.md)
+- [Export Terminal Theme](docs/terminal-export.md)
 - [Tooling Setup](docs/tooling.md)
 - [Ambience Features](docs/ambience.md)
 - [Customization](docs/customization.md)
@@ -38,6 +44,12 @@ Auralis: Apply Recommended Experience
 - [Publisher Verification](docs/verification.md)
 - [Domain Verification Checklist](docs/DOMAIN_VERIFICATION_CHECKLIST.md)
 - [Azure DevOps Account Path](docs/AZURE_DEVOPS_ACCOUNT_PATH.md)
+
+## Terminal Ports
+
+Generated terminal palettes for every Auralis theme — iTerm2, Windows
+Terminal, Alacritty, WezTerm, Ghostty, and Warp — live in [ports/](ports/).
+Inside VS Code, `Auralis: Export Terminal Theme` produces the same files.
 
 ## Support
 

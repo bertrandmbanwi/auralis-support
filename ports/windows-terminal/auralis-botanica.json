@@ -1,0 +1,23 @@
+{
+  "name": "Auralis Botanica",
+  "background": "#08130d",
+  "foreground": "#e5e6d7",
+  "cursorColor": "#a6e45a",
+  "selectionBackground": "#2c6330",
+  "black": "#0e1913",
+  "red": "#fc5855",
+  "green": "#68cb6e",
+  "yellow": "#e6ac3d",
+  "blue": "#a1d862",
+  "purple": "#e29936",
+  "cyan": "#68e4c6",
+  "white": "#e5e6d7",
+  "brightBlack": "#616c63",
+  "brightRed": "#ff625f",
+  "brightGreen": "#6fe276",
+  "brightYellow": "#ffbd34",
+  "brightBlue": "#b0ee65",
+  "brightPurple": "#fea92f",
+  "brightCyan": "#62fcd9",
+  "brightWhite": "#f2f3e4"
+}

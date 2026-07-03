@@ -1,0 +1,23 @@
+# Auralis Frost Colorblind for Ghostty — generated from the Auralis VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+background = #02080e
+foreground = #ddeff5
+cursor-color = #00efff
+selection-background = #00758c
+palette = 0=#060e14
+palette = 1=#fc984c
+palette = 2=#00cef3
+palette = 3=#e6b816
+palette = 4=#00e2ff
+palette = 5=#ed9e2f
+palette = 6=#60e7d8
+palette = 7=#ddeff5
+palette = 8=#5b6c74
+palette = 9=#ffa64c
+palette = 10=#00e5ff
+palette = 11=#ffca00
+palette = 12=#00f9ff
+palette = 13=#ffae23
+palette = 14=#55ffed
+palette = 15=#ebfcff
