@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 0.6.3
+
+Presentation patch — no theme, icon, or runtime behavior changes.
+
+- The variant gallery on the Marketplace listing is now a three-column card grid, and every card opens its full-resolution view when clicked.
+
 ## 0.6.2
 
 Presentation patch — no theme, icon, or runtime behavior changes.
