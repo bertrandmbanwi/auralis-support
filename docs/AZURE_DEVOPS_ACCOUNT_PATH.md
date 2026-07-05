@@ -4,6 +4,38 @@
 
 This is the owner-side path for publishing automation when the original Azure/DevOps tenant is blocked or unreliable.
 
+## Token Rotation — Action Required Before December 2026
+
+The current `VSCE_PAT` (token "access-code", created 2026-07-05) is scoped to
+**All accessible organizations** with **Marketplace → Manage** and shows an
+expiry of **2027-07-04** — but do not trust that date:
+
+1. **The all-orgs PAT mechanism is deprecated on 2026-12-01.** Azure DevOps
+   shows this banner on the PAT page: "Beginning December 1, 2026, Global
+   Personal Access Tokens (PATs) scoped to all accessible organizations will
+   no longer be supported." Publishing will break on or after that date
+   regardless of the token's printed expiry. **Rotate to Microsoft's
+   prescribed org-scoped mechanism before 2026-12-01** (check the current
+   vsce publishing docs for what replaces it — likely an org-scoped PAT
+   against the organization backing the `auralis-labs` publisher, or Entra
+   ID auth).
+2. **Tenant policy can cap PAT lifetimes silently.** The previous token was
+   created with a 1-year expiry but died after roughly a month
+   ("Access Denied: The Personal Access Token used has expired",
+   2026-07-05) — consistent with an Entra maximum-lifetime policy
+   overriding the requested expiry. Assume shorter-than-printed lifetimes
+   until the policy is confirmed under Organization settings → Policies.
+
+Rotation procedure: create the replacement token (Marketplace → Manage
+scope), then update the GitHub secret via the repo web UI
+(Settings → Secrets and variables → Actions → `VSCE_PAT` → edit → paste →
+Update). Do NOT use `gh secret set` from a non-interactive prompt — with no
+TTY it reads empty stdin and silently stores an empty value, which makes the
+publish workflow fail with "Missing VSCE_PAT repository secret" even though
+the secret appears to exist. Note the PAT list in Azure DevOps filters by
+Access scope and Status by default — clear the filters to see all-orgs and
+expired tokens.
+
 ## Current Situation
 
 - Manual Marketplace upload works through the Visual Studio Marketplace publisher dashboard.
