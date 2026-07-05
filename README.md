@@ -36,6 +36,7 @@ Auralis: Apply Recommended Experience
 - [Review Sessions and Edit Provenance](docs/review-sessions.md)
 - [Team Profiles](docs/team-profiles.md)
 - [Export Terminal Theme](docs/terminal-export.md)
+- [Project Themes & Accents](docs/project-theming.md)
 - [Tooling Setup](docs/tooling.md)
 - [Ambience Features](docs/ambience.md)
 - [Customization](docs/customization.md)

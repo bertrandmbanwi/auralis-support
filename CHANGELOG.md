@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 0.7.0
+
+- **Project themes & accents**: `Auralis: Assign Project Theme & Accent` gives each workspace its own variant and a deterministic window accent derived from the project's folder name (same name, same color, every machine) — title bar and activity border tint via workspace settings only, cleared exactly on request. Ends the which-window-is-which problem on multi-project days.
+- **Open VSX**: Auralis is published to the Open VSX registry, so VS Code forks and web editors that install from Open VSX (VSCodium, Gitpod, and several AI-first editors) get first-class access.
+- **Auralis for JetBrains IDEs**: all nine variants ship as a JetBrains plugin (UI themes + editor color schemes incl. the full ANSI console palette), generated from the same palette source as the VS Code themes and terminal ports.
+
 ## 0.6.4
 
 Presentation patch — no theme, icon, or runtime behavior changes.
