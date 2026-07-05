@@ -8,12 +8,12 @@ Becoming a verified Marketplace publisher is gated on a domain and a waiting per
 
 - Code and configuration side: complete.
 - Domain: **registered — `auralislab.dev`** (2026-07-05, Hostinger, auto-renew on, serving the marketing site over HTTPS via Vercel).
-- Domain verified: no — TXT record pending, and the domain-age window runs until ~2027-01-05.
+- Domain verified: in progress — DNS ownership check passed and the verification request was submitted to the Marketplace team on 2026-07-05. The verified-publisher badge additionally waits out the domain-age window (~2027-01-05).
 
 ## Owner-Side Steps (remaining)
 
 1. ~~Purchase/register the Auralis apex domain.~~ Done: `auralislab.dev`, an apex domain on HTTPS (the `.dev` TLD enforces it).
-2. **Add the domain in the publisher portal now.** At `marketplace.visualstudio.com/manage/publishers/auralis-labs` → publisher details, set the verified domain to `https://auralislab.dev`, copy the TXT record Microsoft provides, and add it in Hostinger DNS (Type TXT, Name `@`). This proves ownership immediately and starts the clock cleanly; it does not conflict with the site's A/CNAME records.
+2. ~~Add the domain in the publisher portal.~~ Done 2026-07-05: `https://auralislab.dev` set as the verified domain, DNS TXT ownership check passed, and the request is with the Marketplace team for processing. The publisher profile was also filled out (description, website, support/issues links).
 3. **Wait out the required age windows.** Marketplace verified-publisher eligibility requires both a domain that is at least 6 months old and a publisher that has been on the Marketplace for at least 6 months. The domain window ends around 2027-01-05; keep registration and auto-renew active.
 4. **Apply for Marketplace verified publisher when eligible.** Submit the verification request once the age windows have passed and the TXT record resolves.
 
