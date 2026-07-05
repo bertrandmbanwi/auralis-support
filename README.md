@@ -11,6 +11,7 @@ Auralis is built for Terraform, Kubernetes/YAML, cloud infrastructure, React, Ru
 Install from the official Visual Studio Marketplace listing:
 
 - [Auralis on the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system)
+- Website: [auralislab.dev](https://auralislab.dev)
 
 After installing, run:
 
