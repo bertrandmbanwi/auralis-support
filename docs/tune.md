@@ -41,3 +41,18 @@ Auralis: Calibrate Comfort & Contrast
 Three quick choices — contrast strength, color intensity, temperature — each
 previewing live as you pick. Cancelling restores exactly what you started
 with. The result is saved as Tune adjustments you can refine later.
+
+## Repair Theme Contrast
+
+Works on ANY installed theme, not only Auralis. Run:
+
+```text
+Auralis: Repair Theme Contrast
+```
+
+Auralis reads the active theme's own file, measures the audited UI pairs and
+every syntax color against WCAG floors, and repairs what fails by adjusting
+lightness only — hues are never touched, so the theme keeps its character.
+Deliberately muted roles (struck-through text, faded log noise) are
+respected. Repairs apply as theme-scoped customizations: other themes are
+untouched, and running the command again removes them exactly.

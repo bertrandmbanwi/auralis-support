@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 0.8.0
+
+- **Repair Theme Contrast**: one command scans the ACTIVE theme — Auralis or any installed theme — for WCAG contrast violations across audited UI pairs, plus genuinely unreadable syntax colors (below 3:1 — deliberately muted roles are respected), and repairs them hue-intact by adjusting lightness only. Repairs apply as theme-scoped customizations (other themes untouched) and are removed exactly by running the command again. No other theme product ships this.
+- **Auralis Type**: curated font pairings per variant — JetBrains Mono, Fira Code, Cascadia Code, Victor Mono, IBM Plex Mono (all free, SIL OFL) — applied to editor and terminal in one command, with exact restore of whatever fonts you had before.
+- **Ports program**: machine-readable palettes for all nine variants now ship at `ports/palettes.json` on the support hub, with a porting guide (`docs/porting.md`) for community ports — Neovim, Zed, tmux, starship, and anywhere else with colors.
+
 ## 0.7.0
 
 - **Project themes & accents**: `Auralis: Assign Project Theme & Accent` gives each workspace its own variant and a deterministic window accent derived from the project's folder name (same name, same color, every machine) — title bar and activity border tint via workspace settings only, cleared exactly on request. Ends the which-window-is-which problem on multi-project days.

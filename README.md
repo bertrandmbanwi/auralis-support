@@ -37,6 +37,8 @@ Auralis: Apply Recommended Experience
 - [Team Profiles](docs/team-profiles.md)
 - [Export Terminal Theme](docs/terminal-export.md)
 - [Project Themes & Accents](docs/project-theming.md)
+- [Auralis Type — Font Pairings](docs/type.md)
+- [Porting Auralis](docs/porting.md)
 - [Tooling Setup](docs/tooling.md)
 - [Ambience Features](docs/ambience.md)
 - [Customization](docs/customization.md)
@@ -52,6 +54,8 @@ Auralis: Apply Recommended Experience
 Generated terminal palettes for every Auralis theme — iTerm2, Windows
 Terminal, Alacritty, WezTerm, Ghostty, and Warp — live in [ports/](ports/).
 Inside VS Code, `Auralis: Export Terminal Theme` produces the same files.
+Porting Auralis to another app? Palettes: [ports/palettes.json](ports/palettes.json)
+— guide: [docs/porting.md](docs/porting.md).
 
 ## Support
 

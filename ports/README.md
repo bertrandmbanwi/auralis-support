@@ -15,3 +15,7 @@ Get the VS Code extension: https://marketplace.visualstudio.com/items?itemName=a
 | WezTerm | `wezterm/` | Copy into `~/.config/wezterm/colors/` and set `color_scheme` |
 | Ghostty | `ghostty/` | Copy into `~/.config/ghostty/themes/` and set `theme` |
 | Warp | `warp/` | Copy the YAML into `~/.warp/themes/` |
+
+Building a port for another app? Machine-readable palettes for all
+variants live in [`palettes.json`](palettes.json); the porting guide
+is [`docs/porting.md`](../docs/porting.md).
