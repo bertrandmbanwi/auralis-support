@@ -2,6 +2,10 @@
 
 # Changelog
 
+## 0.8.1
+
+- License activation now verifies signed keys against the embedded production public key (previously fail-closed pending key generation). No behavior change for beta users — everything remains unlocked, and no license is required for anything.
+
 ## 0.8.0
 
 - **Repair Theme Contrast**: one command scans the ACTIVE theme — Auralis or any installed theme — for WCAG contrast violations across audited UI pairs, plus genuinely unreadable syntax colors (below 3:1 — deliberately muted roles are respected), and repairs them hue-intact by adjusting lightness only. Repairs apply as theme-scoped customizations (other themes untouched) and are removed exactly by running the command again. No other theme product ships this.
