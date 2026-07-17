@@ -28,10 +28,11 @@ restoring.
 
 ## Automated evidence
 
-`npm run qa:visual` renders and verifies a deterministic 27-image regression
-matrix: nine VS Code scene boards plus Classic and Islands JetBrains scenes for
-all nine published variants. The manifest also locks five clean-profile
-PyCharm captures by exact file hash and rejects theme-source drift.
+`npm run qa:visual` renders and verifies a 27-image regression matrix: nine VS
+Code scene boards plus Classic and Islands JetBrains scenes for all nine
+published variants. The manifest also locks 21 reviewed VS Code Marketplace
+images and five clean-profile PyCharm captures by exact decoded-pixel SHA-256,
+enforces their complete file inventory, and rejects theme-source drift.
 
 ```text
 npm run qa:visual
