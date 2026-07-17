@@ -1,0 +1,43 @@
+{
+  "name": "@auralis-labs/palettes",
+  "description": "Versioned Auralis color themes and palette metadata for Shiki, documentation, terminals, and community ports.",
+  "version": "0.9.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs",
+      "default": "./index.js"
+    },
+    "./themes/*": "./dist/themes/*",
+    "./icon-associations": "./dist/icon-associations.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bertrandmbanwi/auralis-support.git"
+  },
+  "keywords": [
+    "auralis",
+    "theme",
+    "shiki",
+    "palette",
+    "oklch",
+    "vscode"
+  ]
+}

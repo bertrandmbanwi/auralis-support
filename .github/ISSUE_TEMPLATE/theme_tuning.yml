@@ -1,0 +1,43 @@
+name: Visual theme problem
+description: Report a contrast, color, selected-state, or visual-continuity problem.
+title: "[Visual] "
+labels:
+  - visual
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Auralis variant
+      options:
+        - Noir
+        - Frost
+        - Paper
+        - Botanica
+        - Noir High Contrast
+        - Frost Colorblind
+        - Paper High Contrast
+        - Dimmed
+        - Void
+        - Another theme repaired by Auralis
+    validations:
+      required: true
+  - type: input
+    id: surface
+    attributes:
+      label: Affected surface or language
+      placeholder: Active tab, terminal ANSI, Kotlin keyword, GitLens blame
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is hard to distinguish or read?
+      description: Include expected behavior and accessibility context. Remove project names and private code from screenshots.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Optional sanitized setup
+      description: Paste only the setup or diagnostics payload you reviewed before copying.
+      render: json

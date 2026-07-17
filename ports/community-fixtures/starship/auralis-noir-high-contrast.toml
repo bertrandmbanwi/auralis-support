@@ -1,0 +1,23 @@
+# Auralis Noir High Contrast for Starship — generated community fixture.
+palette = "auralis_noir_high_contrast"
+
+[palettes.auralis_noir_high_contrast]
+background = "#020305"
+foreground = "#faf6ef"
+accent = "#ff9550"
+ansi_0 = "#040508"
+ansi_1 = "#fc5855"
+ansi_2 = "#6ec272"
+ansi_3 = "#e9ab2b"
+ansi_4 = "#25d2fc"
+ansi_5 = "#e175d9"
+ansi_6 = "#52dfbf"
+ansi_7 = "#faf6ef"
+ansi_8 = "#8e929e"
+ansi_9 = "#ff625f"
+ansi_10 = "#75d87a"
+ansi_11 = "#ffbc19"
+ansi_12 = "#00e8ff"
+ansi_13 = "#fc82f3"
+ansi_14 = "#47f7d2"
+ansi_15 = "#fcf8f1"

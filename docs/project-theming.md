@@ -26,9 +26,14 @@ opens it (the theme applies for anyone with Auralis installed; the
 
 ## Clear
 
-Run the same command and choose **Clear project theme & accent**. Only the
-values Auralis wrote are removed — your own customizations on the same keys
-are left alone.
+Run the same command and choose **Clear project theme & accent**. Auralis
+restores the prior Workspace theme and each prior chrome color only while the
+current value still matches what it applied. Later manual edits and unrelated
+`workbench.colorCustomizations` keys are preserved. Reapplying keeps the
+original baseline, and theme + accent apply/clear as one rollback-safe
+transaction. If VS Code rejects part of a rollback, Auralis retains recovery
+ownership so **Clear project theme & accent** can safely retry the exact
+restore.
 
 ## How it plays with other features
 

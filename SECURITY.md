@@ -23,13 +23,20 @@ Please include:
 Auralis is designed to keep the default theme path low risk:
 
 - Color themes, file icons, and product icons are declarative VS Code contributions.
-- The extension does not activate on startup.
+- The small runtime activates only after the workbench finishes starting
+  (`onStartupFinished`); declarative themes and icons do not wait for it, and
+  bounded performance checks gate every release.
 - The extension does not include telemetry.
 - The extension does not make remote network requests.
 - Optional ambience features run only after an Auralis command/profile enables them.
+- Optional usage counters store only fixed aggregate counts in VS Code local
+  extension storage. Users can disable and clear them; they are never sent.
+- Diagnostics and feedback are user-initiated, sanitized previews. Auralis
+  never submits a report or opens a review prompt automatically.
 - Browser VS Code environments use a web-safe runtime without Node-only process APIs.
 - `Auralis: Toggle Blame Ghosts` is disabled in untrusted or virtual workspaces and uses local `git blame` through `execFile`, never through shell string execution.
-- Auralis `0.2.x` does not enforce paid licensing and does not call a license server.
+- The current public beta remains fully unlocked. Signed license checks are
+  offline, and Auralis does not call a license server.
 
 ## User Guidance
 

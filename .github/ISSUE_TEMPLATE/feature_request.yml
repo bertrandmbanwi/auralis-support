@@ -1,0 +1,31 @@
+name: Coverage or icon request
+description: Request a language, framework, file, folder, or icon association.
+title: "[Request] "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request type
+      options:
+        - File or folder icon
+        - Language or framework coverage
+        - Community port
+        - Other appearance improvement
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: Filename, language, framework, or tool
+      placeholder: mise.toml, HEEx, Acme Cloud SDK
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why would this help?
+      description: Explain how common the surface is and include a public reference when useful.
+    validations:
+      required: true

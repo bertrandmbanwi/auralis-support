@@ -1,0 +1,79 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Auralis Frost",
+  "author": "Auralis Labs community port fixture",
+  "themes": [
+    {
+      "name": "Auralis Frost",
+      "appearance": "dark",
+      "style": {
+        "background": "#060e14",
+        "foreground": "#ddeff5",
+        "text": "#ddeff5",
+        "text.muted": "#0d171f",
+        "accent": "#00d7e4",
+        "border": "#253541",
+        "editor.background": "#060e14",
+        "editor.foreground": "#ddeff5",
+        "editor.active_line.background": "#0d171f",
+        "panel.background": "#040a10",
+        "status_bar.background": "#02080e",
+        "title_bar.background": "#0d171f",
+        "success": "#00d097",
+        "warning": "#e6b816",
+        "error": "#ff5169",
+        "modified": "#e6b816",
+        "created": "#00d097",
+        "deleted": "#ff5169",
+        "terminal.background": "#02080e",
+        "terminal.foreground": "#ddeff5",
+        "terminal.ansi.background": "#02080e",
+        "terminal.ansi.black": "#060e14",
+        "terminal.ansi.red": "#ff5169",
+        "terminal.ansi.green": "#00d097",
+        "terminal.ansi.yellow": "#e6b816",
+        "terminal.ansi.blue": "#00e5f2",
+        "terminal.ansi.magenta": "#a688ff",
+        "terminal.ansi.cyan": "#48e8c5",
+        "terminal.ansi.white": "#ddeff5",
+        "terminal.ansi.bright_black": "#5b6c74",
+        "terminal.ansi.bright_red": "#ff5b75",
+        "terminal.ansi.bright_green": "#00e7a7",
+        "terminal.ansi.bright_yellow": "#ffca00",
+        "terminal.ansi.bright_blue": "#00fcff",
+        "terminal.ansi.bright_magenta": "#b997ff",
+        "terminal.ansi.bright_cyan": "#38ffd8",
+        "terminal.ansi.bright_white": "#ebfcff",
+        "syntax": {
+          "comment": {
+            "color": "#6b7d8b"
+          },
+          "string": {
+            "color": "#37e4aa"
+          },
+          "number": {
+            "color": "#ff9550"
+          },
+          "keyword": {
+            "color": "#a688ff"
+          },
+          "function": {
+            "color": "#00e5f2"
+          },
+          "type": {
+            "color": "#48e8c5"
+          },
+          "property": {
+            "color": "#7adaf8"
+          },
+          "operator": {
+            "color": "#b7a0ff"
+          },
+          "punctuation": {
+            "color": "#88949d"
+          }
+        }
+      }
+    }
+  ]
+}

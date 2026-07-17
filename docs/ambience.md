@@ -4,7 +4,16 @@
 
 Auralis ambience features are optional editor decorations. They are off by default unless a profile or toggle enables them.
 
-The runtime activates lazily after VS Code startup (`onStartupFinished`). When every ambience setting is off, that activation does effectively nothing. When you enable an ambience feature, Auralis builds its decorations the first time you turn one on, and your choice is saved as a normal setting — so enabled ambience comes back exactly as you left it after a restart.
+The runtime activates after VS Code's primary startup path
+(`onStartupFinished`). Its bounded activation registers commands, listeners,
+and the optional status entry; the release suite measures that real path.
+Ambience decorations themselves stay lazy while every ambience setting is off.
+When you enable one, your choice is saved as a normal setting, so enabled
+ambience comes back exactly as you left it after a restart.
+
+The three Toggle commands are tracked as Auralis-owned changes. General Reset
+returns their enabled settings to the values they had before the commands;
+later manual edits in Settings still win.
 
 ## Focus Field
 

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auralislab.dev/schema/icon-associations-v1.json",
+  "title": "Auralis icon associations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "family", "fileExtensions", "fileNames", "folderNames", "rootFolderNames", "languageIds"],
+  "properties": {
+    "$schema": { "const": "https://auralislab.dev/schema/icon-associations-v1.json" },
+    "schemaVersion": { "const": 1 },
+    "family": { "const": "balanced" },
+    "fileExtensions": { "$ref": "#/$defs/associationMap" },
+    "fileNames": { "$ref": "#/$defs/associationMap" },
+    "folderNames": { "$ref": "#/$defs/associationMap" },
+    "rootFolderNames": { "$ref": "#/$defs/associationMap" },
+    "languageIds": { "$ref": "#/$defs/associationMap" }
+  },
+  "$defs": {
+    "associationMap": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "pattern": "^_[a-zA-Z0-9._-]+$" }
+    }
+  }
+}

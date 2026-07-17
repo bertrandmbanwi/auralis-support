@@ -52,4 +52,16 @@ Run:
 Auralis: Sync Icons With Active Theme
 ```
 
-This keeps Auralis file icons and product icons paired with the active Auralis color theme. The command is also useful after switching from another theme.
+This keeps Auralis file icons and product icons paired with the active Auralis color theme. The command is also useful after switching from another theme. Sync, the direct Enable File/Product Icons commands, and Switch Theme Variant apply their related settings atomically. Repeated theme switches retain the original pre-Auralis baseline. If these commands and Icon Studio are interleaved, General Reset unwinds them in their actual application order; a later manual icon or theme choice still wins.
+
+## Personalize with Icon Studio
+
+Run `Auralis: Open Icon Studio` to search the shipped inventory, apply one of
+the real Balanced, Minimal, Outline, or Pictorial Explorer themes, add safe
+associations, and import or export a portable preset. Desktop Studio applies
+exact saturation/opacity and file, folder, root-folder, and language maps by
+regenerating only its contributed extension-owned theme. Web hosts keep those
+custom controls as honest read-only preset previews and use the finite shipped
+themes.
+
+See [Auralis Icon Studio](icon-studio.md) for the exact apply/reset boundary.

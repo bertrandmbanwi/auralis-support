@@ -16,9 +16,16 @@ starts a timer in the status bar (`$(eye) Review 12m`).
 Auralis: End Review Session
 ```
 
-(or clicking the status bar item) restores **exactly** the settings you had
-before — including ones that were unset — and reports the session: duration,
-files touched, typed vs bulk lines. Sessions survive a window reload.
+(or clicking the status bar item) restores each Review-owned value only while
+it still matches the session's applied value. Values that were unset return to
+unset, prior values return exactly, and any later manual edit wins. The
+serializable ownership receipt survives a window reload; an interrupted
+restore keeps the session active so it can be retried. The summary reports
+duration, files touched, and typed vs bulk lines.
+
+General Reset silently ends an active Review Session first, restores its exact
+receipt, and stops the timer before clearing profile ownership. A stale **End
+Review Session** action therefore cannot replay an older setup afterward.
 
 ## Edit provenance (AI or paste awareness)
 
