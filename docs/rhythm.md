@@ -17,6 +17,10 @@ Auralis: Toggle Rhythm (Scheduled Themes)
 
 or set `auralis.rhythm.enabled` to `true`.
 
+Enablement through the Toggle command is exact-reset owned. General Reset
+restores the prior enabled value, preventing another scheduled switch; a
+manual edit to the setting after the command still wins.
+
 ## Schedule
 
 The default schedule:

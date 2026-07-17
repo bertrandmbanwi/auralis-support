@@ -1,0 +1,23 @@
+# Auralis Frost Colorblind for Starship — generated community fixture.
+palette = "auralis_frost_colorblind"
+
+[palettes.auralis_frost_colorblind]
+background = "#02080e"
+foreground = "#ddeff5"
+accent = "#00d8f6"
+ansi_0 = "#060e14"
+ansi_1 = "#fc984c"
+ansi_2 = "#00cef3"
+ansi_3 = "#e6b816"
+ansi_4 = "#00e2ff"
+ansi_5 = "#ed9e2f"
+ansi_6 = "#60e7d8"
+ansi_7 = "#ddeff5"
+ansi_8 = "#5b6c74"
+ansi_9 = "#ffa64c"
+ansi_10 = "#00e5ff"
+ansi_11 = "#ffca00"
+ansi_12 = "#00f9ff"
+ansi_13 = "#ffae23"
+ansi_14 = "#55ffed"
+ansi_15 = "#ebfcff"

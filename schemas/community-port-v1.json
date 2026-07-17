@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auralislab.dev/schema/community-port-v1.json",
+  "title": "Auralis community port manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "target", "variants"],
+  "properties": {
+    "$schema": { "const": "https://auralislab.dev/schema/community-port-v1.json" },
+    "schemaVersion": { "const": 1 },
+    "target": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "source": { "type": "string" },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 9,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "type", "ui", "syntax", "ansi"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "enum": ["dark", "light"] },
+          "ui": { "type": "object", "additionalProperties": { "$ref": "#/$defs/color" } },
+          "syntax": { "type": "object", "additionalProperties": { "$ref": "#/$defs/color" } },
+          "ansi": {
+            "type": "array",
+            "minItems": 16,
+            "maxItems": 16,
+            "items": { "$ref": "#/$defs/color" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?$" }
+  }
+}

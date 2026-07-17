@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible Auralis problem without sharing private project data.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Auralis. Remove anything you do not want to publish.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Use a small public example when possible. Do not include source, paths, secrets, or environment names.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Optional sanitized Auralis diagnostics
+      description: Paste only the payload you reviewed with Auralis — Copy Auralis Diagnostics.
+      render: json

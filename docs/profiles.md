@@ -34,7 +34,19 @@ Profiles and customizations are scope-aware. The `auralis.profiles.scope` settin
 - `workspace`: prefer the current folder's settings.
 - `global`: write your user settings.
 
-Before a profile changes your theme and writes editor, diff, and SCM settings, Auralis shows a confirmation that names the profile, the target theme, and the scope it will write to. `Auralis: Apply Recommended Experience` is the one exception: it applies the recommended Botanica profile to your user settings for the fastest first run.
+Before a profile changes anything, Auralis shows a target-aware consent diff
+generated from the same write plan used by Apply. It names every changed
+theme, file/product icon, file association, font, editor, diff, SCM, terminal,
+chat, and ambience value. `Auralis: Apply Recommended Experience` is the one
+exception: it applies the recommended Botanica profile to User scope for the
+fastest first run.
+
+Apply is transactional. A failure restores completed writes and retains exact
+recovery ownership if VS Code cannot finish the rollback. User and Workspace
+scope have independent ledgers. Reapplying another profile keeps the original
+pre-Auralis baseline; Reset restores an owned value only while it still equals
+what Auralis wrote. A later manual edit wins, and `files.associations` is
+tracked per pattern so unrelated or newly added associations are never erased.
 
 ## Commands
 

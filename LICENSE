@@ -15,6 +15,26 @@ resell, repackage, publish derivative themes or icon themes from, or otherwise
 commercially exploit this software or its assets unless a separate written
 license is provided by the copyright holder.
 
+Palette and community-port exception
+
+Notwithstanding the paragraph above, the copyright holder grants permission
+to use, copy, modify, and redistribute the machine-readable color data,
+loaders, schemas, and generated community-port fixtures distributed inside
+`@auralis-labs/palettes`, `packages/auralis-palettes`, `ports/palettes.json`,
+and `ports/community-fixtures` for either of these purposes:
+
+1. rendering Auralis colors in syntax highlighters or documentation; or
+2. building and distributing an Auralis port for another application.
+
+This exception does not cover Auralis SVG/file/product icon artwork, extension
+runtime code, Marketplace media, or other assets. A redistributed port must
+retain this notice, identify material color changes, link to
+https://auralislab.dev, and must not claim to be an official first-party
+release. A port may be bundled with a free or paid-adjacent product but may not
+be sold as a standalone palette or theme. "Auralis" may be used only to
+identify compatibility or the source palette; no other trademark or brand
+rights are granted. All other rights remain reserved.
+
 Third-party notice
 
 The Auralis Product Icons font is generated from original Auralis glyph SVGs. No

@@ -14,6 +14,8 @@ Tooling setup is designed to be safe and reversible:
 - **Prefer Workspace scope.** When a folder is open, tooling settings are written to the current workspace rather than your global user settings, so each project keeps its own setup.
 - **Confirm before format-on-save.** Auralis asks before enabling format-on-save. Choose `Skip` to keep saving untouched and format manually. Nothing is turned on silently.
 - **Skip unregistered settings.** If a companion extension is not installed yet, Auralis skips its settings and tells you which ones were deferred until that extension registers them, instead of throwing an error.
+- **Apply atomically and reset exactly.** Each setup command commits its registered settings as one transaction and rolls them back if a write fails. Auralis keeps separate User and Workspace baselines; `Auralis: Reset Auralis Settings` restores only values and individual object keys that still match its last write. Later manual edits and unrelated file associations or language settings always win.
+- **Unwind features together.** If a profile, icon command, or another Auralis feature later changes one of the same settings, General Reset follows their local application order instead of treating the intermediate Auralis value as your original baseline.
 
 For a guided view, run:
 

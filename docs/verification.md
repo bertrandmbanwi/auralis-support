@@ -1,6 +1,36 @@
 <!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
 
-# Publisher Verification Path
+# Public Listing and Publisher Verification
+
+## Canonical public listings
+
+Auralis is publicly distributed from these durable listing URLs:
+
+- VS Code Marketplace:
+  https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+- Open VSX:
+  https://open-vsx.org/extension/auralis-labs/auralis-theme-system
+- JetBrains Marketplace:
+  https://plugins.jetbrains.com/plugin/32762-auralis-theme
+
+Open VSX is a separate registry for VS Code-compatible editors; it is not the
+Microsoft VS Code Marketplace. The JetBrains URL is the public, approved
+Auralis Theme listing, not a private publisher preview.
+
+After publishing, verify the release through each registry's canonical API:
+
+```bash
+node scripts/verify-distributions.js --registry=marketplace --attempts=6 --delay-ms=10000
+node scripts/verify-distributions.js --registry=openvsx --attempts=6 --delay-ms=10000
+node scripts/verify-distributions.js --registry=jetbrains --attempts=6 --delay-ms=10000
+```
+
+The publish workflows perform the matching check automatically, and the
+scheduled `Verify Public Distributions` workflow catches later drift. Search
+engine results are deliberately not release evidence because their indexes can
+remain stale after a successful publish.
+
+## VS Code publisher verification path
 
 The Marketplace "publisher not verified" label is expected until Microsoft approves the publisher.
 

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auralislab.dev/schema/profile-v1.json",
+  "title": "Auralis shared profile",
+  "description": "A consent-applied, editor-neutral Auralis appearance and environment profile.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "variant"],
+  "properties": {
+    "$schema": {
+      "const": "https://auralislab.dev/schema/profile-v1.json"
+    },
+    "version": {
+      "const": 1
+    },
+    "variant": {
+      "enum": [
+        "noir",
+        "frost",
+        "paper",
+        "botanica",
+        "noir-high-contrast",
+        "frost-colorblind",
+        "paper-high-contrast",
+        "dimmed",
+        "void"
+      ]
+    },
+    "accent": {
+      "type": "string",
+      "pattern": "^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "comfort": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "warmth": { "type": "integer", "minimum": -5, "maximum": 5, "default": 0 },
+        "contrast": { "type": "integer", "minimum": -5, "maximum": 5, "default": 0 },
+        "saturation": { "type": "integer", "minimum": -5, "maximum": 5, "default": 0 }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "comments": { "enum": ["regular", "italic"] },
+        "keywords": { "enum": ["regular", "bold", "italic", "bold-italic"] },
+        "functions": { "enum": ["regular", "italic"] },
+        "variableContrast": { "enum": ["calm", "standard", "strong"] },
+        "workbenchSurface": { "enum": ["unified", "layered", "minimal"] },
+        "borderStrength": { "enum": ["none", "subtle", "clear"] },
+        "bracketStyle": { "enum": ["rainbow", "dimmed", "monochrome"] },
+        "density": { "enum": ["compact", "comfortable"] }
+      }
+    },
+    "environmentGuard": {
+      "description": "Recommend local, read-only production/staging awareness. Labels are literal substrings, not executable regular expressions. Applying always requires user consent.",
+      "oneOf": [
+        {
+          "type": "boolean",
+          "deprecated": true,
+          "description": "Legacy shorthand for { enabled: true|false }."
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "productionLabels": {
+              "type": "array",
+              "maxItems": 20,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+            },
+            "stagingLabels": {
+              "type": "array",
+              "maxItems": 20,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+            },
+            "alert": { "enum": ["statusOnly", "oncePerSignal"], "default": "statusOnly" }
+          }
+        }
+      ]
+    }
+  }
+}

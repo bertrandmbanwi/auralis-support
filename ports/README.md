@@ -16,6 +16,12 @@ Get the VS Code extension: https://marketplace.visualstudio.com/items?itemName=a
 | Ghostty | `ghostty/` | Copy into `~/.config/ghostty/themes/` and set `theme` |
 | Warp | `warp/` | Copy the YAML into `~/.warp/themes/` |
 
+## Community port fixtures
+
+Validated starter output for Zed, Neovim, kitty, tmux, and Starship
+lives in `community-fixtures/`. These are generated fixtures for port
+authors, not separately supported first-party packages.
+
 Building a port for another app? Machine-readable palettes for all
 variants live in [`palettes.json`](palettes.json); the porting guide
 is [`docs/porting.md`](../docs/porting.md).

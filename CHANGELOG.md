@@ -2,6 +2,68 @@
 
 # Changelog
 
+## 0.9.0 — Unreleased
+
+- The shared Auralis status entry is now absent while idle. It appears only
+  for Guard state (including the opt-in safe indicator) or an active Review
+  Session, keeping command-palette, walkthrough, and dashboard access quiet.
+
+- **Auralis Tune 2** adds advanced comment, keyword, function, variable
+  contrast, workbench surface, border, bracket, and density controls while
+  keeping live changes theme-scoped, contrast-protected, and exactly
+  reversible per color, TextMate rule, semantic selector, and setting. Later
+  manual edits win without stranding other unchanged Tune, Contrast Repair, or
+  previous-look entries during reset.
+- **Auralis Icon Studio** adds a searchable inventory and versioned portable
+  presets. Desktop Studio now applies exact saturation/opacity plus file,
+  folder, project-root, and language associations through one bounded,
+  extension-owned Explorer theme, with transactional apply/reset and
+  cache-safe refresh. Browser hosts keep four genuinely generated appearances
+  across every family and label custom controls as read-only preset previews.
+- **Accessibility Lab** audits active-theme contrast and diagnostic, git, test,
+  diff, bracket, and terminal-status separation under approximate common CVD
+  simulations, with two reviewed theme-scoped status axes, copy/save reports,
+  and reversible contrast repair.
+- **Shared profile v1** makes `.auralis/profile.json` versioned and
+  editor-neutral, including comfort, Tune 2 style choices, literal
+  repository guard labels, and consent-based VS Code/JetBrains application.
+  VS Code consent is now generated from the actual full write plan, and
+  Complete Experience, team Guard/Tune, Review Sessions, Customize Accent,
+  Project Theme, and Auralis Type use transactional per-scope/per-key
+  ownership. Prior values survive reapply, later manual edits win, unrelated
+  file/color associations stay untouched, and interrupted restore remains
+  retryable instead of discarding recovery state.
+- Terraform, YAML, web, Better Comments, bracket, Switch Variant, and direct
+  icon commands now use the same transactional exact-reset standard. User and
+  Workspace baselines stay separate, optional companion settings skip safely,
+  and icon sync retains the original pre-Auralis choice across theme changes.
+  General Reset also unwinds interleaved Auralis features in their true reverse
+  application order, so intermediate values from Icon Studio, profiles, Type,
+  Tune, Accessibility, accent/project customization, previous-look, or Guard
+  can never become a stranded baseline; genuine later manual edits still win.
+- **Environment Guard** now shares one restrained Auralis status entry,
+  supports repository-specific rules and optional once-per-signal warnings,
+  explains matched local signals, and stores only a hash for alert snoozing.
+- **Auralis Theme for JetBrains** gains Islands-aware surface coverage,
+  packaged plugin artwork, icon substitutions, change notes, and verifier CI;
+  behavioral parity lives in the separate optional **Auralis Companion** with
+  one status widget, profiles, project identity, Rhythm, Guard, diagnostics,
+  and exact reset. Accepted JetBrains profiles now apply faithfully supported
+  comfort, syntax typography, variable-contrast, bracket, and density choices
+  through a project-owned editor scheme; the consent preview names unsupported
+  Look and Feel fields, and reset preserves later manual scheme edits.
+- Added quiet, user-initiated diagnostics, visual-bug, icon, language-coverage,
+  setup-sharing, and review paths. No report is sent or review prompt shown
+  automatically.
+- Added stable GitLens, Error Lens, and GitHub Pull Requests color surfaces,
+  Spanish and French marketplace/runtime localization foundations, real
+  browser/fork QA, visual-regression and performance budgets, canonical
+  post-publish version verification, a public palette package, and a validated
+  community port kit.
+- Repositioned the Marketplace copy and website around **Auralis — Adaptive
+  Themes & Icons**, with canonical VS Code Marketplace, Open VSX, and public
+  JetBrains Marketplace links and measured, local-first performance language.
+
 ## 0.8.1
 
 - License activation now verifies signed keys against the embedded production public key (previously fail-closed pending key generation). No behavior change for beta users — everything remains unlocked, and no license is required for anything.

@@ -22,6 +22,29 @@ Auralis: Sync Icons With Active Theme
 
 Then reload VS Code if the Extensions view asks for it.
 
+If you used desktop Icon Studio, confirm `Auralis Icons – Studio (Desktop)` is
+the active file-icon theme. Apply switches through a shipped Auralis theme and
+back automatically so Explorer reloads the generated manifest. If Apply reports
+that the installation is read-only, reinstall Auralis in your normal User
+extensions location; no settings are changed by the failed attempt.
+
+On vscode.dev and other web hosts, choose Balanced, Minimal, Outline, or
+Pictorial. Arbitrary slider values and custom folder/root/language maps remain
+read-only preset previews there because browser extensions cannot update their
+packaged contribution files.
+
+## Accessibility Lab cannot read the active theme
+
+Run `Preferences: Color Theme`, select the theme again, and retry:
+
+```text
+Auralis: Open Accessibility Lab
+```
+
+Some installed themes do not expose a readable JSON contribution to other
+extensions. Auralis shows a warning and makes no changes when the active theme
+cannot be inspected.
+
 ## I want one place to check my setup
 
 Run:
@@ -66,6 +89,13 @@ Profiles write normal VS Code settings. Open Settings JSON and adjust the settin
 }
 ```
 
+## General Reset says its reset history is damaged
+
+Auralis preserves every current editor setting and clears only its local reset
+metadata, so the next Auralis apply starts from the setup you can see. If that
+metadata cleanup fails, retry General Reset before applying more Auralis
+changes.
+
 ## Images are broken on Marketplace
 
 Marketplace images must be public HTTPS URLs. Auralis uses a public asset repository for screenshots while keeping the source repository private.
@@ -74,4 +104,11 @@ Public support issues live at:
 
 ```text
 https://github.com/bertrandmbanwi/auralis-support/issues
+```
+
+For a shareable support payload that excludes file paths, project names, source
+code, and environment context names, run:
+
+```text
+Auralis: Copy Auralis Diagnostics
 ```

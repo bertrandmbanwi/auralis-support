@@ -30,6 +30,9 @@ confirmation offers the download page (every font is free).
 
 ## Restore
 
-The first apply snapshots whatever fonts you had. Run the command again and
-choose **Restore my previous fonts** to get back exactly what was there —
-even after trying several pairings.
+The first apply records the prior value and the exact value written for editor
+font, ligatures, and terminal font independently. Reapplying another pairing
+keeps that original baseline. Choose **Restore my previous fonts** to restore
+each setting only while it still matches Auralis Type; a later manual font edit
+wins. Apply and restore are transactional, and an interrupted restore keeps
+its ownership record so it can be retried safely.

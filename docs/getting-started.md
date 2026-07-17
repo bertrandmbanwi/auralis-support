@@ -2,12 +2,46 @@
 
 # Getting Started
 
-## Marketplace
+## VS Code Marketplace
 
 1. Open VS Code.
 2. Open Extensions.
-3. Search for `Auralis`.
-4. Install the extension from publisher `Bertrand Mbanwi · Auralis`.
+3. Search for `Auralis — Adaptive Themes & Icons`.
+4. Install the extension with ID `auralis-labs.auralis-theme-system`.
+
+Canonical listing:
+
+- https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+The publisher ID and extension ID are the durable identity. Use them to avoid
+confusing Auralis with similarly named extensions.
+
+## Open VSX and VS Code-compatible editors
+
+Auralis is also published under the same publisher and extension IDs on Open
+VSX:
+
+- https://open-vsx.org/extension/auralis-labs/auralis-theme-system
+
+Use that listing for editors whose built-in extension browser uses Open VSX.
+The release workflow verifies the canonical registry version after publishing;
+search-engine result pages are not used as release evidence.
+
+## JetBrains IDEs
+
+The public, approved Auralis Theme listing for JetBrains IDEs is:
+
+- https://plugins.jetbrains.com/plugin/32762-auralis-theme
+
+The standalone theme plugin carries all nine palettes, editor schemes,
+Islands-aware surfaces, and Auralis icon substitutions without bundling
+behavioral runtime features. Auralis Companion is a separate optional plugin
+for shared profiles, project identity, Rhythm, and Environment Guard; keeping
+the two products separate means users who want only a theme install only a
+theme. Its shared-profile review can also apply supported comfort, syntax,
+bracket, and density choices through a separately owned editor scheme; every
+change is previewed first, and unsupported Look and Feel fields are identified
+without approximation.
 
 ## Local VSIX
 
@@ -26,7 +60,11 @@ Installing Auralis does not change anything on its own. Your color theme, file i
 Auralis: Apply Recommended Experience
 ```
 
-or use the walkthrough buttons or the Setup Dashboard. Everything Auralis writes is a normal VS Code setting, and `Auralis: Reset Auralis Settings` clears the settings Auralis owns whenever you want.
+or use the walkthrough buttons or the Setup Dashboard. Every write is a normal,
+visible VS Code setting. Ownership-aware surfaces such as Complete Experience,
+tooling, theme/icon commands, Tune, Icon Studio, project/accent customization,
+and Auralis Type restore only their unchanged writes or individually owned
+object keys; later manual edits and unrelated additions win.
 
 ## First Setup
 

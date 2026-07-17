@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "schema": "https://auralislab.dev/schema/profile-v1.json",
+  "cases": [
+    {
+      "name": "complete-v1-profile",
+      "valid": true,
+      "input": {
+        "$schema": "https://auralislab.dev/schema/profile-v1.json",
+        "version": 1,
+        "variant": "botanica",
+        "accent": "#5cc8a0",
+        "comfort": { "warmth": 1, "contrast": -1, "saturation": 2 },
+        "style": { "comments": "italic", "keywords": "bold", "density": "compact" },
+        "environmentGuard": {
+          "enabled": true,
+          "productionLabels": ["prod", "live.eu"],
+          "stagingLabels": ["uat"],
+          "alert": "oncePerSignal"
+        }
+      },
+      "normalized": {
+        "version": 1,
+        "variant": "botanica",
+        "theme": "Auralis Botanica",
+        "accent": "#5cc8a0",
+        "comfort": { "warmth": 1, "contrast": -1, "saturation": 2 },
+        "style": { "comments": "italic", "keywords": "bold", "density": "compact" },
+        "environmentGuard": {
+          "enabled": true,
+          "productionLabels": ["prod", "live.eu"],
+          "stagingLabels": ["uat"],
+          "alert": "oncePerSignal"
+        }
+      }
+    },
+    {
+      "name": "legacy-profile-migrates-explicitly",
+      "valid": true,
+      "legacy": true,
+      "input": {
+        "profile": "Auralis Botanica: Calm Infra",
+        "tune": { "warmth": 2 },
+        "environmentGuard": true
+      },
+      "migrated": {
+        "$schema": "https://auralislab.dev/schema/profile-v1.json",
+        "version": 1,
+        "variant": "botanica",
+        "comfort": { "warmth": 2, "contrast": 0, "saturation": 0 },
+        "environmentGuard": { "enabled": true }
+      }
+    },
+    {
+      "name": "future-version-is-rejected",
+      "valid": false,
+      "input": { "version": 2, "variant": "noir" },
+      "errorsContain": ["version must be 1."]
+    },
+    {
+      "name": "unknown-and-out-of-range-values-are-rejected",
+      "valid": false,
+      "input": {
+        "version": 1,
+        "variant": "noir",
+        "comfort": { "warmth": 6 },
+        "surprise": true
+      },
+      "errorsContain": ["Unknown root property: surprise", "comfort.warmth must be an integer from -5 to 5."]
+    },
+    {
+      "name": "unsafe-guard-shape-is-rejected",
+      "valid": false,
+      "input": {
+        "version": 1,
+        "variant": "frost",
+        "environmentGuard": {
+          "productionLabels": ["prod", "prod"],
+          "alert": "always",
+          "extra": true
+        }
+      },
+      "errorsContain": [
+        "Unknown environmentGuard property: extra",
+        "environmentGuard.productionLabels labels must be unique.",
+        "environmentGuard.alert must be statusOnly or oncePerSignal."
+      ]
+    }
+  ]
+}

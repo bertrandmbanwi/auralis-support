@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auralislab.dev/schema/palette-v1.json",
+  "title": "Auralis palette index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "packageVersion", "themes", "iconAssociations"],
+  "properties": {
+    "$schema": { "const": "https://auralislab.dev/schema/palette-v1.json" },
+    "schemaVersion": { "const": 1 },
+    "packageVersion": { "type": "string" },
+    "iconAssociations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "definitions", "fileExtensions", "fileNames", "folderNames", "rootFolderNames", "languageIds"],
+      "properties": {
+        "file": { "const": "icon-associations.json" },
+        "definitions": { "type": "integer", "minimum": 1 },
+        "fileExtensions": { "type": "integer", "minimum": 1 },
+        "fileNames": { "type": "integer", "minimum": 1 },
+        "folderNames": { "type": "integer", "minimum": 1 },
+        "rootFolderNames": { "type": "integer", "minimum": 0 },
+        "languageIds": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "themes": {
+      "type": "object",
+      "minProperties": 9,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["file", "type", "editorBackground", "editorForeground", "accent", "terminal"],
+        "properties": {
+          "file": { "type": "string" },
+          "type": { "enum": ["dark", "light"] },
+          "editorBackground": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+          "editorForeground": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+          "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?$" },
+          "terminal": {
+            "type": "object",
+            "minProperties": 18,
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
