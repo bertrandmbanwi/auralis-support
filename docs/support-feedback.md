@@ -10,7 +10,7 @@ recurring, or promotional review prompts.
 Run:
 
 ```text
-Auralis: Copy Auralis Diagnostics
+Auralis: Copy Support Diagnostics
 ```
 
 The confirmation preview shows the exact payload before anything is copied. It
@@ -30,12 +30,12 @@ These commands show the exact public, prefilled GitHub URL before opening an
 issue that you can inspect and edit before submitting:
 
 ```text
-Auralis: Report Visual Bug
-Auralis: Request Icon
+Auralis: Report Visual Theme Bug
+Auralis: Request Missing Icon
 Auralis: Request Language Coverage
 ```
 
-`Request Icon` first asks for the filename, extension, folder, or language.
+`Request Missing Icon` first asks for the filename, extension, folder, or language.
 `Request Language Coverage` first asks for the language or framework. The
 answers stay local until the prefilled issue opens in your browser, and GitHub
 submits nothing until you choose **Submit new issue**.
@@ -43,11 +43,11 @@ submits nothing until you choose **Submit new issue**.
 ## Share a setup or leave a review
 
 ```text
-Auralis: Share My Setup
+Auralis: Copy Shareable Setup
 Auralis: Review Auralis
 ```
 
-Share My Setup previews and then copies a small JSON object containing only the
+Copy Shareable Setup previews and then copies a small JSON object containing only the
 active Auralis theme/icon choices and optional Tune, Rhythm, and Guard state.
 Review Auralis previews the official VS Code Marketplace review URL before it
 opens. Both actions occur only when you run the command. The quiet Dashboard

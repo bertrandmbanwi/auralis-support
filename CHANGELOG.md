@@ -2,7 +2,36 @@
 
 # Changelog
 
-## 0.9.0 — Unreleased
+## Unreleased
+
+- Exact reset correctness: focused resets now preserve pre-existing empty
+  theme-scoped blocks, and Icon Studio's manifest bounce can no longer record
+  a stale ledger edge that made a later reset revert itself.
+- Environment Guard no longer removes user-authored color customizations
+  that coincide with Auralis tint values; the tint peel is now gated on
+  Auralis's own recorded writes.
+- Auralis Tune enforces the token-color contrast floors on the contrast
+  slider's softest settings, persists crash-safe ownership for live previews
+  (leaked previews are cleaned up on the next activation), keeps panel
+  controls across tab switches, and validates accents consistently
+  (#RGB/#RRGGBB, with visible feedback).
+- Accessibility Lab surfaces webview action failures instead of swallowing
+  them; the Setup Dashboard no longer reports successful actions as errors
+  after its panel closes; Rhythm retries a failed theme write on the next
+  tick; shared-profile notes are sanitized before the consent dialog.
+- JetBrains Companion parity: strict profile JSON parsing, exact variant
+  matching, guard fields applied only when the profile contains them, and
+  exact reset restoring the pre-Companion baseline after a profile.
+- Community ports: readable Zed muted text and tmux copy-mode selection in
+  all nine variants; the in-product Ghostty export drops the extra `.txt`.
+- The bracket-hue audit now checks the depth-6-to-depth-1 wrap pair (shipped
+  palettes are frozen at their published values under the visual contract).
+- The browser-bundle budget rose from 275 KiB to 280 KiB to carry these
+  web-host fixes; the bundle is 278.6 KiB.
+- Shipped help docs use the real command titles, the current bundle ceiling,
+  and document Icon Studio behavior across extension updates.
+
+## 0.9.0 — 2026-07-17
 
 - The shared Auralis status entry is now absent while idle. It appears only
   for Guard state (including the opt-in safe indicator) or an active Review

@@ -18,7 +18,7 @@ Auralis is designed around explicit budgets and local work, not an absolute
   delta. Integration QA reads those in-memory measurements for release-budget
   assertions; they contain no workspace or user data and are never sent.
 - Release gates cap the generated desktop bundle at 320 KiB and the browser
-  bundle at 272 KiB. The browser ceiling includes the same bounded,
+  bundle at 280 KiB. The browser ceiling includes the same bounded,
   fail-closed exact-reset safety checks as desktop. The real VS Code
   integration suite budgets extension
   activation below 2 seconds and activation heap growth below 32 MiB on the CI

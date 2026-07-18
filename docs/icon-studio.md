@@ -107,7 +107,7 @@ Example:
 Choose **Exact reset** inside Icon Studio, or run:
 
 ```text
-Auralis: Reset Icon Studio
+Auralis: Reset Icon Studio Changes
 ```
 
 Before its first write, Icon Studio records whether each affected User setting

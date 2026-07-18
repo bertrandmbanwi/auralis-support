@@ -110,5 +110,5 @@ For a shareable support payload that excludes file paths, project names, source
 code, and environment context names, run:
 
 ```text
-Auralis: Copy Auralis Diagnostics
+Auralis: Copy Support Diagnostics
 ```
