@@ -26,9 +26,13 @@ node scripts/verify-distributions.js --registry=jetbrains --attempts=6 --delay-m
 ```
 
 The publish workflows perform the matching check automatically, and the
-scheduled `Verify Public Distributions` workflow catches later drift. Search
-engine results are deliberately not release evidence because their indexes can
-remain stale after a successful publish.
+scheduled `Verify Public Distributions` workflow catches later drift. The
+scheduled run uses `--expect=converged`: it passes while the version in
+`package.json` is either published on every registry or not published on any
+(the normal state between a release PR and the publish dispatch), and fails
+only on partial presence or registry errors. Search engine results are
+deliberately not release evidence because their indexes can remain stale
+after a successful publish.
 
 ## VS Code publisher verification path
 

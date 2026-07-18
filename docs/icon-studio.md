@@ -123,6 +123,14 @@ Apply and reset are transactional. If any settings or asset write fails,
 Icon Studio restores the previous successful state instead of leaving half of
 a preset active.
 
+On desktop, applied Studio assets are written into the installed extension's
+own icon directory. An extension update or reinstall replaces that directory,
+which returns the Studio icon theme to the packaged baseline until you apply
+your preset again — your saved preset, associations, and export files are not
+lost. After an update, reopen Icon Studio and choose **Apply to Explorer** to
+restore the applied look. On hosts where the extension directory is read-only,
+Icon Studio reports the failed write instead of applying partially.
+
 ## Request a missing icon
 
 Enter the filename, folder, language, framework, and a short reason, then
