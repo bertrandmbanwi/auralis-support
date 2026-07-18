@@ -124,12 +124,13 @@ Icon Studio restores the previous successful state instead of leaving half of
 a preset active.
 
 On desktop, applied Studio assets are written into the installed extension's
-own icon directory. An extension update or reinstall replaces that directory,
-which returns the Studio icon theme to the packaged baseline until you apply
-your preset again — your saved preset, associations, and export files are not
-lost. After an update, reopen Icon Studio and choose **Apply to Explorer** to
-restore the applied look. On hosts where the extension directory is read-only,
-Icon Studio reports the failed write instead of applying partially.
+own icon directory. An extension update or reinstall replaces that directory
+with the packaged baseline, so on the next activation Auralis detects the
+untouched baseline and silently rebuilds the assets for your applied preset —
+no settings change and nothing to reapply. Files that were edited by hand or
+by another tool are never overwritten. On hosts where the extension directory
+is read-only, Icon Studio reports the failed write instead of applying
+partially.
 
 ## Request a missing icon
 
