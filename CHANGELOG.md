@@ -26,8 +26,10 @@
   all nine variants; the in-product Ghostty export drops the extra `.txt`.
 - The bracket-hue audit now checks the depth-6-to-depth-1 wrap pair (shipped
   palettes are frozen at their published values under the visual contract).
-- The browser-bundle budget rose from 275 KiB to 280 KiB to carry these
-  web-host fixes; the bundle is 278.6 KiB.
+- The browser-bundle budget rose from 275 KiB to 284 KiB to carry these
+  web-host fixes, Icon Studio's update self-healing, and the stale-read
+  settling that keeps exact reset correct on slow hosts; the bundle is
+  280.8 KiB.
 - Shipped help docs use the real command titles, the current bundle ceiling,
   and document Icon Studio behavior across extension updates.
 
