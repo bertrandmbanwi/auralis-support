@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Unreleased
+## 0.9.1 — 2026-07-19
 
 - Exact reset correctness: focused resets now preserve pre-existing empty
   theme-scoped blocks, and Icon Studio's manifest bounce can no longer record
