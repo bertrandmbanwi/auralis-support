@@ -2,6 +2,20 @@
 
 # Changelog
 
+## Unreleased
+
+- Review Auralis now routes to the registry your editor installs from:
+  genuine VS Code opens the VS Code Marketplace review page, while VSCodium,
+  code-server, and other Open VSX-based hosts open the Open VSX review page.
+- The quiet review entry now unlocks from more delivered-value moments —
+  Icon Studio presets, accessibility status axes, font pairings, contrast
+  repairs, terminal exports, and project themes now count alongside Tune and
+  shared profiles — and appears in the Auralis menu as well as the dashboard.
+  Counters stay anonymous local totals; nothing prompts automatically.
+- The Auralis menu gains a Report a Visual Theme Bug entry, and the
+  walkthrough gains a feedback step with the prefilled report, icon-request,
+  and review paths.
+
 ## 0.9.1 — 2026-07-19
 
 - Exact reset correctness: focused resets now preserve pre-existing empty

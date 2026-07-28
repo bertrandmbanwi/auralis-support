@@ -49,7 +49,16 @@ Auralis: Review Auralis
 
 Copy Shareable Setup previews and then copies a small JSON object containing only the
 active Auralis theme/icon choices and optional Tune, Rhythm, and Guard state.
-Review Auralis previews the official VS Code Marketplace review URL before it
-opens. Both actions occur only when you run the command. The quiet Dashboard
-review link appears only after you have explicitly applied Tune or a shared
-profile at least once on that VS Code installation.
+Review Auralis previews the exact review URL before it opens, and routes to
+the registry your editor installs from: genuine VS Code opens the official
+VS Code Marketplace review page, while VSCodium, code-server, and other
+Open VSX-based hosts open the Open VSX review page. Both actions occur only
+when you run the command.
+
+The quiet review entries in the Setup Dashboard and the Auralis menu appear
+only after this installation has recorded at least one locally counted moment
+of delivered value: applying Tune, a shared profile, an Icon Studio preset, an
+accessibility status axis, a font pairing, a contrast repair, a terminal
+export, or a project theme. The counters are anonymous totals stored only in
+local extension state (`auralis.localUsageCounters.enabled` disables them and
+clears the stored counts), and nothing ever prompts you to review.
