@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Unreleased
+## 0.9.2 — 2026-07-28
 
 - Review Auralis now routes to the registry your editor installs from:
   genuine VS Code opens the VS Code Marketplace review page, while VSCodium,

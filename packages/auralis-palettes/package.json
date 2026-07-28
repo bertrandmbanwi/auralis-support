@@ -1,7 +1,7 @@
 {
   "name": "@auralis-labs/palettes",
   "description": "Versioned Auralis color themes and palette metadata for Shiki, documentation, terminals, and community ports.",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {
     "access": "public",
