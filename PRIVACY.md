@@ -12,7 +12,20 @@ optional runtime does not collect or transmit telemetry.
 - No device or account identifier is created.
 - No analytics, advertising SDK, crash reporter, tracking pixel, or background
   network service is included.
-- Offline license verification does not contact a license server.
+- Licensing makes no passive network calls; the only license-service contact
+  is the user-initiated flow described under Licensing below.
+
+## Licensing
+
+Syntalume has no passive telemetry or analytics. The only network calls in
+the product are the license actions you start yourself — activate, validate,
+and deactivate — and they occur only when you use a store-issued key. Each
+call is disclosed before it is sent and carries exactly two things: the
+license key and a random per-installation identifier that labels the
+activation. No code, paths, settings, or account data accompany it, and
+nothing runs in the background. Offline signed keys (`SYNTALUME-…` /
+`AURALIS-…`) remain fully supported and verify locally without contacting any
+server.
 
 ## Local data
 
@@ -23,7 +36,8 @@ the current installation:
   apply, including a local sequence of Syntalume setting changes used only to
   unwind interleaved features during General Reset.
 - Draft Icon Studio presets and saved Tune/profile choices.
-- A signed license key in VS Code secret storage, if you choose to enter one.
+- A license key — and, for store-issued keys, the activation id the licensing
+  service returns — in VS Code secret storage, if you choose to enter one.
 - Two optional aggregate counters: Tune applies and shared-profile applies.
 - The optional JetBrains Companion stores its local choices and exact-reset
   ownership in JetBrains application/project metadata. It does not edit source
