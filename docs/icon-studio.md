@@ -1,22 +1,22 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
-# Auralis Icon Studio
+# Syntalume Icon Studio
 
-Icon Studio is the searchable browser and preset editor for the Auralis file
+Icon Studio is the searchable browser and preset editor for the Syntalume file
 icon system. Open it with:
 
 ```text
-Auralis: Open Icon Studio
+Syntalume: Open Icon Studio
 ```
 
 The browser is built from the file-icon theme shipped with your installed
-version of Auralis. Search by icon name, extension, filename, folder, or VS
+version of Syntalume. Search by icon name, extension, filename, folder, or VS
 Code language ID, then select an icon and add an association.
 
 ## Desktop Studio: exact Explorer customization
 
-Desktop VS Code uses one contributed `Auralis Icons – Studio` theme whose
-manifest and SVGs belong to the installed Auralis extension. When you choose
+Desktop VS Code uses one contributed `Syntalume Icons – Studio` theme whose
+manifest and SVGs belong to the installed Syntalume extension. When you choose
 **Apply to Explorer**, Icon Studio rebuilds only those bounded, extension-owned
 files. It never writes into your workspace, opens an arbitrary path, or edits a
 third-party icon theme.
@@ -24,7 +24,7 @@ third-party icon theme.
 The desktop Studio applies all of these together:
 
 - Base, Noir, Frost, Paper, or Botanica colors, including automatic family
-  changes when the active Auralis color theme changes.
+  changes when the active Syntalume color theme changes.
 - Balanced, Minimal, Outline, or Pictorial shapes.
 - The exact slider values shown: 0–200% saturation and 10–100% opacity.
 - Exact file names and simple `*.extension` patterns, including multi-part
@@ -45,7 +45,7 @@ The four named starting points are:
 | Pictorial | 115% | 100% | The pictorial system with a more vivid palette |
 
 VS Code can cache a selected icon-theme manifest. Reapplying Studio briefly
-switches through the selected shipped Auralis family and back, so Explorer
+switches through the selected shipped Syntalume family and back, so Explorer
 reliably reloads the new manifest without asking you to reload the window.
 
 ## Web and read-only installations
@@ -107,7 +107,7 @@ Example:
 Choose **Exact reset** inside Icon Studio, or run:
 
 ```text
-Auralis: Reset Icon Studio Changes
+Syntalume: Reset Icon Studio Changes
 ```
 
 Before its first write, Icon Studio records whether each affected User setting
@@ -125,7 +125,7 @@ a preset active.
 
 On desktop, applied Studio assets are written into the installed extension's
 own icon directory. An extension update or reinstall replaces that directory
-with the packaged baseline, so on the next activation Auralis detects the
+with the packaged baseline, so on the next activation Syntalume detects the
 untouched baseline and silently rebuilds the assets for your applied preset —
 no settings change and nothing to reapply. Files that were edited by hand or
 by another tool are never overwritten. On hosts where the extension directory
@@ -135,6 +135,6 @@ partially.
 ## Request a missing icon
 
 Enter the filename, folder, language, framework, and a short reason, then
-choose **Open prefilled icon request**. Icon Studio opens the public Auralis
+choose **Open prefilled icon request**. Icon Studio opens the public Syntalume
 support repository with the issue title and details filled in. Nothing is sent
 until you review and submit the issue on GitHub.

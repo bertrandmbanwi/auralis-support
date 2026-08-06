@@ -1,0 +1,79 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Syntalume Botanica",
+  "author": "Syntalume community port fixture",
+  "themes": [
+    {
+      "name": "Syntalume Botanica",
+      "appearance": "dark",
+      "style": {
+        "background": "#0e1913",
+        "foreground": "#e5e6d7",
+        "text": "#e5e6d7",
+        "text.muted": "#768776",
+        "accent": "#95cb54",
+        "border": "#23322a",
+        "editor.background": "#0e1913",
+        "editor.foreground": "#e5e6d7",
+        "editor.active_line.background": "#15211a",
+        "panel.background": "#0b1510",
+        "status_bar.background": "#08130d",
+        "title_bar.background": "#15211a",
+        "success": "#68cb6e",
+        "warning": "#e6ac3d",
+        "error": "#fc5855",
+        "modified": "#e6ac3d",
+        "created": "#68cb6e",
+        "deleted": "#fc5855",
+        "terminal.background": "#08130d",
+        "terminal.foreground": "#e5e6d7",
+        "terminal.ansi.background": "#08130d",
+        "terminal.ansi.black": "#0e1913",
+        "terminal.ansi.red": "#fc5855",
+        "terminal.ansi.green": "#68cb6e",
+        "terminal.ansi.yellow": "#e6ac3d",
+        "terminal.ansi.blue": "#a1d862",
+        "terminal.ansi.magenta": "#e29936",
+        "terminal.ansi.cyan": "#68e4c6",
+        "terminal.ansi.white": "#e5e6d7",
+        "terminal.ansi.bright_black": "#616c63",
+        "terminal.ansi.bright_red": "#ff625f",
+        "terminal.ansi.bright_green": "#6fe276",
+        "terminal.ansi.bright_yellow": "#ffbd34",
+        "terminal.ansi.bright_blue": "#b0ee65",
+        "terminal.ansi.bright_magenta": "#fea92f",
+        "terminal.ansi.bright_cyan": "#62fcd9",
+        "terminal.ansi.bright_white": "#f2f3e4",
+        "syntax": {
+          "comment": {
+            "color": "#768776"
+          },
+          "string": {
+            "color": "#e1c34b"
+          },
+          "number": {
+            "color": "#f8a052"
+          },
+          "keyword": {
+            "color": "#f97770"
+          },
+          "function": {
+            "color": "#a1d862"
+          },
+          "type": {
+            "color": "#68e4c6"
+          },
+          "property": {
+            "color": "#95cf96"
+          },
+          "operator": {
+            "color": "#e3928b"
+          },
+          "punctuation": {
+            "color": "#899287"
+          }
+        }
+      }
+    }
+  ]
+}

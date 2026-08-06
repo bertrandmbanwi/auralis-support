@@ -3,7 +3,7 @@
   "source": "https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system",
   "palettes": [
     {
-      "name": "Auralis Noir",
+      "name": "Syntalume Noir",
       "type": "dark",
       "ui": {
         "editor": "#0f1117",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "name": "Auralis Frost",
+      "name": "Syntalume Frost",
       "type": "dark",
       "ui": {
         "editor": "#060e14",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "name": "Auralis Paper",
+      "name": "Syntalume Paper",
       "type": "light",
       "ui": {
         "editor": "#faf4ec",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "name": "Auralis Botanica",
+      "name": "Syntalume Botanica",
       "type": "dark",
       "ui": {
         "editor": "#0e1913",
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "name": "Auralis Noir High Contrast",
+      "name": "Syntalume Noir High Contrast",
       "type": "dark",
       "ui": {
         "editor": "#040508",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "name": "Auralis Frost Colorblind",
+      "name": "Syntalume Frost Colorblind",
       "type": "dark",
       "ui": {
         "editor": "#060e14",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "name": "Auralis Paper High Contrast",
+      "name": "Syntalume Paper High Contrast",
       "type": "light",
       "ui": {
         "editor": "#fffcf8",
@@ -332,7 +332,7 @@
       ]
     },
     {
-      "name": "Auralis Dimmed",
+      "name": "Syntalume Dimmed",
       "type": "dark",
       "ui": {
         "editor": "#080a0d",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "name": "Auralis Void",
+      "name": "Syntalume Void",
       "type": "dark",
       "ui": {
         "editor": "#000000",

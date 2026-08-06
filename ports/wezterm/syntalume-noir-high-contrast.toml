@@ -1,0 +1,15 @@
+# Syntalume Noir High Contrast for WezTerm — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#faf6ef"
+background = "#020305"
+cursor_bg = "#ffac67"
+cursor_border = "#ffac67"
+selection_bg = "#286cab"
+ansi = ["#040508", "#fc5855", "#6ec272", "#e9ab2b", "#25d2fc", "#e175d9", "#52dfbf", "#faf6ef"]
+brights = ["#8e929e", "#ff625f", "#75d87a", "#ffbc19", "#00e8ff", "#fc82f3", "#47f7d2", "#fcf8f1"]
+
+[metadata]
+name = "Syntalume Noir High Contrast"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

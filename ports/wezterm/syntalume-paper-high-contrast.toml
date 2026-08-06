@@ -1,0 +1,15 @@
+# Syntalume Paper High Contrast for WezTerm — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#1f1610"
+background = "#f3ede5"
+cursor_bg = "#c43b15"
+cursor_border = "#c43b15"
+selection_bg = "#ec8e76"
+ansi = ["#130b06", "#cc272e", "#308639", "#bb6a00", "#044cb6", "#6365c1", "#007982", "#1f1610"]
+brights = ["#5a5049", "#be000c", "#007617", "#ad5300", "#0035ad", "#524fb8", "#006975", "#150e08"]
+
+[metadata]
+name = "Syntalume Paper High Contrast"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

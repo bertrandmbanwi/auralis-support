@@ -1,4 +1,4 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Browser and editor-fork QA
 
@@ -50,7 +50,7 @@ below and copy
 3. Open **Extensions: Install from VSIX...** from the Command Palette and pick
    `auralis-theme-system-<version>.vsix`. Installing from the Extensions view
    avoids the known ambiguity of CLI installation into non-default profiles.
-4. Run **Auralis: Open Setup Dashboard**, apply Paper, and switch through the
+4. Run **Syntalume: Open Setup Dashboard**, apply Paper, and switch through the
    file and product icon systems.
 5. Open Tune, Icon Studio, and Accessibility Lab. Apply and reset one scoped
    change, then confirm a deliberately unrelated setting is unchanged.
@@ -79,7 +79,7 @@ manually uploaded candidate VSIX. That makes two useful release checks:
 5. Apply and exactly reset one browser-supported setting. Confirm Ambience and
    Environment Guard explain that they require a desktop extension host rather
    than throwing an error.
-6. Capture the Extensions details page and the Auralis status center.
+6. Capture the Extensions details page and the Syntalume status center.
 
 Expected result: both the public Open VSX build and candidate VSIX install,
 browser-supported features run, desktop-only features degrade with an explicit
@@ -98,7 +98,7 @@ use the Gitpod Classic path while validating the explicitly researched target.
 3. apply one color theme and each icon system;
 4. open Tune, Icon Studio, and Accessibility Lab;
 5. confirm desktop-only features explain their limitation instead of failing;
-6. reset Auralis and verify unrelated settings remain unchanged.
+6. reset Syntalume and verify unrelated settings remain unchanged.
 
 Record product versions, results, and screenshots in the release issue. The
 scheduled workflow owns real VS Code Browser, VSCodium, and code-server runtime

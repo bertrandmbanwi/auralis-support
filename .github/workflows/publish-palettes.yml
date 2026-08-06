@@ -1,4 +1,4 @@
-name: Publish Auralis Palettes
+name: Prepare Syntalume Palette Package
 
 on:
   workflow_dispatch:

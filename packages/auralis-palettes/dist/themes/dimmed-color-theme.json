@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Auralis Dimmed",
+  "name": "Syntalume Dimmed",
   "type": "dark",
   "colors": {
     "focusBorder": "#ca933e85",

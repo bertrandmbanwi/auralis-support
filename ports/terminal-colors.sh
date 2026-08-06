@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Auralis terminal preview: prints the 16-color ANSI palette your terminal
-# theme provides, then an AURALIS wordmark drawn entirely with those colors.
-# Pairs with "Auralis: Export Terminal Theme" — export a port, install it in
-# your terminal, run this script, and the palette below becomes Auralis.
+# Syntalume terminal preview: prints the 16-color ANSI palette your terminal
+# theme provides, then a SYNTALUME wordmark drawn entirely with those colors.
+# Pairs with "Syntalume: Export Terminal Theme" — export a port, install it in
+# your terminal, run this script, and the palette below becomes Syntalume.
 
 set -euo pipefail
 
@@ -23,21 +23,21 @@ for row in 0 8; do
 done
 echo
 
-# 5-row block font for the AURALIS wordmark. Each column of each glyph is
+# 5-row block font for the SYNTALUME wordmark. Each column of each glyph is
 # painted with a cycling bright ANSI background, so the art is drawn by the
 # terminal theme itself.
 rows=(
-  ".AAA. U...U RRRR. .AAA. L.... IIIII .SSSS"
-  "A...A U...U R...R A...A L.... ..I.. S...."
-  "AAAAA U...U RRRR. AAAAA L.... ..I.. .SSS."
-  "A...A U...U R.R.. A...A L.... ..I.. ....S"
-  "A...A .UUU. R..RR A...A LLLLL IIIII SSSS."
+  ".SSSS Y...Y N...N TTTTT .AAA. L.... U...U M...M EEEEE"
+  "S.... .Y.Y. NN..N ..T.. A...A L.... U...U MM.MM E...."
+  ".SSS. ..Y.. N.N.N ..T.. AAAAA L.... U...U M.M.M EEEE."
+  "....S ..Y.. N..NN ..T.. A...A L.... U...U M...M E...."
+  "SSSS. ..Y.. N...N ..T.. A...A LLLLL .UUU. M...M EEEEE"
 )
 
 # Bright red, green, yellow, blue, magenta, cyan.
 colors=(9 10 11 12 13 14)
 
-echo "AURALIS preview (uses your terminal theme colors):"
+echo "SYNTALUME preview (uses your terminal theme colors):"
 echo
 for row in "${rows[@]}"; do
   line=""

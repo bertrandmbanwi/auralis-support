@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Tooling Setup
 
-Auralis can configure a polished formatter and linter setup without bundling heavy tooling into the theme.
+Syntalume can configure a polished formatter and linter setup without bundling heavy tooling into the theme.
 
 The setup commands write normal VS Code settings. They do not install Terraform, TFLint, Prettier, ESLint, or Better Comments unless you explicitly choose to install a missing companion extension from the prompt.
 
@@ -10,17 +10,17 @@ The setup commands write normal VS Code settings. They do not install Terraform,
 
 Tooling setup is designed to be safe and reversible:
 
-- **Detect before overwrite.** Auralis checks whether you already have a default formatter for a language before setting one. If you have already chosen a formatter, Auralis leaves it alone.
+- **Detect before overwrite.** Syntalume checks whether you already have a default formatter for a language before setting one. If you have already chosen a formatter, Syntalume leaves it alone.
 - **Prefer Workspace scope.** When a folder is open, tooling settings are written to the current workspace rather than your global user settings, so each project keeps its own setup.
-- **Confirm before format-on-save.** Auralis asks before enabling format-on-save. Choose `Skip` to keep saving untouched and format manually. Nothing is turned on silently.
-- **Skip unregistered settings.** If a companion extension is not installed yet, Auralis skips its settings and tells you which ones were deferred until that extension registers them, instead of throwing an error.
-- **Apply atomically and reset exactly.** Each setup command commits its registered settings as one transaction and rolls them back if a write fails. Auralis keeps separate User and Workspace baselines; `Auralis: Reset Auralis Settings` restores only values and individual object keys that still match its last write. Later manual edits and unrelated file associations or language settings always win.
-- **Unwind features together.** If a profile, icon command, or another Auralis feature later changes one of the same settings, General Reset follows their local application order instead of treating the intermediate Auralis value as your original baseline.
+- **Confirm before format-on-save.** Syntalume asks before enabling format-on-save. Choose `Skip` to keep saving untouched and format manually. Nothing is turned on silently.
+- **Skip unregistered settings.** If a companion extension is not installed yet, Syntalume skips its settings and tells you which ones were deferred until that extension registers them, instead of throwing an error.
+- **Apply atomically and reset exactly.** Each setup command commits its registered settings as one transaction and rolls them back if a write fails. Syntalume keeps separate User and Workspace baselines; `Syntalume: Reset Syntalume Settings` restores only values and individual object keys that still match its last write. Later manual edits and unrelated file associations or language settings always win.
+- **Unwind features together.** If a profile, icon command, or another Syntalume feature later changes one of the same settings, General Reset follows their local application order instead of treating the intermediate Syntalume value as your original baseline.
 
 For a guided view, run:
 
 ```text
-Auralis: Open Setup Dashboard
+Syntalume: Open Setup Dashboard
 ```
 
 The dashboard shows active theme/icon status, git decoration visibility, formatter readiness, and companion extension availability.
@@ -30,7 +30,7 @@ The dashboard shows active theme/icon status, git decoration visibility, formatt
 Run:
 
 ```text
-Auralis: Setup Terraform Tooling
+Syntalume: Setup Terraform Tooling
 ```
 
 This applies:
@@ -50,14 +50,14 @@ Optional CLI:
 - `terraform`
 - `tflint`
 
-Auralis Doctor checks whether these commands are available on your `PATH`, but it does not run Terraform or TFLint automatically.
+Syntalume Doctor checks whether these commands are available on your `PATH`, but it does not run Terraform or TFLint automatically.
 
 ## YAML and Kubernetes
 
 Run:
 
 ```text
-Auralis: Setup YAML and Kubernetes Tooling
+Syntalume: Setup YAML and Kubernetes Tooling
 ```
 
 This applies:
@@ -73,14 +73,14 @@ Recommended companion extensions:
 - `redhat.vscode-yaml`
 - `esbenp.prettier-vscode`
 
-YAML linting should come from your project or CI when stricter rules are needed. Auralis keeps this lightweight and does not bundle a YAML linter.
+YAML linting should come from your project or CI when stricter rules are needed. Syntalume keeps this lightweight and does not bundle a YAML linter.
 
 ## Web
 
 Run:
 
 ```text
-Auralis: Setup Web Tooling
+Syntalume: Setup Web Tooling
 ```
 
 This applies:
@@ -107,10 +107,10 @@ Project-local npm tools are fine. A global CLI is not required if your project a
 Run:
 
 ```text
-Auralis: Configure Better Comments
+Syntalume: Configure Better Comments
 ```
 
-This applies Auralis-colored tags for:
+This applies Syntalume-colored tags for:
 
 - `!`
 - `?`
@@ -131,21 +131,21 @@ Recommended companion extension:
 Run:
 
 ```text
-Auralis: Apply Bracket Style
+Syntalume: Apply Bracket Style
 ```
 
 Available styles:
 
-- `Auralis Active Guides`
-- `Auralis Full Guides`
-- `Auralis Color Only`
+- `Syntalume Active Guides`
+- `Syntalume Full Guides`
+- `Syntalume Color Only`
 - `Off`
 
 You can also use:
 
 ```text
-Auralis: Toggle Bracket Pair Colorization
-Auralis: Toggle Active Bracket Guides
+Syntalume: Toggle Bracket Pair Colorization
+Syntalume: Toggle Active Bracket Guides
 ```
 
 ## Doctor
@@ -153,12 +153,12 @@ Auralis: Toggle Active Bracket Guides
 Run:
 
 ```text
-Auralis: Run Doctor (Check Setup)
+Syntalume: Run Doctor (Check Setup)
 ```
 
 Desktop VS Code checks:
 
-- Active Auralis theme and icon settings.
+- Active Syntalume theme and icon settings.
 - Companion extension installation state.
 - Whether `terraform`, `tflint`, `prettier`, and `eslint` are available on `PATH`.
 - Formatter settings for Terraform, HCL, YAML, and common web languages.

@@ -1,0 +1,15 @@
+# Syntalume Frost for WezTerm — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#ddeff5"
+background = "#02080e"
+cursor_bg = "#00f2ff"
+cursor_border = "#00f2ff"
+selection_bg = "#007b87"
+ansi = ["#060e14", "#ff5169", "#00d097", "#e6b816", "#00e5f2", "#a688ff", "#48e8c5", "#ddeff5"]
+brights = ["#5b6c74", "#ff5b75", "#00e7a7", "#ffca00", "#00fcff", "#b997ff", "#38ffd8", "#ebfcff"]
+
+[metadata]
+name = "Syntalume Frost"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

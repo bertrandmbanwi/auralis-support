@@ -1,12 +1,12 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
-# Porting Auralis
+# Porting Syntalume
 
-Auralis first-party ports cover VS Code, JetBrains IDEs, and six terminals —
+Syntalume first-party ports cover VS Code, JetBrains IDEs, and six terminals —
 all generated from one palette source. Community ports carry the palettes
 everywhere else: Neovim, Zed, Sublime, tmux, starship, fzf, bat, browsers,
 anything with colors. This guide is the contract for a port that can carry
-the Auralis name.
+the Syntalume name.
 
 ## The palettes
 
@@ -21,8 +21,8 @@ The same source is packaged as `@auralis-labs/palettes` for Shiki and build
 tooling. To start a full port manifest and protect it from palette drift:
 
 ```sh
-node scripts/validate-community-port.js --init zed ./auralis-zed.port.json
-node scripts/validate-community-port.js ./auralis-zed.port.json
+node scripts/validate-community-port.js --init zed ./syntalume-zed.port.json
+node scripts/validate-community-port.js ./syntalume-zed.port.json
 ```
 
 The generated manifest follows `schemas/community-port-v1.schema.json` and
@@ -31,7 +31,7 @@ target application's native format.
 
 ## Style rules
 
-1. **Name**: `Auralis <Variant>` (e.g. `Auralis Noir`), one port artifact per
+1. **Name**: `Syntalume <Variant>` (e.g. `Syntalume Noir`), one port artifact per
    variant where the target app supports multiple themes.
 2. **Roles, not colors**: map by role (keyword→keyword, string→string,
    error→error). When the target has no matching role, prefer the nearest
@@ -55,10 +55,10 @@ enough if you need to hand one off.
 ## License
 
 The palettes in `ports/palettes.json` are published for the purpose of
-building and distributing Auralis ports for other applications, free or
-paid-adjacent (a port may not be sold by itself). Keep the name `Auralis`,
+building and distributing Syntalume ports for other applications, free or
+paid-adjacent (a port may not be sold by itself). Keep the name `Syntalume`,
 link back to this hub, identify material color changes, and don't present a
 port as the first-party product. The formal permission and boundaries are the
 **Palette and community-port exception** in the repository `LICENSE`; the
-exception does not include Auralis SVG/file/product icon artwork or runtime
+exception does not include Syntalume SVG/file/product icon artwork or runtime
 code.
