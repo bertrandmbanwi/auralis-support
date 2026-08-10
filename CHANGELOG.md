@@ -28,6 +28,10 @@ Auralis is now **Syntalume** — same product, same listing, same update path.
 - Rhythm schedules accept either brand's theme names and normalize safely.
 - Terminal exports and the public ports now carry Syntalume names
   (`syntalume-noir.toml`, …); files you exported earlier keep working as-is.
+- Replaced the legacy geometric mark with the approved Refined Cleave across
+  the VS Code listing icon, JetBrains theme, JetBrains Companion, website
+  mark, favicon, and social card. Stable package ids, listing ids, URLs, and
+  asset filenames are unchanged.
 
 ## 0.9.2 — 2026-07-28
 
