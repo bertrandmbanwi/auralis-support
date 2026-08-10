@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://auralislab.dev/schema/profile-v1.json",
-  "title": "Auralis shared profile",
-  "description": "A consent-applied, editor-neutral Auralis appearance and environment profile.",
+  "title": "Syntalume shared profile",
+  "description": "A consent-applied, editor-neutral Syntalume appearance and environment profile.",
   "type": "object",
   "additionalProperties": false,
   "required": ["version", "variant"],
