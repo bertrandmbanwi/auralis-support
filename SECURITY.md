@@ -15,7 +15,7 @@ Please include:
 - Affected Syntalume version.
 - VS Code version and operating system.
 - Steps to reproduce.
-- Whether an Syntalume optional ambience feature was enabled.
+- Whether a Syntalume optional ambience feature was enabled.
 - Any relevant logs that do not contain secrets.
 
 ## Security Model
@@ -28,7 +28,7 @@ Syntalume is designed to keep the default theme path low risk:
   bounded performance checks gate every release.
 - The extension does not include telemetry.
 - The extension does not make remote network requests.
-- Optional ambience features run only after an Syntalume command/profile enables them.
+- Optional ambience features run only after a Syntalume command/profile enables them.
 - Optional usage counters store only fixed aggregate counts in VS Code local
   extension storage. Users can disable and clear them; they are never sent.
 - Diagnostics and feedback are user-initiated, sanitized previews. Syntalume
@@ -43,4 +43,4 @@ Syntalume is designed to keep the default theme path low risk:
 - Install Syntalume only from the official `auralis-labs.auralis-theme-system` Marketplace listing.
 - Keep VS Code and Syntalume updated.
 - Use the public support hub for non-sensitive bugs and docs issues: `https://github.com/bertrandmbanwi/auralis-support`.
-- Review any extension claiming to be an Syntalume fork or modified build carefully.
+- Review any extension claiming to be a Syntalume fork or modified build carefully.
