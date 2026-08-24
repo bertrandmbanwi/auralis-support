@@ -71,7 +71,7 @@ body:
     id: paid-intent
     attributes:
       label: If a future release were paid, what would you realistically do?
-      description: This is research, not an offer for sale or a payment request.
+      description: This is directional research, not an offer for sale, a payment request, or proof of a future purchase.
       options:
         - Consider buying if the price fit my budget
         - Continue only if a useful free option remained
