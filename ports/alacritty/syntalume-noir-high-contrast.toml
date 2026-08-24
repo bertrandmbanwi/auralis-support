@@ -1,0 +1,29 @@
+# Syntalume Noir High Contrast for Alacritty — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors.primary]
+background = "#020305"
+foreground = "#faf6ef"
+
+[colors.cursor]
+cursor = "#ffac67"
+
+[colors.normal]
+black = "#040508"
+red = "#fc5855"
+green = "#6ec272"
+yellow = "#e9ab2b"
+blue = "#25d2fc"
+magenta = "#e175d9"
+cyan = "#52dfbf"
+white = "#faf6ef"
+
+[colors.bright]
+black = "#8e929e"
+red = "#ff625f"
+green = "#75d87a"
+yellow = "#ffbc19"
+blue = "#00e8ff"
+magenta = "#fc82f3"
+cyan = "#47f7d2"
+white = "#fcf8f1"

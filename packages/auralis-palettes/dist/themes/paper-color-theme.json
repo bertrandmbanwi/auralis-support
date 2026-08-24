@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Auralis Paper",
+  "name": "Syntalume Paper",
   "type": "light",
   "colors": {
     "focusBorder": "#d45b3d85",

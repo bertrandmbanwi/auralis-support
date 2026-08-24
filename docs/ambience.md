@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Ambience Features
 
-Auralis ambience features are optional editor decorations. They are off by default unless a profile or toggle enables them.
+Syntalume ambience features are optional editor decorations. They are off by default unless a profile or toggle enables them.
 
 The runtime activates after VS Code's primary startup path
 (`onStartupFinished`). Its bounded activation registers commands, listeners,
@@ -11,7 +11,7 @@ Ambience decorations themselves stay lazy while every ambience setting is off.
 When you enable one, your choice is saved as a normal setting, so enabled
 ambience comes back exactly as you left it after a restart.
 
-The three Toggle commands are tracked as Auralis-owned changes. General Reset
+The three Toggle commands are tracked as Syntalume-owned changes. General Reset
 returns their enabled settings to the values they had before the commands;
 later manual edits in Settings still win.
 
@@ -20,7 +20,7 @@ later manual edits in Settings still win.
 Focus Field subtly shades visible lines away from the cursor. It only decorates visible editor ranges so large files stay responsive.
 
 ```text
-Auralis: Toggle Focus Field
+Syntalume: Toggle Focus Field
 ```
 
 Settings:
@@ -34,8 +34,8 @@ Settings:
 Edit Heatmap tracks current-session edits and shows subtle line and overview ruler heat. It caps files, lines, and age so memory stays bounded.
 
 ```text
-Auralis: Toggle Edit Heatmap
-Auralis: Clear Edit Heatmap
+Syntalume: Toggle Edit Heatmap
+Syntalume: Clear Edit Heatmap
 ```
 
 Settings:
@@ -50,7 +50,7 @@ Settings:
 Blame Ghosts shows faint inline git blame for the active line. It is disabled in untrusted workspaces, virtual workspaces, dirty files, unsaved files, and non-file documents. `restrictedConfigurations` keeps `auralis.blameGhosts.enabled` and `auralis.reviewLens.enableBlameGhosts` from taking effect until the workspace is trusted.
 
 ```text
-Auralis: Toggle Blame Ghosts
+Syntalume: Toggle Blame Ghosts
 ```
 
 Blame Ghosts uses `git blame` through `execFile` after cursor movement settles. It runs only after the cursor settles in a trusted local file workspace, never during VS Code startup.

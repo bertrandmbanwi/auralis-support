@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # File and Product Icons
 
-Auralis ships both a file icon theme and a product icon theme.
+Syntalume ships both a file icon theme and a product icon theme.
 
 ## File Icons
 
@@ -29,19 +29,19 @@ The expanded 0.2.12 set added stronger coverage for:
 Run:
 
 ```text
-Auralis: Enable File Icons
+Syntalume: Enable File Icons
 ```
 
 ## Product Icons
 
-Product icons restyle VS Code's built-in UI glyphs such as Explorer, Search, Source Control, Run, Testing, Chat, Notebooks, Extensions, Problems, Ports, folding controls, breakpoints, and diff actions. Auralis uses a bespoke single-color glyph font generated from original Auralis SVG geometry, shipped WOFF-first with TTF fallback.
+Product icons restyle VS Code's built-in UI glyphs such as Explorer, Search, Source Control, Run, Testing, Chat, Notebooks, Extensions, Problems, Ports, folding controls, breakpoints, and diff actions. Syntalume uses a bespoke single-color glyph font generated from original Syntalume SVG geometry, shipped WOFF-first with TTF fallback.
 
 As of 0.6.0 the font covers 583 workbench icon ids with 111 bespoke glyphs, including distinct window minimize/maximize/restore controls and a unique glyph for every common IntelliSense symbol kind (class, method, variable, field, property, enum, interface, constant, keyword, snippet, struct, event), so completion lists keep carrying meaning.
 
 Run:
 
 ```text
-Auralis: Enable Product Icons
+Syntalume: Enable Product Icons
 ```
 
 ## Sync
@@ -49,14 +49,14 @@ Auralis: Enable Product Icons
 Run:
 
 ```text
-Auralis: Sync Icons With Active Theme
+Syntalume: Sync Icons With Active Theme
 ```
 
-This keeps Auralis file icons and product icons paired with the active Auralis color theme. The command is also useful after switching from another theme. Sync, the direct Enable File/Product Icons commands, and Switch Theme Variant apply their related settings atomically. Repeated theme switches retain the original pre-Auralis baseline. If these commands and Icon Studio are interleaved, General Reset unwinds them in their actual application order; a later manual icon or theme choice still wins.
+This keeps Syntalume file icons and product icons paired with the active Syntalume color theme. The command is also useful after switching from another theme. Sync, the direct Enable File/Product Icons commands, and Switch Theme Variant apply their related settings atomically. Repeated theme switches retain the original pre-Syntalume baseline. If these commands and Icon Studio are interleaved, General Reset unwinds them in their actual application order; a later manual icon or theme choice still wins.
 
 ## Personalize with Icon Studio
 
-Run `Auralis: Open Icon Studio` to search the shipped inventory, apply one of
+Run `Syntalume: Open Icon Studio` to search the shipped inventory, apply one of
 the real Balanced, Minimal, Outline, or Pictorial Explorer themes, add safe
 associations, and import or export a portable preset. Desktop Studio applies
 exact saturation/opacity and file, folder, root-folder, and language maps by
@@ -64,4 +64,4 @@ regenerating only its contributed extension-owned theme. Web hosts keep those
 custom controls as honest read-only preset previews and use the finite shipped
 themes.
 
-See [Auralis Icon Studio](icon-studio.md) for the exact apply/reset boundary.
+See [Syntalume Icon Studio](icon-studio.md) for the exact apply/reset boundary.

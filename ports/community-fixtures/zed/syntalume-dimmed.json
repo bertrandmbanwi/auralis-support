@@ -1,0 +1,79 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Syntalume Dimmed",
+  "author": "Syntalume community port fixture",
+  "themes": [
+    {
+      "name": "Syntalume Dimmed",
+      "appearance": "dark",
+      "style": {
+        "background": "#080a0d",
+        "foreground": "#d4d0ca",
+        "text": "#d4d0ca",
+        "text.muted": "#6f7e8d",
+        "accent": "#ca933e",
+        "border": "#20252a",
+        "editor.background": "#080a0d",
+        "editor.foreground": "#d4d0ca",
+        "editor.active_line.background": "#0e1215",
+        "panel.background": "#05080a",
+        "status_bar.background": "#040608",
+        "title_bar.background": "#0e1216",
+        "success": "#6ec272",
+        "warning": "#e9ab2b",
+        "error": "#fc5855",
+        "modified": "#e9ab2b",
+        "created": "#6ec272",
+        "deleted": "#fc5855",
+        "terminal.background": "#040608",
+        "terminal.foreground": "#d4d0ca",
+        "terminal.ansi.background": "#040608",
+        "terminal.ansi.black": "#080a0d",
+        "terminal.ansi.red": "#fc5855",
+        "terminal.ansi.green": "#6ec272",
+        "terminal.ansi.yellow": "#e9ab2b",
+        "terminal.ansi.blue": "#41bdd1",
+        "terminal.ansi.magenta": "#19a9b0",
+        "terminal.ansi.cyan": "#6fc4ae",
+        "terminal.ansi.white": "#d4d0ca",
+        "terminal.ansi.bright_black": "#5b6167",
+        "terminal.ansi.bright_red": "#ff625f",
+        "terminal.ansi.bright_green": "#75d87a",
+        "terminal.ansi.bright_yellow": "#ffbc19",
+        "terminal.ansi.bright_blue": "#2fd4ec",
+        "terminal.ansi.bright_magenta": "#00bfc8",
+        "terminal.ansi.bright_cyan": "#6ddcc0",
+        "terminal.ansi.bright_white": "#e1ddd7",
+        "syntax": {
+          "comment": {
+            "color": "#6f7e8d"
+          },
+          "string": {
+            "color": "#beaa5e"
+          },
+          "number": {
+            "color": "#ff9381"
+          },
+          "keyword": {
+            "color": "#c57fbf"
+          },
+          "function": {
+            "color": "#41bdd1"
+          },
+          "type": {
+            "color": "#6fc4ae"
+          },
+          "property": {
+            "color": "#e6bd77"
+          },
+          "operator": {
+            "color": "#ce84a7"
+          },
+          "punctuation": {
+            "color": "#8a8f9c"
+          }
+        }
+      }
+    }
+  ]
+}

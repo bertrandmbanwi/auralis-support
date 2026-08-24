@@ -1,6 +1,37 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Changelog
+
+## 0.10.0 — Syntalume, formerly Auralis
+
+Auralis is now **Syntalume** — same product, same listing, same update path.
+
+- Renamed every user-facing surface to Syntalume: extension display name,
+  command palette category and titles (English, Spanish, French), theme and
+  icon-theme labels, webviews, notifications, walkthrough, docs, and the
+  JetBrains theme and Companion presentation.
+- Your setup is untouched by design: the extension identity, all
+  `auralis.*` commands and settings, stored theme selections
+  (`workbench.colorTheme` values), icon-theme ids, keybindings, Tune
+  adjustments, ownership/reset baselines, trial state, and stored license
+  keys all keep working exactly as before. Theme settings ids are pinned so
+  existing `"Auralis …"` values keep resolving to the renamed themes.
+- Added `syntalume.*` aliases for every command (the `auralis.*` ids remain
+  the stable identifiers).
+- Team profiles: `.syntalume/profile.json` is now read first;
+  `.auralis/profile.json` remains fully supported and is still the write
+  target for compatibility with mixed-version teams.
+- License keys: newly issued keys use the `SYNTALUME-` prefix; existing
+  `AURALIS-` keys verify forever. Everything remains unlocked during the
+  public beta — nothing about pricing or availability changes in this
+  release.
+- Rhythm schedules accept either brand's theme names and normalize safely.
+- Terminal exports and the public ports now carry Syntalume names
+  (`syntalume-noir.toml`, …); files you exported earlier keep working as-is.
+- Replaced the legacy geometric mark with the approved Refined Cleave across
+  the VS Code listing icon, JetBrains theme, JetBrains Companion, website
+  mark, favicon, and social card. Stable package ids, listing ids, URLs, and
+  asset filenames are unchanged.
 
 ## 0.9.2 — 2026-07-28
 

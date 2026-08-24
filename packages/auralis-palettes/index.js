@@ -2,7 +2,7 @@ const index = require('./dist/index.json');
 
 function themePath(name) {
   const entry = index.themes[name];
-  if (!entry) throw new Error(`Unknown Auralis theme: ${name}`);
+  if (!entry) throw new Error(`Unknown Syntalume theme: ${name}`);
   return require.resolve(`./dist/${entry.file}`);
 }
 

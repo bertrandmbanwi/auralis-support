@@ -1,9 +1,9 @@
 {
   "$schema": "https://auralislab.dev/schema/palette-v1.json",
   "schemaVersion": 1,
-  "packageVersion": "0.9.2",
+  "packageVersion": "0.10.0",
   "themes": {
-    "Auralis Noir": {
+    "Syntalume Noir": {
       "file": "themes/noir-color-theme.json",
       "type": "dark",
       "editorBackground": "#0f1117",
@@ -30,7 +30,7 @@
         "terminal.ansiBrightWhite": "#f6f1e9"
       }
     },
-    "Auralis Frost": {
+    "Syntalume Frost": {
       "file": "themes/frost-color-theme.json",
       "type": "dark",
       "editorBackground": "#060e14",
@@ -57,7 +57,7 @@
         "terminal.ansiBrightWhite": "#ebfcff"
       }
     },
-    "Auralis Paper": {
+    "Syntalume Paper": {
       "file": "themes/paper-color-theme.json",
       "type": "light",
       "editorBackground": "#faf4ec",
@@ -84,7 +84,7 @@
         "terminal.ansiBrightWhite": "#2b221b"
       }
     },
-    "Auralis Botanica": {
+    "Syntalume Botanica": {
       "file": "themes/botanica-color-theme.json",
       "type": "dark",
       "editorBackground": "#0e1913",
@@ -111,7 +111,7 @@
         "terminal.ansiBrightWhite": "#f2f3e4"
       }
     },
-    "Auralis Noir High Contrast": {
+    "Syntalume Noir High Contrast": {
       "file": "themes/noir-contrast-color-theme.json",
       "type": "dark",
       "editorBackground": "#040508",
@@ -138,7 +138,7 @@
         "terminal.ansiBrightWhite": "#fcf8f1"
       }
     },
-    "Auralis Frost Colorblind": {
+    "Syntalume Frost Colorblind": {
       "file": "themes/frost-colorblind-color-theme.json",
       "type": "dark",
       "editorBackground": "#060e14",
@@ -165,7 +165,7 @@
         "terminal.ansiBrightWhite": "#ebfcff"
       }
     },
-    "Auralis Paper High Contrast": {
+    "Syntalume Paper High Contrast": {
       "file": "themes/paper-contrast-color-theme.json",
       "type": "light",
       "editorBackground": "#fffcf8",
@@ -192,7 +192,7 @@
         "terminal.ansiBrightWhite": "#150e08"
       }
     },
-    "Auralis Dimmed": {
+    "Syntalume Dimmed": {
       "file": "themes/dimmed-color-theme.json",
       "type": "dark",
       "editorBackground": "#080a0d",
@@ -219,7 +219,7 @@
         "terminal.ansiBrightWhite": "#e1ddd7"
       }
     },
-    "Auralis Void": {
+    "Syntalume Void": {
       "file": "themes/void-color-theme.json",
       "type": "dark",
       "editorBackground": "#000000",

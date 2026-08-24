@@ -1,4 +1,4 @@
-export type AuralisThemeName =
+export type SyntalumeThemeName =
   | 'Auralis Noir'
   | 'Auralis Frost'
   | 'Auralis Paper'
@@ -31,7 +31,7 @@ export interface IconAssociationData {
 
 export const schemaVersion: 1;
 export const packageVersion: string;
-export const themes: Record<AuralisThemeName, PaletteIndexEntry>;
+export const themes: Record<SyntalumeThemeName, PaletteIndexEntry>;
 export const iconAssociations: {
   file: string;
   definitions: number;
@@ -41,6 +41,6 @@ export const iconAssociations: {
   rootFolderNames: number;
   languageIds: number;
 };
-export function themePath(name: AuralisThemeName): string;
-export function loadTheme(name: AuralisThemeName): Record<string, unknown>;
+export function themePath(name: SyntalumeThemeName): string;
+export function loadTheme(name: SyntalumeThemeName): Record<string, unknown>;
 export function loadIconAssociations(): IconAssociationData;

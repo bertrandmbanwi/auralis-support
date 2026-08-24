@@ -1,10 +1,12 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Shared Team Profiles
 
-A repository can recommend one editor-neutral Auralis appearance to everyone
-who opens it. VS Code and the optional Auralis Companion for JetBrains consume
-the same versioned `.auralis/profile.json` contract.
+A repository can recommend one editor-neutral Syntalume appearance to everyone
+who opens it. VS Code and the optional Syntalume Companion for JetBrains consume
+the same versioned `.auralis/profile.json` contract. When both files exist,
+`.syntalume/profile.json` is read first; `.auralis/profile.json` remains fully
+supported.
 
 Nothing is applied silently. A trusted workspace shows the recommendation and
 asks each person to **Apply**, choose **Not now**, or choose **Never for this
@@ -15,12 +17,12 @@ repo**.
 Run:
 
 ```text
-Auralis: Write Team Profile Recommendation
+Syntalume: Write Team Profile Recommendation
 ```
 
 Choose a variant, optional note, whether to include your current Tune 2
 comfort/style choices, and whether to recommend repository-specific
-Environment Guard labels. Auralis writes a version-1 profile such as:
+Environment Guard labels. Syntalume writes a version-1 profile such as:
 
 ```json
 {
@@ -92,7 +94,7 @@ The offer appears once per file content and returns only if the profile
 changes. Reads are capped at 1 MiB before parsing, and the offer memory keeps
 only a short local fingerprint—not the repository's profile content. Set
 `auralis.teamProfile.enabled` to `false` to suppress automatic offers, or run
-`Auralis: Apply Team Profile Recommendation` to inspect the current file
+`Syntalume: Apply Team Profile Recommendation` to inspect the current file
 manually.
 
 In the optional JetBrains Companion, **Review and apply shared profile** shows

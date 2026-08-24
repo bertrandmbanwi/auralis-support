@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://auralislab.dev/schema/palette-v1.json",
-  "title": "Auralis palette index",
+  "title": "Syntalume palette index",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "packageVersion", "themes", "iconAssociations"],

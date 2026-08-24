@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Performance and Privacy
 
-Auralis is designed around explicit budgets and local work, not an absolute
+Syntalume is designed around explicit budgets and local work, not an absolute
 "no startup cost" promise.
 
 ## Performance
@@ -10,7 +10,7 @@ Auralis is designed around explicit budgets and local work, not an absolute
 - Color themes, file icons, and product icons load declaratively with no code execution.
 - The small runtime activates lazily at `onStartupFinished`, after VS Code's
   own startup path. It registers commands but claims no idle status-bar space;
-  the single optional Auralis entry exists only while Environment Guard or a
+  the single optional Syntalume entry exists only while Environment Guard or a
   Review Session has state to show. Enabled optional tools then initialize
   only the work they need.
 - Desktop and browser entry points record the duration of the actual
@@ -53,19 +53,19 @@ Auralis is designed around explicit budgets and local work, not an absolute
   installation's local extension storage, are never transmitted, and can be
   cleared from the dashboard at any time.
 - Blame Ghosts runs local `git blame` only when enabled by the user and only in trusted local workspaces. `restrictedConfigurations` keeps the blame settings from taking effect until the workspace is trusted.
-- Auralis Doctor only checks whether optional companion CLIs are available on `PATH`, and only in trusted workspaces; it does not run formatters or linters against your source files.
+- Syntalume Doctor only checks whether optional companion CLIs are available on `PATH`, and only in trusted workspaces; it does not run formatters or linters against your source files.
 - The Setup Dashboard webview is locked down: a crypto-strong per-render nonce, `localResourceRoots: []`, `retainContextWhenHidden: false`, and a `default-src 'none'` Content-Security-Policy. It loads no external or local resources.
 - Accessibility Lab uses a locked-down, local-resource-free webview. Icon
-  Studio's equally locked-down webview can read only Auralis's packaged icon
+  Studio's equally locked-down webview can read only Syntalume's packaged icon
   directory so it can render its inventory; it cannot read workspace files.
   On desktop, Apply rewrites only the bounded contributed Studio manifest and
   SVG directory inside the installed extension. Presets and reports stay local
   until you explicitly copy or save them.
-- License and trial state is local-first: trial state lives in VS Code global state and a license key lives in VS Code secret storage. Neither is sent over the network, and there is no startup license check. Signed license keys are verified entirely offline against a public key embedded in the extension, and `Auralis: Show License Status` reports the stored state (during the public beta everything is unlocked for everyone regardless).
+- License and trial state is local-first: trial state lives in VS Code global state and a license key lives in VS Code secret storage. Neither is sent over the network, and there is no startup license check. Signed license keys are verified entirely offline against a public key embedded in the extension, and `Syntalume: Show License Status` reports the stored state (during the public beta everything is unlocked for everyone regardless).
 
 ## Web and Virtual Workspaces
 
-In browser-based VS Code environments, Auralis keeps themes, file icons,
+In browser-based VS Code environments, Syntalume keeps themes, file icons,
 product icons, profiles, and the finite Icon Studio fallback available.
 Arbitrary Studio asset generation and desktop ambience are skipped because web
 extensions cannot use Node filesystem or process APIs.
