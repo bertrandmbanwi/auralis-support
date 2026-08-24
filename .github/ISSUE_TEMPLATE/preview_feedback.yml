@@ -1,0 +1,100 @@
+name: Auralis private-preview feedback
+description: Share structured, candid feedback after using an invited preview build.
+title: "[Preview Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue will be public. Do not name or attach unreleased products, builds, screenshots, files, or download links. Do not include private code, paths, project details, secrets, or contact information. Use the private contact path supplied with the build for sensitive or unreleased details.
+
+        Positive feedback is not required. Please report what actually happened.
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Primary test environment
+      options:
+        - Visual Studio Code
+        - VSCodium, code-server, or another Open VSX host
+        - JetBrains IDE
+        - More than one editor family
+    validations:
+      required: true
+  - type: dropdown
+    id: duration
+    attributes:
+      label: Test duration
+      options:
+        - One session
+        - 2–3 days
+        - 4–7 days
+        - 8–14 days
+        - More than 14 days
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What happened after installation?
+      options:
+        - I kept it installed and used it repeatedly
+        - I kept it installed but rarely used it
+        - I uninstalled or disabled it
+        - I could not complete installation or setup
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: What delivered real value?
+      description: Describe the part that improved—or failed to improve—your normal workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: What was broken, confusing, or unnecessary?
+      description: Include reproducible steps when possible, but keep unreleased and private information out of this public issue.
+    validations:
+      required: true
+  - type: dropdown
+    id: choice
+    attributes:
+      label: Compared with your previous setup
+      options:
+        - I would choose this preview
+        - I would choose my previous setup
+        - I would use parts of both
+        - I am not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: paid-intent
+    attributes:
+      label: If a future release were paid, what would you realistically do?
+      description: This is research, not an offer for sale or a payment request.
+      options:
+        - Consider buying if the price fit my budget
+        - Continue only if a useful free option remained
+        - Need substantially more value before considering payment
+        - I would not pay for this type of product
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: What most influenced that decision?
+      description: Mention the value, limitation, competing tool, or budget factor that mattered most.
+    validations:
+      required: true
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: Feedback confirmation
+      options:
+        - label: I tested an actual preview build and reported my own experience.
+          required: true
+        - label: I did not include unreleased names, files, links, screenshots, or private project information.
+          required: true
+    validations:
+      required: true
