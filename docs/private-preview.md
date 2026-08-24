@@ -73,3 +73,5 @@ for evidence such as:
 - What the tester would realistically do if a future release were paid.
 
 An honest “I would not pay for this” is as useful as positive feedback.
+Repeated use and retention are stronger evidence than a hypothetical answer
+about future payment, so the two are evaluated separately.
