@@ -15,7 +15,7 @@ Install from the official Visual Studio Marketplace listing:
 - [Syntalume on the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system)
 - [Open VSX](https://open-vsx.org/extension/auralis-labs/auralis-theme-system)
 - [Syntalume Theme on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/32762-auralis-theme)
-- Website: [auralislab.dev](https://auralislab.dev)
+- Website: [syntalume.dev](https://syntalume.dev)
 
 After installing, run:
 
