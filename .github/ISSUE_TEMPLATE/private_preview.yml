@@ -1,0 +1,66 @@
+name: Join the Auralis private preview
+description: Volunteer to test a potential next Auralis release for 7–14 days.
+title: "[Preview Volunteer] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for volunteering. This application is public. Do not include an email address, private code, project details, or other personal information.
+
+        Preview access is free. Selection does not depend on positive feedback, willingness to pay, or agreeing to leave a review.
+  - type: dropdown
+    id: current-use
+    attributes:
+      label: Current Auralis use
+      description: Choose the answer that best describes your current use.
+      options:
+        - I use Auralis most workdays
+        - I use Auralis a few times each week
+        - I use Auralis occasionally
+        - I recently installed Auralis
+        - I have not installed Auralis yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: editors
+    attributes:
+      label: Editors you can test
+      description: Select every editor in which you can use the preview in a real workflow.
+      options:
+        - label: Visual Studio Code
+        - label: VSCodium, code-server, or another Open VSX host
+        - label: A supported JetBrains IDE
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Normal workflow
+      description: Briefly describe the languages or work you would use while testing. Keep project and employer details private.
+      placeholder: Terraform and YAML in VS Code; TypeScript in WebStorm; documentation editing; or similar.
+    validations:
+      required: true
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Testing availability
+      description: How much real-world use can you reasonably provide?
+      options:
+        - Several sessions over 7 days
+        - Several sessions over 14 days
+        - One focused testing session
+    validations:
+      required: true
+  - type: checkboxes
+    id: commitments
+    attributes:
+      label: Preview commitments
+      options:
+        - label: I will give candid feedback even if my experience is negative.
+          required: true
+        - label: I will not repost preview files, download links, screenshots, or unreleased names.
+          required: true
+        - label: I understand that applying does not guarantee selection and preview features may change or never ship.
+          required: true
+    validations:
+      required: true

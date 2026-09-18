@@ -27,6 +27,20 @@ For the fastest first run, choose:
 Auralis: Apply Recommended Experience
 ```
 
+## Help Test the Next Release
+
+Auralis is inviting a small group of current users to test a private preview
+for 7–14 days. There is no payment, purchase, or expectation of a positive
+review. We want candid feedback from people who will actually use the preview
+in their normal editor workflow.
+
+[Volunteer for the private preview](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=private_preview.yml)
+
+The application is a public GitHub issue, so do not include an email address,
+private code, project details, or other personal information. Selected testers
+will be notified on their issue and invited to a private GitHub space. Read the
+[private-preview guide](docs/private-preview.md) before volunteering.
+
 ## Guides
 
 - [Getting Started](docs/getting-started.md)
@@ -48,6 +62,7 @@ Auralis: Apply Recommended Experience
 - [Customization](docs/customization.md)
 - [Performance and Privacy](docs/performance-privacy.md)
 - [Diagnostics, Feedback, and Reviews](docs/support-feedback.md)
+- [Private Preview](docs/private-preview.md)
 - [Localization](docs/localization.md)
 - [Fork and Browser QA](docs/FORK_QA.md)
 - [Visual Contract](docs/VISUAL_CONTRACT.md)
