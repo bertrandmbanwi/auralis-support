@@ -2,6 +2,20 @@
 
 # Changelog
 
+## 0.9.3 — 2026-09-18
+
+- Help test the next release: the README now invites a small group of current
+  users to a no-cost, opt-in private preview lasting about 7–14 days, with a
+  public volunteer form and a private-preview guide on the support hub. It is
+  not a purchase or a request for a positive review, and the preview adds no
+  telemetry — feedback is always user-initiated.
+- The support hub gains structured private-preview volunteer and preview
+  feedback forms. Both are public GitHub issues, so they ask testers to leave
+  out contact details, private code, and project information.
+- Cleared the newly published advisories in the development-only packaging
+  and font build toolchain. The extension still ships no runtime dependencies,
+  and the generated themes, icons, and ports are unchanged.
+
 ## 0.9.2 — 2026-07-28
 
 - Review Auralis now routes to the registry your editor installs from:
