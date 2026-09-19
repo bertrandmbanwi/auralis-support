@@ -12,20 +12,20 @@ optional runtime does not collect or transmit telemetry.
 - No device or account identifier is created.
 - No analytics, advertising SDK, crash reporter, tracking pixel, or background
   network service is included.
-- Licensing makes no passive network calls; the only license-service contact
-  is the user-initiated flow described under Licensing below.
+- The shipped free beta has no configured license-service endpoint and makes
+  no license-service network calls.
 
-## Licensing
+## Licensing in the shipped beta
 
-Syntalume has no passive telemetry or analytics. The only network calls in
-the product are the license actions you start yourself — activate, validate,
-and deactivate — and they occur only when you use a store-issued key. Each
-call is disclosed before it is sent and carries exactly two things: the
-license key and a random per-installation identifier that labels the
-activation. No code, paths, settings, or account data accompany it, and
-nothing runs in the background. Offline signed keys (`SYNTALUME-…` /
-`AURALIS-…`) remain fully supported and verify locally without contacting any
-server.
+The current release is fully unlocked and works offline. It does not require
+an account, payment, license activation, or periodic online validation.
+Optional signed keys verify locally; entering one does not contact a server.
+
+Online entitlement code and the separate commerce demonstration are development
+features, not enabled in the distributed beta. The demonstration uses synthetic
+keys and simulated provider responses and cannot charge a card. A future online
+release requires a separate disclosure of its endpoint, operator, actual request
+fields, local identifiers, and retention before those requests are enabled.
 
 ## Local data
 
@@ -36,8 +36,8 @@ the current installation:
   apply, including a local sequence of Syntalume setting changes used only to
   unwind interleaved features during General Reset.
 - Draft Icon Studio presets and saved Tune/profile choices.
-- A license key — and, for store-issued keys, the activation id the licensing
-  service returns — in VS Code secret storage, if you choose to enter one.
+- An optional locally verified license key in VS Code secret storage, if you
+  choose to enter one. The free beta does not require one.
 - Two optional aggregate counters: Tune applies and shared-profile applies.
 - The optional JetBrains Companion stores its local choices and exact-reset
   ownership in JetBrains application/project metadata. It does not edit source

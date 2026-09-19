@@ -38,7 +38,10 @@ icons.
 ```
 
 Patterns in Settings are case-insensitive regular expressions matched against
-each signal. Repository-shared profiles use literal production/staging labels;
+each signal. Matching runs in a cancellable worker with a 250 ms budget per
+evaluation, at most 64 patterns per category, 256 characters per pattern, and
+4,096 characters per signal. Invalid, oversized, or timed-out checks show an
+explicit warning; an incomplete check is never reported as safe. Repository-shared profiles use literal production/staging labels;
 Syntalume escapes them before writing workspace patterns so a repository cannot
 inject executable regular-expression behavior.
 

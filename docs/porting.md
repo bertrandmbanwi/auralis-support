@@ -25,7 +25,7 @@ node scripts/validate-community-port.js --init zed ./syntalume-zed.port.json
 node scripts/validate-community-port.js ./syntalume-zed.port.json
 ```
 
-The generated manifest follows `schemas/community-port-v1.schema.json` and
+The generated manifest follows `schemas/community-port-v1.json` and
 copies all role values exactly, while your renderer maps those roles into the
 target application's native format.
 

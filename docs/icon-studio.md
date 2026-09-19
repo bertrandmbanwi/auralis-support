@@ -138,3 +138,13 @@ Enter the filename, folder, language, framework, and a short reason, then
 choose **Open prefilled icon request**. Icon Studio opens the public Syntalume
 support repository with the issue title and details filled in. Nothing is sent
 until you review and submit the issue on GitHub.
+
+
+## Concurrent changes and recovery
+
+Apply, Reset, and startup repair are serialized across editor windows. A second
+operation waits for the first rather than changing the same icon directory at
+the same time. Syntalume recovers a lock whose recorded local process has ended.
+If a lock is incomplete or belongs to another machine, the operation stops with
+an error instead of assuming that the other writer is gone. Close all editor
+windows and reinstall the extension to clear an interrupted installation lock.

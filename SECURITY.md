@@ -27,7 +27,9 @@ Syntalume is designed to keep the default theme path low risk:
   (`onStartupFinished`); declarative themes and icons do not wait for it, and
   bounded performance checks gate every release.
 - The extension does not include telemetry.
-- The extension does not make remote network requests.
+- The shipped free beta has no configured license-service endpoint and does
+  not make remote network requests. Development-only commerce demonstrations
+  are separate from the distributed beta.
 - Optional ambience features run only after a Syntalume command/profile enables them.
 - Optional usage counters store only fixed aggregate counts in VS Code local
   extension storage. Users can disable and clear them; they are never sent.

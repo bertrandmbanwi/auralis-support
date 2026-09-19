@@ -4,8 +4,12 @@ Versioned, generated Syntalume themes for syntax renderers, documentation, and c
 
 ```js
 const { loadTheme } = require('@auralis-labs/palettes');
-const noir = loadTheme('Auralis Noir');
+const noir = loadTheme('Syntalume Noir');
 ```
+
+Legacy `Auralis <Variant>` names remain accepted by `loadTheme()` and
+`themePath()`. The `themes` index lists the nine canonical Syntalume names;
+`aliases` maps the nine legacy names to those canonical entries.
 
 With Shiki, pass the loaded VS Code-compatible theme object as a custom theme. Direct JSON imports are also available under `@auralis-labs/palettes/themes/<file>.json`.
 

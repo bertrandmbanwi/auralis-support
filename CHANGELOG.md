@@ -14,13 +14,14 @@ Auralis is now **Syntalume** — same product, same listing, same update path.
   `auralis.*` commands and settings, stored theme selections
   (`workbench.colorTheme` values), icon-theme ids, keybindings, Tune
   adjustments, ownership/reset baselines, trial state, and stored license
-  keys all keep working exactly as before. Theme settings ids are pinned so
+  keys retain their durable storage identifiers. Theme settings ids are pinned so
   existing `"Auralis …"` values keep resolving to the renamed themes.
 - Added `syntalume.*` aliases for every command (the `auralis.*` ids remain
   the stable identifiers).
 - Team profiles: `.syntalume/profile.json` is now read first;
-  `.auralis/profile.json` remains fully supported and is still the write
-  target for compatibility with mixed-version teams.
+  `.auralis/profile.json` remains fully supported. Writes update the preferred
+  existing profile so a successful save is read back consistently; new
+  repositories retain the legacy path for mixed-version teams.
 - License keys: newly issued keys use the `SYNTALUME-` prefix; existing
   `AURALIS-` keys verify forever. Everything remains unlocked during the
   public beta — nothing about pricing or availability changes in this
@@ -32,6 +33,20 @@ Auralis is now **Syntalume** — same product, same listing, same update path.
   the VS Code listing icon, JetBrains theme, JetBrains Companion, website
   mark, favicon, and social card. Stable package ids, listing ids, URLs, and
   asset filenames are unchanged.
+
+## 0.9.3 — 2026-09-18
+
+- Help test the next release: the README now invites a small group of current
+  users to a no-cost, opt-in private preview lasting about 7–14 days, with a
+  public volunteer form and a private-preview guide on the support hub. It is
+  not a purchase or a request for a positive review, and the preview adds no
+  telemetry — feedback is always user-initiated.
+- The support hub gains structured private-preview volunteer and preview
+  feedback forms. Both are public GitHub issues, so they ask testers to leave
+  out contact details, private code, and project information.
+- Cleared the newly published advisories in the development-only packaging
+  and font build toolchain. The extension still ships no runtime dependencies,
+  and the generated themes, icons, and ports are unchanged.
 
 ## 0.9.2 — 2026-07-28
 

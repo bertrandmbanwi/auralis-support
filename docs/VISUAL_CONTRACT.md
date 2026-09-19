@@ -31,7 +31,8 @@ restoring.
 `npm run qa:visual` renders and verifies a 27-image regression matrix: nine VS
 Code scene boards plus Classic and Islands JetBrains scenes for all nine
 published variants. The manifest also locks 21 reviewed VS Code Marketplace
-images and five clean-profile PyCharm captures by exact decoded-pixel SHA-256,
+images, five sanitized PyCharm source captures, and their five upload crops by
+exact decoded-pixel SHA-256,
 enforces their complete file inventory, and rejects theme-source drift.
 
 ```text
@@ -40,6 +41,10 @@ npm run qa:visual
 
 After a human has reviewed an intentional visual change, the approved baseline
 can be replaced only with the explicit `npm run qa:visual:update` command.
+The candidate media integrity record is separate from release approval. The
+publish gate checks the actual final VSIX hash, media digest, release version,
+reviewer/date, and native-capture records. An old approval or a successful
+hash check cannot authorize a new release. Animated GIF embeds are retired.
 
 `npm run audit:visual-contract` separately verifies the packaged palette
 snapshot used for rollback. The baseline cannot be replaced by a normal build.
@@ -57,7 +62,7 @@ and the high-contrast/colorblind variants.
 
 Community ports should consume the versioned palette and association schemas,
 then validate fixtures with `scripts/validate-community-port.js`. See
-[Porting Syntalume](PORTING.md) for the supported Zed, Neovim, Kitty, tmux, and
+[Porting Syntalume](porting.md) for the supported Zed, Neovim, Kitty, tmux, and
 Starship formats. Visual changes should include:
 
 1. the affected role and why it cannot use the existing role;

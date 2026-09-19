@@ -6,7 +6,9 @@ A repository can recommend one editor-neutral Syntalume appearance to everyone
 who opens it. VS Code and the optional Syntalume Companion for JetBrains consume
 the same versioned `.auralis/profile.json` contract. When both files exist,
 `.syntalume/profile.json` is read first; `.auralis/profile.json` remains fully
-supported.
+supported. Writing a recommendation updates an existing `.syntalume/profile.json`
+first, otherwise an existing `.auralis/profile.json`. New repositories use the
+compatible `.auralis/profile.json` path so older installations can read it.
 
 Nothing is applied silently. A trusted workspace shows the recommendation and
 asks each person to **Apply**, choose **Not now**, or choose **Never for this

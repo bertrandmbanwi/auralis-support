@@ -247,6 +247,17 @@
       }
     }
   },
+  "aliases": {
+    "Auralis Noir": "Syntalume Noir",
+    "Auralis Frost": "Syntalume Frost",
+    "Auralis Paper": "Syntalume Paper",
+    "Auralis Botanica": "Syntalume Botanica",
+    "Auralis Noir High Contrast": "Syntalume Noir High Contrast",
+    "Auralis Frost Colorblind": "Syntalume Frost Colorblind",
+    "Auralis Paper High Contrast": "Syntalume Paper High Contrast",
+    "Auralis Dimmed": "Syntalume Dimmed",
+    "Auralis Void": "Syntalume Void"
+  },
   "iconAssociations": {
     "file": "icon-associations.json",
     "definitions": 398,
