@@ -70,4 +70,20 @@ Click the Syntalume status entry (or run `Syntalume: Show Environment Status`) t
 see exactly which local signal matched and open the relevant settings.
 The entry is absent while idle by default. If you explicitly enable
 `auralis.environmentGuard.showWhenSafe`, Guard may show a neutral `safe`
-shield while it is enabled and no risky signal is present.
+shield while it is enabled and no risky signal is present. That legacy label
+means no configured risk pattern matched; it does not certify that the
+environment is safe.
+
+## JetBrains Companion
+
+The separate optional Companion provides its own local Guard implementation.
+Missing or unreadable signals produce an unknown state; unmatched names mean
+only that no configured risk pattern matched. Neither outcome guarantees safety.
+It reads the first nonempty current context across the ordered `KUBECONFIG` files
+(up to 32 files, 1 MiB each) and rejects unsafe YAML aliases or excessive nesting.
+
+Companion custom patterns use the RE2/J engine with at most 32 patterns per
+category and 256 characters per pattern. Unsupported lookarounds or
+backreferences are reported rather than executed. These limits differ from the
+VS Code worker limits above. Open **Syntalume Companion Controls** through
+Find Action or Tools, or focus its status widget and press Enter or Space.

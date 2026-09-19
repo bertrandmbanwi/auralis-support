@@ -42,8 +42,8 @@ Syntalume is designed around explicit budgets and local work, not an absolute
 - No source upload.
 - No passive review or feedback prompts. Support links run only when you choose
   them and let you inspect the copied or prefilled payload before submitting.
-- The optional JetBrains Companion reads `.auralis/profile.json` only when you
-  inspect or apply it. Accepted appearance values are stored in normal local
+- The optional JetBrains Companion reads `.syntalume/profile.json` first, with
+  `.auralis/profile.json` as a legacy fallback, only when you inspect or apply it. Accepted appearance values are stored in normal local
   IDE/project component state and a locally derived editor scheme; no project
   file is edited and nothing is transmitted. Exact reset fingerprints public
   scheme settings so later manual edits are preserved.
@@ -61,7 +61,12 @@ Syntalume is designed around explicit budgets and local work, not an absolute
   On desktop, Apply rewrites only the bounded contributed Studio manifest and
   SVG directory inside the installed extension. Presets and reports stay local
   until you explicitly copy or save them.
-- License and trial state is local-first: trial state lives in VS Code global state and a license key lives in VS Code secret storage. Neither is sent over the network, and there is no startup license check. Signed license keys are verified entirely offline against a public key embedded in the extension, and `Syntalume: Show License Status` reports the stored state (during the public beta everything is unlocked for everyone regardless).
+- The shipped free release has no configured licensing endpoint and performs no
+  startup license check. Optional local trial state uses VS Code global state
+  plus a secret-storage marker; optional signed keys are kept in SecretStorage
+  and verified locally. Staged provider-backed licensing code is disabled in
+  this release and is not evidence of an operational paid service. All 0.10.0
+  baseline features remain unlocked regardless of stored trial or license state.
 
 ## Web and Virtual Workspaces
 
