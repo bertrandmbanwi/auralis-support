@@ -7,7 +7,7 @@ body:
   - type: dropdown
     id: variant
     attributes:
-      label: Auralis variant
+      label: Syntalume variant
       options:
         - Noir
         - Frost
@@ -18,7 +18,7 @@ body:
         - Paper High Contrast
         - Dimmed
         - Void
-        - Another theme repaired by Auralis
+        - Another theme repaired by Syntalume
     validations:
       required: true
   - type: input

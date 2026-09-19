@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://auralislab.dev/schema/community-port-v1.json",
-  "title": "Auralis community port manifest",
+  "title": "Syntalume community port manifest",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "target", "variants"],

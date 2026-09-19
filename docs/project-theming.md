@@ -1,16 +1,16 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Project Themes & Accents
 
 Every window its own aurora. When you work across several projects at once,
-the "which window is this?" problem is real — Auralis solves it per project.
+the "which window is this?" problem is real — Syntalume solves it per project.
 
 ## Assign
 
 Run:
 
 ```text
-Auralis: Assign Project Theme & Accent
+Syntalume: Assign Project Theme & Accent
 ```
 
 1. Pick a theme variant for this project (or keep your current theme).
@@ -21,17 +21,17 @@ Auralis: Assign Project Theme & Accent
 
 Both writes go to **workspace settings only**: your global setup is
 untouched, and the project opens with its own look on every machine that
-opens it (the theme applies for anyone with Auralis installed; the
+opens it (the theme applies for anyone with Syntalume installed; the
 `.vscode/settings.json` entry is a normal, transparent VS Code setting).
 
 ## Clear
 
-Run the same command and choose **Clear project theme & accent**. Auralis
+Run the same command and choose **Clear project theme & accent**. Syntalume
 restores the prior Workspace theme and each prior chrome color only while the
 current value still matches what it applied. Later manual edits and unrelated
 `workbench.colorCustomizations` keys are preserved. Reapplying keeps the
 original baseline, and theme + accent apply/clear as one rollback-safe
-transaction. If VS Code rejects part of a rollback, Auralis retains recovery
+transaction. If VS Code rejects part of a rollback, Syntalume retains recovery
 ownership so **Clear project theme & accent** can safely retry the exact
 restore.
 

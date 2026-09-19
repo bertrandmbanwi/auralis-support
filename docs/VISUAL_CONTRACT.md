@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
-# Auralis Visual Contract
+# Syntalume Visual Contract
 
-Auralis treats every published variant as a visual API. The meaning of syntax,
+Syntalume treats every published variant as a visual API. The meaning of syntax,
 diagnostics, source control, tests, diffs, terminals, active tabs, and tool
 windows must remain recognizable across updates.
 
@@ -18,8 +18,8 @@ windows must remain recognizable across updates.
   an explicitly approved baseline update, and a packaged previous-look
   contract that users can restore with one command.
 
-The `Auralis: Restore Previous Published Look` command applies the packaged
-0.8.1 visual contract only to the active Auralis variant. Running it again
+The `Syntalume: Restore Previous Published Look` command applies the packaged
+0.8.1 visual contract only to the active Syntalume variant. Running it again
 restores the exact User settings it covered. Other themes and later manual
 changes are left alone. Ownership is tracked per workbench color, TextMate
 rule, semantic selector, and scoped semantic setting, so editing one contract
@@ -31,7 +31,8 @@ restoring.
 `npm run qa:visual` renders and verifies a 27-image regression matrix: nine VS
 Code scene boards plus Classic and Islands JetBrains scenes for all nine
 published variants. The manifest also locks 21 reviewed VS Code Marketplace
-images and five clean-profile PyCharm captures by exact decoded-pixel SHA-256,
+images, five sanitized PyCharm source captures, and their five upload crops by
+exact decoded-pixel SHA-256,
 enforces their complete file inventory, and rejects theme-source drift.
 
 ```text
@@ -40,6 +41,10 @@ npm run qa:visual
 
 After a human has reviewed an intentional visual change, the approved baseline
 can be replaced only with the explicit `npm run qa:visual:update` command.
+The candidate media integrity record is separate from release approval. The
+publish gate checks the actual final VSIX hash, media digest, release version,
+reviewer/date, and native-capture records. An old approval or a successful
+hash check cannot authorize a new release. Animated GIF embeds are retired.
 
 `npm run audit:visual-contract` separately verifies the packaged palette
 snapshot used for rollback. The baseline cannot be replaced by a normal build.
@@ -57,7 +62,7 @@ and the high-contrast/colorblind variants.
 
 Community ports should consume the versioned palette and association schemas,
 then validate fixtures with `scripts/validate-community-port.js`. See
-[Porting Auralis](PORTING.md) for the supported Zed, Neovim, Kitty, tmux, and
+[Porting Syntalume](porting.md) for the supported Zed, Neovim, Kitty, tmux, and
 Starship formats. Visual changes should include:
 
 1. the affected role and why it cannot use the existing role;

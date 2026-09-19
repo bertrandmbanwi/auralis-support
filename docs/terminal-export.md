@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Export Terminal Theme
 
-Your terminal can match your editor exactly. Auralis generates ports of every
+Your terminal can match your editor exactly. Syntalume generates ports of every
 theme for six terminal apps from the same color source as the VS Code themes,
 and one command exports them from inside VS Code.
 
@@ -11,10 +11,10 @@ and one command exports them from inside VS Code.
 Run:
 
 ```text
-Auralis: Export Terminal Theme
+Syntalume: Export Terminal Theme
 ```
 
-1. If an Auralis theme is active, it is exported; otherwise you pick one.
+1. If a Syntalume theme is active, it is exported; otherwise you pick one.
 2. Pick the terminal app: iTerm2, Windows Terminal, Alacritty, WezTerm,
    Ghostty, or Warp.
 3. Choose where to save the file. The confirmation message includes the
@@ -41,7 +41,7 @@ in VS Code's integrated terminal, so colors match across both.
 
 Pre-generated ports for every theme also live in the `ports/` folder of the
 public support hub, along with `terminal-colors.sh` — a small script that
-prints your terminal theme's 16-color palette and an Auralis wordmark drawn
+prints your terminal theme's 16-color palette and a Syntalume wordmark drawn
 in those colors, so you can see the port the moment it is installed:
 
 - https://github.com/bertrandmbanwi/auralis-support

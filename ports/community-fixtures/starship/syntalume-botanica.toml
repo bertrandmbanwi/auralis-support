@@ -1,0 +1,23 @@
+# Syntalume Botanica for Starship — generated community fixture.
+palette = "syntalume_botanica"
+
+[palettes.syntalume_botanica]
+background = "#08130d"
+foreground = "#e5e6d7"
+accent = "#95cb54"
+ansi_0 = "#0e1913"
+ansi_1 = "#fc5855"
+ansi_2 = "#68cb6e"
+ansi_3 = "#e6ac3d"
+ansi_4 = "#a1d862"
+ansi_5 = "#e29936"
+ansi_6 = "#68e4c6"
+ansi_7 = "#e5e6d7"
+ansi_8 = "#616c63"
+ansi_9 = "#ff625f"
+ansi_10 = "#6fe276"
+ansi_11 = "#ffbd34"
+ansi_12 = "#b0ee65"
+ansi_13 = "#fea92f"
+ansi_14 = "#62fcd9"
+ansi_15 = "#f2f3e4"

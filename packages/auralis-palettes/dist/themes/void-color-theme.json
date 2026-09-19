@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Auralis Void",
+  "name": "Syntalume Void",
   "type": "dark",
   "colors": {
     "focusBorder": "#00d9fa85",

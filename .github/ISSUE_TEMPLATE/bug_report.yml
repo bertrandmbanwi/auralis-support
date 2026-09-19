@@ -1,12 +1,12 @@
 name: Bug report
-description: Report a reproducible Auralis problem without sharing private project data.
+description: Report a reproducible Syntalume problem without sharing private project data.
 title: "[Bug] "
 labels:
   - bug
 body:
   - type: markdown
     attributes:
-      value: Thanks for helping improve Auralis. Remove anything you do not want to publish.
+      value: Thanks for helping improve Syntalume. Remove anything you do not want to publish.
   - type: textarea
     id: problem
     attributes:
@@ -24,6 +24,6 @@ body:
   - type: textarea
     id: diagnostics
     attributes:
-      label: Optional sanitized Auralis diagnostics
-      description: Paste only the payload you reviewed with Auralis — Copy Auralis Diagnostics.
+      label: Optional sanitized Syntalume diagnostics
+      description: Paste only the payload you reviewed with Syntalume — Copy Syntalume Diagnostics.
       render: json

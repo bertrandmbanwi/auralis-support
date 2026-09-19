@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://auralislab.dev/schema/icon-associations-v1.json",
-  "title": "Auralis icon associations",
+  "title": "Syntalume icon associations",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "family", "fileExtensions", "fileNames", "folderNames", "rootFolderNames", "languageIds"],

@@ -1,0 +1,23 @@
+# Syntalume Paper for Starship — generated community fixture.
+palette = "syntalume_paper"
+
+[palettes.syntalume_paper]
+background = "#ede7de"
+foreground = "#352c25"
+accent = "#d45b3d"
+ansi_0 = "#282019"
+ansi_1 = "#cc272e"
+ansi_2 = "#308639"
+ansi_3 = "#bb6a00"
+ansi_4 = "#044cb6"
+ansi_5 = "#6365c1"
+ansi_6 = "#007982"
+ansi_7 = "#352c25"
+ansi_8 = "#80756d"
+ansi_9 = "#be000c"
+ansi_10 = "#007617"
+ansi_11 = "#ad5300"
+ansi_12 = "#0035ad"
+ansi_13 = "#524fb8"
+ansi_14 = "#006975"
+ansi_15 = "#2b221b"

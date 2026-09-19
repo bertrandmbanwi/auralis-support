@@ -1,0 +1,26 @@
+# Syntalume Frost Colorblind for Warp — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Syntalume Frost Colorblind"
+accent: "#00e2ff"
+background: "#02080e"
+foreground: "#ddeff5"
+details: darker
+terminal_colors:
+  normal:
+    black: "#060e14"
+    red: "#fc984c"
+    green: "#00cef3"
+    yellow: "#e6b816"
+    blue: "#00e2ff"
+    magenta: "#ed9e2f"
+    cyan: "#60e7d8"
+    white: "#ddeff5"
+  bright:
+    black: "#5b6c74"
+    red: "#ffa64c"
+    green: "#00e5ff"
+    yellow: "#ffca00"
+    blue: "#00f9ff"
+    magenta: "#ffae23"
+    cyan: "#55ffed"
+    white: "#ebfcff"

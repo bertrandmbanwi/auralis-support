@@ -1,0 +1,26 @@
+# Syntalume Noir High Contrast for Warp — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Syntalume Noir High Contrast"
+accent: "#25d2fc"
+background: "#020305"
+foreground: "#faf6ef"
+details: darker
+terminal_colors:
+  normal:
+    black: "#040508"
+    red: "#fc5855"
+    green: "#6ec272"
+    yellow: "#e9ab2b"
+    blue: "#25d2fc"
+    magenta: "#e175d9"
+    cyan: "#52dfbf"
+    white: "#faf6ef"
+  bright:
+    black: "#8e929e"
+    red: "#ff625f"
+    green: "#75d87a"
+    yellow: "#ffbc19"
+    blue: "#00e8ff"
+    magenta: "#fc82f3"
+    cyan: "#47f7d2"
+    white: "#fcf8f1"
