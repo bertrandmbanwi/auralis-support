@@ -1,5 +1,5 @@
-name: Join the Auralis private preview
-description: Volunteer to test a potential next Auralis release for 7–14 days.
+name: Join the Syntalume private preview
+description: Volunteer to test a potential next Syntalume release (formerly Auralis) for 7–14 days.
 title: "[Preview Volunteer] "
 body:
   - type: markdown
@@ -11,14 +11,14 @@ body:
   - type: dropdown
     id: current-use
     attributes:
-      label: Current Auralis use
+      label: Current Syntalume use
       description: Choose the answer that best describes your current use.
       options:
-        - I use Auralis most workdays
-        - I use Auralis a few times each week
-        - I use Auralis occasionally
-        - I recently installed Auralis
-        - I have not installed Auralis yet
+        - I use Syntalume most workdays
+        - I use Syntalume a few times each week
+        - I use Syntalume occasionally
+        - I recently installed Syntalume
+        - I have not installed Syntalume yet
     validations:
       required: true
   - type: checkboxes

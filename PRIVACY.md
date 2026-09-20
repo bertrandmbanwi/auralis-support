@@ -50,7 +50,8 @@ clears Syntalume-owned runtime state.
 
 Edit Heatmap data stays in memory for the current session. Environment Guard
 derives a severity locally from the active Git branch, Kubernetes context, and
-workspace name, but stores only bounded configuration and a short-lived hash
+Terraform workspace marker in `.terraform/environment`, but stores only bounded
+configuration and a short-lived hash
 for a signal-specific snooze—not the raw label.
 
 ## Local tools and files

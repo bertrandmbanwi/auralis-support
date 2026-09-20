@@ -41,7 +41,8 @@ Patterns in Settings are case-insensitive regular expressions matched against
 each signal. Matching runs in a cancellable worker with a 250 ms budget per
 evaluation, at most 64 patterns per category, 256 characters per pattern, and
 4,096 characters per signal. Invalid, oversized, or timed-out checks show an
-explicit warning; an incomplete check is never reported as safe. Repository-shared profiles use literal production/staging labels;
+explicit unknown warning; an incomplete check is never reported as safe.
+Repository-shared profiles use literal production/staging labels;
 Syntalume escapes them before writing workspace patterns so a repository cannot
 inject executable regular-expression behavior.
 
@@ -68,22 +69,23 @@ reset. It never writes editor text or leaves a decoration behind.
 
 Click the Syntalume status entry (or run `Syntalume: Show Environment Status`) to
 see exactly which local signal matched and open the relevant settings.
-The entry is absent while idle by default. If you explicitly enable
-`auralis.environmentGuard.showWhenSafe`, Guard may show a neutral `safe`
-shield while it is enabled and no risky signal is present. That legacy label
-means no configured risk pattern matched; it does not certify that the
-environment is safe.
+Incomplete checks remain visible as **Guard unknown**. If you explicitly enable
+`auralis.environmentGuard.showWhenSafe`, completed checks with no matching
+pattern show a neutral **no match** shield. Neither label certifies safety.
+
+Kubeconfig files are read in `KUBECONFIG` order, using the first nonempty
+current context (at most 32 files, 1 MiB per file). Empty values and YAML
+comments are handled as YAML; aliases and excessive nesting are rejected.
+Missing, unreadable, malformed or timed-out kubeconfig inputs make the check
+incomplete even when another signal can still be classified. The maximum is
+96 file watchers: 32 kubeconfigs plus Git/Terraform signals for 32 folders.
 
 ## JetBrains Companion
 
-The separate optional Companion provides its own local Guard implementation.
-Missing or unreadable signals produce an unknown state; unmatched names mean
-only that no configured risk pattern matched. Neither outcome guarantees safety.
-It reads the first nonempty current context across the ordered `KUBECONFIG` files
-(up to 32 files, 1 MiB each) and rejects unsafe YAML aliases or excessive nesting.
-
-Companion custom patterns use the RE2/J engine with at most 32 patterns per
-category and 256 characters per pattern. Unsupported lookarounds or
-backreferences are reported rather than executed. These limits differ from the
-VS Code worker limits above. Open **Syntalume Companion Controls** through
-Find Action or Tools, or focus its status widget and press Enter or Space.
+The optional Companion provides local Guard controls in its status widget and
+Tools menu. It reads the same ordered kubeconfig context and reports missing or
+invalid contexts as unknown. Its RE2/J matcher is non-backtracking, with at most
+32 patterns per category, 256 characters per pattern and 4,096 characters per
+signal. Unsupported lookarounds and backreferences are rejected explicitly.
+File collection runs off the UI thread with only one in-flight collection per
+project; no command or kubeconfig authentication plugin is executed.

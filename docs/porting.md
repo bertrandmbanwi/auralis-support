@@ -25,9 +25,11 @@ node scripts/validate-community-port.js --init zed ./syntalume-zed.port.json
 node scripts/validate-community-port.js ./syntalume-zed.port.json
 ```
 
-The generated manifest follows `schemas/community-port-v1.json` and
-copies all role values exactly, while your renderer maps those roles into the
-target application's native format.
+The generated manifest follows the [public community-port v1 schema](https://github.com/bertrandmbanwi/auralis-support/blob/main/schemas/community-port-v1.json)
+(`schemas/community-port-v1.schema.json` in the product source). It copies
+all role values exactly, while your renderer maps those roles into the target
+application's native format. The validator checks both the schema structure and
+canonical colors; JSON object key order does not matter, and ANSI array order does.
 
 ## Style rules
 

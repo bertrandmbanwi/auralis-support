@@ -8,7 +8,7 @@
   "properties": {
     "$schema": { "const": "https://auralislab.dev/schema/community-port-v1.json" },
     "schemaVersion": { "const": 1 },
-    "target": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "target": { "type": "string", "minLength": 1, "maxLength": 100, "pattern": "\\S" },
     "source": { "type": "string" },
     "variants": {
       "type": "array",

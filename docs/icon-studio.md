@@ -123,6 +123,11 @@ Apply and reset are transactional. If any settings or asset write fails,
 Icon Studio restores the previous successful state instead of leaving half of
 a preset active.
 
+Desktop asset changes use a shared filesystem lock across VS Code windows.
+Snapshots, swaps, and owned rollbacks are serialized, so simultaneous windows
+cannot interleave one manifest with another preset's SVGs. If the lock cannot
+be acquired, Studio reports that the assets are busy and you can retry.
+
 On desktop, applied Studio assets are written into the installed extension's
 own icon directory. An extension update or reinstall replaces that directory
 with the packaged baseline, so on the next activation Syntalume detects the
@@ -138,13 +143,3 @@ Enter the filename, folder, language, framework, and a short reason, then
 choose **Open prefilled icon request**. Icon Studio opens the public Syntalume
 support repository with the issue title and details filled in. Nothing is sent
 until you review and submit the issue on GitHub.
-
-
-## Concurrent changes and recovery
-
-Apply, Reset, and startup repair are serialized across editor windows. A second
-operation waits for the first rather than changing the same icon directory at
-the same time. Syntalume recovers a lock whose recorded local process has ended.
-If a lock is incomplete or belongs to another machine, the operation stops with
-an error instead of assuming that the other writer is gone. Close all editor
-windows and reinstall the extension to clear an interrupted installation lock.
