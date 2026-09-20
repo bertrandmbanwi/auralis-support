@@ -9,7 +9,7 @@
 - `Syntalume Paper`: warm light mode for daylight.
 - `Syntalume Botanica`: quiet forest dark for infrastructure work.
 - `Syntalume Noir High Contrast`: a true `hc-black` VS Code high-contrast theme with explicit contrast borders for review and debugging.
-- `Syntalume Frost Colorblind`: a CVD-safe palette that puts status meaning on a blue/orange axis instead of red/green.
+- `Syntalume Frost Colorblind`: a palette designed to reduce reliance on red/green distinctions by using a blue/orange status axis. Color-vision simulations are heuristics, not a guarantee for every reader; try the palette with your own editor and accessibility settings.
 - `Syntalume Paper High Contrast`: a true `hc-light` VS Code high-contrast theme for dense daylight and projector work.
 - `Syntalume Dimmed`: lower-glare dark mode for terminal-heavy sessions.
 - `Syntalume Void`: true-black OLED dark (`#000000` canvas) with electric cyan/violet accents — pixels off, colors on.
