@@ -66,13 +66,7 @@ will be notified on their issue and invited to a private GitHub space. Read the
 - [Diagnostics, Feedback, and Reviews](docs/support-feedback.md)
 - [Private Preview](docs/private-preview.md)
 - [Localization](docs/localization.md)
-- [Fork and Browser QA](docs/FORK_QA.md)
-- [Visual Contract](docs/VISUAL_CONTRACT.md)
 - [Troubleshooting](docs/troubleshooting.md)
-- [0.2.12 Visual QA](docs/VISUAL_QA_0.2.12.md)
-- [Publisher Verification](docs/verification.md)
-- [Domain Verification Checklist](docs/DOMAIN_VERIFICATION_CHECKLIST.md)
-- [Azure DevOps Account Path](docs/AZURE_DEVOPS_ACCOUNT_PATH.md)
 
 ## Terminal Ports
 
@@ -102,3 +96,22 @@ Syntalume uses a small lazy runtime after startup, has no passive telemetry or b
 
 - [Security Policy](SECURITY.md)
 - [Privacy Notes](PRIVACY.md)
+
+## Contributor QA
+
+For contributors testing candidate releases:
+
+- [Fork and Browser QA](docs/FORK_QA.md)
+- [Visual Contract](docs/VISUAL_CONTRACT.md)
+
+## Historical QA
+
+These records describe earlier releases and do not certify the current release.
+
+- [0.2.12 Visual QA](docs/VISUAL_QA_0.2.12.md)
+
+## Maintainer Operations
+
+- [Publisher Verification](docs/verification.md)
+- [Domain Verification Checklist](docs/DOMAIN_VERIFICATION_CHECKLIST.md)
+- [Azure DevOps Account Path](docs/AZURE_DEVOPS_ACCOUNT_PATH.md)
