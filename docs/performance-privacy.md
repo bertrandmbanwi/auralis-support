@@ -17,7 +17,7 @@ Syntalume is designed around explicit budgets and local work, not an absolute
   `activate()` registration path. Desktop also records its non-negative heap
   delta. Integration QA reads those in-memory measurements for release-budget
   assertions; they contain no workspace or user data and are never sent.
-- Release gates cap the generated desktop bundle at 338 KiB and the browser
+- Release gates cap the generated desktop bundle at 339 KiB and the browser
   bundle at 300 KiB. Separate desktop-only YAML and file-lock helpers are
   capped at 140 KiB and 24 KiB and load only when their features need them. The browser ceiling includes the same bounded,
   fail-closed exact-reset safety checks as desktop. The real VS Code
