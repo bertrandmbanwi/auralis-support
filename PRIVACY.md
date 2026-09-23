@@ -78,6 +78,6 @@ destination's privacy terms.
 ## Questions
 
 For privacy questions that do not contain sensitive information, use the
-[public Syntalume support hub](https://github.com/bertrandmbanwi/auralis-support).
+[public Syntalume support hub](https://github.com/syntalume/syntalume-support).
 Report suspected security vulnerabilities through the private publisher
 contact path described in [SECURITY.md](SECURITY.md).

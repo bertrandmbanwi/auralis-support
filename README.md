@@ -36,7 +36,7 @@ for 7–14 days. There is no payment, purchase, or expectation of a positive
 review. We want candid feedback from people who will actually use the preview
 in their normal editor workflow.
 
-[Volunteer for the private preview](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=private_preview.yml)
+[Volunteer for the private preview](https://github.com/syntalume/syntalume-support/issues/new?template=private_preview.yml)
 
 The application is a public GitHub issue, so do not include an email address,
 private code, project details, or other personal information. Selected testers
@@ -83,7 +83,7 @@ published with npm trusted-publisher provenance.
 
 ## Support
 
-- Use [GitHub Issues](https://github.com/bertrandmbanwi/auralis-support/issues) for bugs, install problems, docs issues, and feature requests.
+- Use [GitHub Issues](https://github.com/syntalume/syntalume-support/issues) for bugs, install problems, docs issues, and feature requests.
 - Include your Syntalume version, VS Code version, operating system, active theme/profile, and the output of `Syntalume: Doctor` when useful.
 
 ## Source Boundary
