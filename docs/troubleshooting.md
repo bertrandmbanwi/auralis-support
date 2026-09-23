@@ -103,7 +103,7 @@ Marketplace images must be public HTTPS URLs. Syntalume uses a public asset repo
 Public support issues live at:
 
 ```text
-https://github.com/bertrandmbanwi/auralis-support/issues
+https://github.com/syntalume/syntalume-support/issues
 ```
 
 For a shareable support payload that excludes file paths, project names, source

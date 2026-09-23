@@ -44,4 +44,4 @@ public support hub, along with `terminal-colors.sh` — a small script that
 prints your terminal theme's 16-color palette and a Syntalume wordmark drawn
 in those colors, so you can see the port the moment it is installed:
 
-- https://github.com/bertrandmbanwi/auralis-support
+- https://github.com/syntalume/syntalume-support

@@ -44,5 +44,5 @@ Syntalume is designed to keep the default theme path low risk:
 
 - Install Syntalume only from the official `auralis-labs.auralis-theme-system` Marketplace listing.
 - Keep VS Code and Syntalume updated.
-- Use the public support hub for non-sensitive bugs and docs issues: `https://github.com/bertrandmbanwi/auralis-support`.
+- Use the public support hub for non-sensitive bugs and docs issues: `https://github.com/syntalume/syntalume-support`.
 - Review any extension claiming to be a Syntalume fork or modified build carefully.

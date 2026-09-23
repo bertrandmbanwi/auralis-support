@@ -31,14 +31,14 @@ someone who:
 ## How It Works
 
 1. Submit the public
-   [volunteer form](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=private_preview.yml).
+   [volunteer form](https://github.com/syntalume/syntalume-support/issues/new?template=private_preview.yml).
 2. A small first group will be selected based on editor and workflow coverage,
    not praise or willingness to post a review.
 3. Selected volunteers are notified on their application issue and receive a
    private GitHub invitation with installation and download instructions.
 4. Use the preview in a normal workflow for 7–14 days when possible.
 5. Submit the public
-   [preview feedback form](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=preview_feedback.yml),
+   [preview feedback form](https://github.com/syntalume/syntalume-support/issues/new?template=preview_feedback.yml),
    or use the private contact path supplied with the build for anything that
    would expose unreleased information.
 

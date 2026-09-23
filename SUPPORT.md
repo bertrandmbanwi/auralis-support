@@ -25,10 +25,10 @@ Please include:
 
 Want to help test the next Auralis release in a real editor workflow? Read the
 [private-preview guide](docs/private-preview.md), then use the
-[volunteer form](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=private_preview.yml).
+[volunteer form](https://github.com/syntalume/syntalume-support/issues/new?template=private_preview.yml).
 
 After testing, use the
-[preview feedback form](https://github.com/bertrandmbanwi/auralis-support/issues/new?template=preview_feedback.yml).
+[preview feedback form](https://github.com/syntalume/syntalume-support/issues/new?template=preview_feedback.yml).
 Both forms create public GitHub issues. Do not include contact information,
 private code, unreleased names, screenshots, files, or download links.
 

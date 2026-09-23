@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 0.10.2 — 2026-09-23
+
+- Updated documentation, support forms, package metadata, and Marketplace media links for the Syntalume GitHub organization.
+- Updated release workflows to use the organization repositories.
+- Preserved extension and plugin identifiers, user settings, and installed themes.
+
 ## 0.10.1 — 2026-09-23
 
 - Clarified the Marketplace listing with a quick start, larger theme cards, and enlarged samples of the shipped icons.
@@ -319,7 +325,7 @@ Signature features — all local-first, no network, no telemetry:
 
 ## 0.2.8
 
-- Added the public Auralis support hub at `https://github.com/bertrandmbanwi/auralis-support`.
+- Added the public Auralis support hub at `https://github.com/syntalume/syntalume-support`.
 - Updated Marketplace metadata links for docs, support, and public GitHub presence so users no longer land on private-repo 404s.
 - Clarified that the source repo stays private while customer-facing docs, support, privacy, and security notes live publicly.
 - Updated local install references for the 0.2.8 VSIX.
