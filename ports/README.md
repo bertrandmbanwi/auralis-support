@@ -1,8 +1,8 @@
-# Auralis ports
+# Syntalume ports
 
-Generated terminal-app palettes for every Auralis theme, produced from the
+Generated terminal-app palettes for every Syntalume theme, produced from the
 same color source as the VS Code extension by `scripts/build-ports.js`.
-Do not edit by hand. Inside VS Code, the command "Auralis: Export Terminal
+Do not edit by hand. Inside VS Code, the command "Syntalume: Export Terminal
 Theme" produces these same files for the active theme.
 
 Get the VS Code extension: https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system

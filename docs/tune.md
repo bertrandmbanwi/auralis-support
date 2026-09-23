@@ -1,8 +1,8 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
-# Auralis Tune and Calibration
+# Syntalume Tune and Calibration
 
-Every Auralis theme is generated from a perceptual (OKLab) color engine — and
+Every Syntalume theme is generated from a perceptual (OKLab) color engine — and
 Tune puts a slice of that engine in your hands.
 
 ## Tune
@@ -10,10 +10,10 @@ Tune puts a slice of that engine in your hands.
 Run:
 
 ```text
-Auralis: Open Auralis Tune
+Syntalume: Open Syntalume Tune
 ```
 
-The core controls reshape the **active Auralis theme**, live:
+The core controls reshape the **active Syntalume theme**, live:
 
 - **Warmth** — shift the whole palette toward amber or toward blue.
 - **Contrast** — push text and surfaces apart (or soften them).
@@ -43,7 +43,7 @@ result stays consistent in languages whose extensions provide richer token
 information. Every control previews in the active editor after a short delay;
 click **Apply** when you are satisfied.
 
-If General Reset runs while Tune is open, Auralis first drains queued preview
+If General Reset runs while Tune is open, Syntalume first drains queued preview
 work, restores the transient preview, and closes the panel. It then resets the
 committed Tune ownership, so closing an old panel cannot resurrect stale
 values.
@@ -57,9 +57,9 @@ full grammar or renderer.
 
 Two guarantees no manual color tweaking gives you:
 
-1. Changes apply **only to Auralis themes** (they are written as theme-scoped
+1. Changes apply **only to Syntalume themes** (they are written as theme-scoped
    customizations), so other themes are never touched.
-2. The same WCAG contrast floors that gate every Auralis release are
+2. The same WCAG contrast floors that gate every Syntalume release are
    re-enforced after every adjustment — you cannot tune yourself into
    unreadable text.
 
@@ -89,7 +89,7 @@ and future theme improvements continue to flow through.
 Run:
 
 ```text
-Auralis: Calibrate Comfort & Contrast
+Syntalume: Calibrate Comfort & Contrast
 ```
 
 Three quick choices — contrast strength, color intensity, temperature — each
@@ -98,13 +98,13 @@ with. The result is saved as Tune adjustments you can refine later.
 
 ## Repair Theme Contrast
 
-Works on ANY installed theme, not only Auralis. Run:
+Works on ANY installed theme, not only Syntalume. Run:
 
 ```text
-Auralis: Repair Theme Contrast
+Syntalume: Repair Theme Contrast
 ```
 
-Auralis reads the active theme's own file, measures the audited UI pairs and
+Syntalume reads the active theme's own file, measures the audited UI pairs and
 every syntax color against WCAG floors, and repairs what fails by adjusting
 lightness only — hues are never touched, so the theme keeps its character.
 Deliberately muted roles (struck-through text, faded log noise) are

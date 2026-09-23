@@ -6,7 +6,7 @@ This source code, extension package, theme palettes, generated theme JSON,
 generated file icons, product icon mappings, screenshots, documentation, brand
 names, and related assets are proprietary to Bertrand Mbanwi.
 
-You may install and use the official Auralis extension as distributed by
+You may install and use the official Syntalume (formerly Auralis) extension as distributed by
 Bertrand Mbanwi through the Visual Studio Marketplace or another authorized
 channel.
 
@@ -23,27 +23,27 @@ loaders, schemas, and generated community-port fixtures distributed inside
 `@auralis-labs/palettes`, `packages/auralis-palettes`, `ports/palettes.json`,
 and `ports/community-fixtures` for either of these purposes:
 
-1. rendering Auralis colors in syntax highlighters or documentation; or
-2. building and distributing an Auralis port for another application.
+1. rendering Syntalume (formerly Auralis) colors in syntax highlighters or documentation; or
+2. building and distributing a Syntalume (formerly Auralis) port for another application.
 
-This exception does not cover Auralis SVG/file/product icon artwork, extension
+This exception does not cover Syntalume SVG/file/product icon artwork, extension
 runtime code, Marketplace media, or other assets. A redistributed port must
 retain this notice, identify material color changes, link to
-https://auralislab.dev, and must not claim to be an official first-party
+https://syntalume.dev, and must not claim to be an official first-party
 release. A port may be bundled with a free or paid-adjacent product but may not
-be sold as a standalone palette or theme. "Auralis" may be used only to
+be sold as a standalone palette or theme. "Syntalume" and the legacy name "Auralis" may be used only to
 identify compatibility or the source palette; no other trademark or brand
 rights are granted. All other rights remain reserved.
 
 Third-party notice
 
-The Auralis Product Icons font is generated from original Auralis glyph SVGs. No
+The Syntalume Product Icons font is generated from original Syntalume glyph SVGs. No
 Microsoft Codicons font, glyph artwork, or font binaries are bundled in or
 shipped with this extension.
 
 The `@vscode/codicons` package is used only as a build-time development
 dependency. Its metadata mapping (icon identifiers, categories, and tags)
-informs the coverage of Auralis product icon ids; no Codicons glyph artwork is
+informs the coverage of Syntalume product icon ids; no Codicons glyph artwork is
 copied or shipped. `@vscode/codicons` is published by Microsoft under the
 Creative Commons Attribution 4.0 International (CC-BY-4.0) license. See
 https://creativecommons.org/licenses/by/4.0/ for the license text.

@@ -1,0 +1,23 @@
+# Syntalume Dimmed for Ghostty — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+background = #040608
+foreground = #d4d0ca
+cursor-color = #e1a447
+selection-background = #004859
+palette = 0=#080a0d
+palette = 1=#fc5855
+palette = 2=#6ec272
+palette = 3=#e9ab2b
+palette = 4=#41bdd1
+palette = 5=#19a9b0
+palette = 6=#6fc4ae
+palette = 7=#d4d0ca
+palette = 8=#5b6167
+palette = 9=#ff625f
+palette = 10=#75d87a
+palette = 11=#ffbc19
+palette = 12=#2fd4ec
+palette = 13=#00bfc8
+palette = 14=#6ddcc0
+palette = 15=#e1ddd7

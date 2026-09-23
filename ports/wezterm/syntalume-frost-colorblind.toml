@@ -1,0 +1,15 @@
+# Syntalume Frost Colorblind for WezTerm — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#ddeff5"
+background = "#02080e"
+cursor_bg = "#00efff"
+cursor_border = "#00efff"
+selection_bg = "#00758c"
+ansi = ["#060e14", "#fc984c", "#00cef3", "#e6b816", "#00e2ff", "#ed9e2f", "#60e7d8", "#ddeff5"]
+brights = ["#5b6c74", "#ffa64c", "#00e5ff", "#ffca00", "#00f9ff", "#ffae23", "#55ffed", "#ebfcff"]
+
+[metadata]
+name = "Syntalume Frost Colorblind"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

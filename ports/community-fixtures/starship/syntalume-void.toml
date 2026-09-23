@@ -1,0 +1,23 @@
+# Syntalume Void for Starship — generated community fixture.
+palette = "syntalume_void"
+
+[palettes.syntalume_void]
+background = "#000000"
+foreground = "#e1ded5"
+accent = "#00d9fa"
+ansi_0 = "#000000"
+ansi_1 = "#fc5855"
+ansi_2 = "#61cb7c"
+ansi_3 = "#e6b22d"
+ansi_4 = "#00dffd"
+ansi_5 = "#c787ff"
+ansi_6 = "#5ae6c6"
+ansi_7 = "#e1ded5"
+ansi_8 = "#696870"
+ansi_9 = "#ff625f"
+ansi_10 = "#65e287"
+ansi_11 = "#ffc31a"
+ansi_12 = "#00f6ff"
+ansi_13 = "#de95ff"
+ansi_14 = "#50fed8"
+ansi_15 = "#eeebe2"

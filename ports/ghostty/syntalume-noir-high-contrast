@@ -1,0 +1,23 @@
+# Syntalume Noir High Contrast for Ghostty — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+background = #020305
+foreground = #faf6ef
+cursor-color = #ffac67
+selection-background = #286cab
+palette = 0=#040508
+palette = 1=#fc5855
+palette = 2=#6ec272
+palette = 3=#e9ab2b
+palette = 4=#25d2fc
+palette = 5=#e175d9
+palette = 6=#52dfbf
+palette = 7=#faf6ef
+palette = 8=#8e929e
+palette = 9=#ff625f
+palette = 10=#75d87a
+palette = 11=#ffbc19
+palette = 12=#00e8ff
+palette = 13=#fc82f3
+palette = 14=#47f7d2
+palette = 15=#fcf8f1

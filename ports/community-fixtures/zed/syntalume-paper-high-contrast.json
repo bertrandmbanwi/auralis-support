@@ -1,0 +1,79 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Syntalume Paper High Contrast",
+  "author": "Syntalume community port fixture",
+  "themes": [
+    {
+      "name": "Syntalume Paper High Contrast",
+      "appearance": "light",
+      "style": {
+        "background": "#fffcf8",
+        "foreground": "#1f1610",
+        "text": "#1f1610",
+        "text.muted": "#736046",
+        "accent": "#d45b3d",
+        "border": "#b9b0a3",
+        "editor.background": "#fffcf8",
+        "editor.foreground": "#1f1610",
+        "editor.active_line.background": "#f5efe7",
+        "panel.background": "#f7f3ec",
+        "status_bar.background": "#f3ede5",
+        "title_bar.background": "#f5f0ea",
+        "success": "#308639",
+        "warning": "#bb6a00",
+        "error": "#cc272e",
+        "modified": "#bb6a00",
+        "created": "#308639",
+        "deleted": "#cc272e",
+        "terminal.background": "#f3ede5",
+        "terminal.foreground": "#1f1610",
+        "terminal.ansi.background": "#f3ede5",
+        "terminal.ansi.black": "#130b06",
+        "terminal.ansi.red": "#cc272e",
+        "terminal.ansi.green": "#308639",
+        "terminal.ansi.yellow": "#bb6a00",
+        "terminal.ansi.blue": "#044cb6",
+        "terminal.ansi.magenta": "#6365c1",
+        "terminal.ansi.cyan": "#007982",
+        "terminal.ansi.white": "#1f1610",
+        "terminal.ansi.bright_black": "#5a5049",
+        "terminal.ansi.bright_red": "#be000c",
+        "terminal.ansi.bright_green": "#007617",
+        "terminal.ansi.bright_yellow": "#ad5300",
+        "terminal.ansi.bright_blue": "#0035ad",
+        "terminal.ansi.bright_magenta": "#524fb8",
+        "terminal.ansi.bright_cyan": "#006975",
+        "terminal.ansi.bright_white": "#150e08",
+        "syntax": {
+          "comment": {
+            "color": "#736046"
+          },
+          "string": {
+            "color": "#1e7729"
+          },
+          "number": {
+            "color": "#b25400"
+          },
+          "keyword": {
+            "color": "#ad215f"
+          },
+          "function": {
+            "color": "#044cb6"
+          },
+          "type": {
+            "color": "#007982"
+          },
+          "property": {
+            "color": "#6d3800"
+          },
+          "operator": {
+            "color": "#a43c2f"
+          },
+          "punctuation": {
+            "color": "#564b42"
+          }
+        }
+      }
+    }
+  ]
+}

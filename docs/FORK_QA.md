@@ -1,4 +1,4 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Browser and editor-fork QA
 
@@ -10,7 +10,7 @@ independent paths:
 - the current code-server workbench, driven through a real Chromium browser,
   with the same VSIX;
 - the exact current public artifact downloaded from Open VSX.
-- the candidate package contract required by Cursor desktop and Gitpod's VS
+- the candidate package contract required by Cursor desktop and Ona's VS
   Code Browser: desktop and browser entries, stable APIs, no Marketplace-only
   dependency, and both workspace and UI extension kinds.
 
@@ -35,7 +35,7 @@ code-server User settings file to prove the pre-existing theme color and the
 unrelated sentinel survive. A failure screenshot and container logs are kept as
 workflow artifacts/diagnostics.
 
-Cursor and Gitpod remain release-operator evidence because an unauthenticated
+Cursor and Ona remain release-operator evidence because an unauthenticated
 Linux runner cannot reproduce their hosted/product-specific UI state. The
 contract job is a fast compatibility gate, not a substitute for opening those
 products. Before every major release, complete both reproducible product smokes
@@ -50,7 +50,7 @@ below and copy
 3. Open **Extensions: Install from VSIX...** from the Command Palette and pick
    `auralis-theme-system-<version>.vsix`. Installing from the Extensions view
    avoids the known ambiguity of CLI installation into non-default profiles.
-4. Run **Auralis: Open Setup Dashboard**, apply Paper, and switch through the
+4. Run **Syntalume: Open Setup Dashboard**, apply Paper, and switch through the
    file and product icon systems.
 5. Open Tune, Icon Studio, and Accessibility Lab. Apply and reset one scoped
    change, then confirm a deliberately unrelated setting is unchanged.
@@ -62,34 +62,46 @@ Expected result: the dashboard and desktop features work, the browser-safe
 surfaces remain available, reset preserves unrelated settings, and no proposed
 API warning appears.
 
-## Gitpod Classic / VS Code Browser smoke
+## Ona / VS Code Browser smoke
 
-Gitpod Classic uses an Open VSX mirror for VS Code Browser and also permits a
-manually uploaded candidate VSIX. That makes two useful release checks:
+Use the current Ona environment service for the default hosted-editor check.
+Record the host product/version, browser version, candidate VSIX SHA-256, and
+whether Syntalume runs in a browser or remote Node extension host. A browser UI
+alone does not prove that the extension runs in a browser host.
 
-1. Start a clean Gitpod Classic workspace for a small public repository and
-   record the workspace image plus VS Code Browser version.
+1. Start a clean Ona environment for a small public repository, using the
+   current Dev Container configuration. Open its **Code** tab, or select
+   **VS Code Browser** from the editor dropdown for a separate browser tab.
 2. In Extensions, search `auralis-labs.auralis-theme-system` and install the
-   current public Open VSX build. Confirm the displayed version matches the
-   release baseline.
-3. Upload `auralis-theme-system-<version>.vsix` to the workspace. Run
-   **Extensions: Install from VSIX...**, choose it, and reload the browser.
-4. Confirm the candidate version in Extensions, then open the setup dashboard,
-   apply Paper, and open Tune, Icon Studio, and Accessibility Lab.
-5. Apply and exactly reset one browser-supported setting. Confirm Ambience and
-   Environment Guard explain that they require a desktop extension host rather
-   than throwing an error.
-6. Capture the Extensions details page and the Auralis status center.
+   public release available from that host's registry. Record the registry and
+   displayed version rather than assuming it uses an Open VSX mirror.
+3. Upload the reviewed `auralis-theme-system-<version>.vsix` to the environment.
+   Run **Extensions: Install from VSIX...**, select it, and reload. Confirm the
+   candidate version and its running host in **Developer: Show Running Extensions**.
+4. Open the setup dashboard, apply Paper, and open Tune, Icon Studio, and
+   Accessibility Lab. Apply and exactly reset one supported setting; verify an
+   unrelated setting remains unchanged.
+5. On an actual browser extension host, confirm desktop-only features show
+   their limitation. On a remote Node host, record the supported remote behavior
+   instead. Do not count a remote desktop-host run as the separate browser-host gate.
+6. Capture the Extensions details, dashboard, host/version information, and
+   reset result. Sanitize private paths and environment details before sharing.
 
-Expected result: both the public Open VSX build and candidate VSIX install,
-browser-supported features run, desktop-only features degrade with an explicit
-explanation, and no extension-host error appears.
+Expected result: the reviewed candidate installs, the host-appropriate features
+work, exact reset preserves unrelated settings, and no extension-host error
+appears. These are manual runtime results, separate from the static package
+contract and automated VS Code browser smoke.
 
-The Gitpod steps follow its current
-[Open VSX and manual VSIX documentation](https://ona.com/docs/classic/user/references/ides-and-editors/vscode-extensions).
-Ona, Gitpod's successor, also documents
-[Cursor and VS Code Browser as supported VS Code-family editors](https://ona.com/docs/ona/editors/overview);
-use the Gitpod Classic path while validating the explicitly researched target.
+The procedure follows Ona's [supported editors](https://ona.com/docs/ona/editors/overview)
+and [VS Code Browser instructions](https://ona.com/docs/ona/editors/vscode-browser).
+Gitpod Classic PAYG retired on **2025-10-15**; the old documentation remaining
+online does not make it an available public test service. [Official retirement
+notice](https://ona.com/stories/gitpod-classic-payg-sunset).
+
+An existing **Gitpod Classic enterprise** instance can remain an additional
+compatibility target only when its operator confirms its supported version and
+migration timeline. Record that instance/version explicitly; enterprise migration
+schedules differ from PAYG. Do not require a retired PAYG account for release QA.
 
 ## Shared functional checklist
 
@@ -98,10 +110,10 @@ use the Gitpod Classic path while validating the explicitly researched target.
 3. apply one color theme and each icon system;
 4. open Tune, Icon Studio, and Accessibility Lab;
 5. confirm desktop-only features explain their limitation instead of failing;
-6. reset Auralis and verify unrelated settings remain unchanged.
+6. reset Syntalume and verify unrelated settings remain unchanged.
 
 Record product versions, results, and screenshots in the release issue. The
 scheduled workflow owns real VS Code Browser, VSCodium, and code-server runtime
 evidence plus the deterministic package contract. The two manual product
-smokes own only the Cursor and Gitpod evidence that cannot be reproduced on an
+smokes own only the Cursor and Ona evidence that cannot be reproduced on an
 unauthenticated Linux runner.

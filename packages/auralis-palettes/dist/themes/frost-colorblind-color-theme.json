@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Auralis Frost Colorblind",
+  "name": "Syntalume Frost Colorblind",
   "type": "dark",
   "colors": {
     "focusBorder": "#00d8f685",

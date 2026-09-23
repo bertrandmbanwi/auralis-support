@@ -1,9 +1,9 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
-# Auralis Private Preview
+# Syntalume Private Preview
 
 The private preview gives a small number of volunteers early access to a
-potential next Auralis release. Its purpose is to test whether the product is
+potential next Syntalume release (formerly Auralis). Its purpose is to test whether the product is
 useful in real editor workflows before any public launch or paid offering.
 
 ## What This Preview Is

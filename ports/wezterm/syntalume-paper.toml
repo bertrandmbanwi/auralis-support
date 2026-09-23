@@ -1,0 +1,15 @@
+# Syntalume Paper for WezTerm — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+
+[colors]
+foreground = "#352c25"
+background = "#ede7de"
+cursor_bg = "#c43b15"
+cursor_border = "#c43b15"
+selection_bg = "#f0a08c"
+ansi = ["#282019", "#cc272e", "#308639", "#bb6a00", "#044cb6", "#6365c1", "#007982", "#352c25"]
+brights = ["#80756d", "#be000c", "#007617", "#ad5300", "#0035ad", "#524fb8", "#006975", "#2b221b"]
+
+[metadata]
+name = "Syntalume Paper"
+origin_url = "https://github.com/bertrandmbanwi/auralis-support"

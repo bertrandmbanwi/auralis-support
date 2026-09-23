@@ -1,0 +1,26 @@
+# Syntalume Paper for Warp — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Syntalume Paper"
+accent: "#044cb6"
+background: "#ede7de"
+foreground: "#352c25"
+details: lighter
+terminal_colors:
+  normal:
+    black: "#282019"
+    red: "#cc272e"
+    green: "#308639"
+    yellow: "#bb6a00"
+    blue: "#044cb6"
+    magenta: "#6365c1"
+    cyan: "#007982"
+    white: "#352c25"
+  bright:
+    black: "#80756d"
+    red: "#be000c"
+    green: "#007617"
+    yellow: "#ad5300"
+    blue: "#0035ad"
+    magenta: "#524fb8"
+    cyan: "#006975"
+    white: "#2b221b"

@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Auralis Noir",
+  "name": "Syntalume Noir",
   "type": "dark",
   "colors": {
     "focusBorder": "#ff955085",

@@ -1,0 +1,26 @@
+# Syntalume Void for Warp — generated from the Syntalume VS Code theme.
+# https://marketplace.visualstudio.com/items?itemName=auralis-labs.auralis-theme-system
+name: "Syntalume Void"
+accent: "#00dffd"
+background: "#000000"
+foreground: "#e1ded5"
+details: darker
+terminal_colors:
+  normal:
+    black: "#000000"
+    red: "#fc5855"
+    green: "#61cb7c"
+    yellow: "#e6b22d"
+    blue: "#00dffd"
+    magenta: "#c787ff"
+    cyan: "#5ae6c6"
+    white: "#e1ded5"
+  bright:
+    black: "#696870"
+    red: "#ff625f"
+    green: "#65e287"
+    yellow: "#ffc31a"
+    blue: "#00f6ff"
+    magenta: "#de95ff"
+    cyan: "#50fed8"
+    white: "#eeebe2"

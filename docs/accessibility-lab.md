@@ -1,15 +1,15 @@
-<!-- Synced from the private Auralis source repo. Run `npm run docs:sync` before every release. -->
+<!-- Synced from the private Syntalume source repo. Run `npm run docs:sync` before every release. -->
 
 # Accessibility Lab
 
 Accessibility Lab turns the active theme's readability and status colors into
-an inspectable report. It works with Auralis themes and with other installed
+an inspectable report. It works with Syntalume themes and with other installed
 themes that VS Code makes available to the extension.
 
 Run:
 
 ```text
-Auralis: Open Accessibility Lab
+Syntalume: Open Accessibility Lab
 ```
 
 ## What the report checks
@@ -78,11 +78,11 @@ terminal.ansiBlue
 terminal.ansiBrightBlue
 ```
 
-Choose **Exact reset** or run `Auralis: Reset Accessibility Status Axis` to
+Choose **Exact reset** or run `Syntalume: Reset Accessibility Status Axis` to
 restore each owned key to its value—or absence—before Apply. Unrelated keys you
 add to the same theme block later remain. If you manually change one of the 24
 owned keys after Apply, that newer value wins while reset still restores the
-other unchanged Auralis-written keys.
+other unchanged Syntalume-written keys.
 
 ## Share or repair
 
@@ -99,9 +99,9 @@ device-agnostic review heuristics—not calibrated hardware profiles. They are
 read-only and reversible because switching them changes only the Lab preview;
 it writes no editor setting. Copy and Save export the selected stress report.
 
-Choose **Repair contrast** to run Auralis' reversible, theme-scoped contrast
+Choose **Repair contrast** to run Syntalume's reversible, theme-scoped contrast
 repair. The repair adjusts lightness while preserving hue and leaves every
-other theme untouched. Run `Auralis: Repair Theme Contrast` again to remove the
+other theme untouched. Run `Syntalume: Repair Theme Contrast` again to remove the
 repair exactly per color and syntax rule: later manual edits win, every other
 unchanged repair entry restores, and unrelated entries remain. General Reset
 removes repairs for every theme through the same exact, cross-feature history.
