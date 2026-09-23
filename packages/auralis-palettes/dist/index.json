@@ -1,7 +1,7 @@
 {
   "$schema": "https://auralislab.dev/schema/palette-v1.json",
   "schemaVersion": 1,
-  "packageVersion": "0.10.0",
+  "packageVersion": "0.10.1",
   "themes": {
     "Syntalume Noir": {
       "file": "themes/noir-color-theme.json",
