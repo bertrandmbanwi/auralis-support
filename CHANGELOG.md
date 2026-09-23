@@ -2,6 +2,13 @@
 
 # Changelog
 
+## 0.10.1 — 2026-09-23
+
+- Clarified the Marketplace listing with a quick start, larger theme cards, and enlarged samples of the shipped icons.
+- Simplified sharing links, removed outdated preview recruitment copy, and refreshed the Syntalume footer.
+- Updated package homepage and public support links to the canonical Syntalume destinations.
+- Preserved the extension identity, themes, commands, settings, and runtime behavior.
+
 ## 0.10.0 — Syntalume, formerly Auralis
 
 Auralis is now **Syntalume** — same product, same listing, same update path.
